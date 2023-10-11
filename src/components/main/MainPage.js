@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography, Paper, Avatar, Card, Alert, CardMedia, CardContent, Grid } from '@mui/material';
+import { Box, Typography, Paper, Avatar, Grid, Alert, CardMedia, CardContent } from '@mui/material';
+import Image from 'mui-image'
 import ExperienceCard from './ExperienceCard';
 
 
@@ -53,26 +54,26 @@ const passions = [
 export default function MainPage() {
     return(
 
-        <Box sx={{padding:2, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }} >  
-            <Card sx={{ spacing: 2, padding: 2 } }  >    
-            <Box sx={{ display: 'flex', flexDirection: 'rows' }}> 
-                <CardMedia
-                component="img"
-                height="250"
-                image={`${process.env.PUBLIC_URL}/img/foto.jpeg`} 
-                alt="Lorenzo Bazzani"
-                />
-                <CardContent>
+        <Box sx={{width: "100%", paddingTop: 2, paddingBottom:2, margin:0, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }} >  
+            <Paper sx={{ spacing: 2, padding: 2 } }  >    
+            <Grid container spacing={2}
+                alignItems="center"
+                justify="center"
+                style={{ }}>
 
-                <Typography variant="body1" color="text.secondary">
-                Delivery Director and Senior Software Engineer with extensive experience in banking, major industries, and startup ventures. Expert in managing large IT program deliveries and passionate about coding and artificial intelligence. Solid foundation in Enterprise IT Architecture and key Digital Transformation Technologies. Outstanding public speaker and communicator with strong interpersonal skills. Proven track record in solving complex business and technical challenges.
-                <p/>
-                This site is hosted on my personal VPS cloud server where I publish my demos. Lately, I've been exploring the capabilities of generative AI. Try the demo of my service at bazml.com/icv, upload a CV in PDF format and receive: a cover letter, improvements, translation, and in the future, other features I'm currently working on.
-                </Typography>
-                </CardContent>
+                <Grid item xs={12} sm={"auto"}>
+
+                    <Image src={`${process.env.PUBLIC_URL}/img/foto.jpeg`} shift="left" style={{ maxHeight:250, maxWidth:250, borderRadius: 16 }} />   
+                </Grid>
+                <Grid item xs={12} sm={9}>
+                    <Typography variant="body1" color="text.secondary">
+                    Delivery Director and Senior Software Engineer with extensive experience in banking, major industries, and startup ventures. Expert in managing large IT program deliveries and passionate about coding and artificial intelligence. Solid foundation in Enterprise IT Architecture and key Digital Transformation Technologies. Outstanding public speaker and communicator with strong interpersonal skills. Proven track record in solving complex business and technical challenges.
+                    </Typography>
+                </Grid>
+
             
-            </Box>
-            </Card>
+            </Grid>
+            </Paper>
 
             <Box m={1} />
 

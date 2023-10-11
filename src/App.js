@@ -34,7 +34,6 @@ function App() {
 
         <CssBaseline />
         
-
         <Switch test={route}>
           <Case value="icv">
             <MyAppBar title="Intelligent CV"/>
