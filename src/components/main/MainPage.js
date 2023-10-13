@@ -1,10 +1,9 @@
 import React from 'react';
 import { Box, Typography, Paper, Avatar, Grid, Alert, CardMedia, CardContent } from '@mui/material';
 import Image from 'mui-image'
-import ExperienceCard from './ExperienceCard';
+import ExperienceCard from './CardComponent';
 
 
-import axios from "axios";
 
 const experiences = [
     {
@@ -48,10 +47,33 @@ const passions = [
     },
 ]
 
+const demos = [
+    {
+        logo: "foto_small",
+        youtube: "Running.jpg",
+        title: "Intelligent CV (Generatie AI)",
+        youtube: "Q-iidnaLULA?si=GRROKrNHXic8YB85",
+        detail: "Personal marathon time: 3:35. It's been a few years, but the desire for high-intensity sports remains strong. Sports, mountains, and the great outdoors are medicine for both the body and the mind."
+    },
+    {
+        logo: "foto_small",
+        image: "SoftwareEngineering.jpg",
+        title: "Software Engineer Inside",
+        detail: "I love to create, invent, and experiment. In over thirty years I've worked with at least 10 different programming languages. I enjoy personally testing everything that's new and innovative."
+    },
+    {
+        logo: "foto_small",
+        image: "Leader.jpeg",
+        title: "Management and Leadership",
+        detail: "Over twenty years of experience as an entrepreneur, project manager and director of delivery for large programs, have taught me that, in order to achieve results, it's essential to work on the team maintaining a creative and positive environment both with the team and with stakeholders."
+    },
+]
+
 
 
 
 export default function MainPage() {
+    const [test, setTest] = React.useState(false);
     return(
 
         <Box sx={{width: "100%", paddingTop: 2, paddingBottom:2, margin:0, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }} >  
@@ -88,12 +110,11 @@ export default function MainPage() {
                 </Grid>
                 ))}
             </Grid>
-
+            
             <Box m={1} />
-
             <Alert severity="success" >My passions</Alert>
-
             <Box m={1} />
+
             <Grid container spacing={4}>
                 {passions.map((n) => (
                 <Grid item key={n.id} xs={12} sm={6} md={4}>
@@ -101,6 +122,24 @@ export default function MainPage() {
                 </Grid>
                 ))}
             </Grid>
+            
+            {test &&(<>
+            <Box m={1} />
+            <Alert severity="success" >My Coding Demos</Alert>
+            <Box m={1} />
+
+            <Grid container spacing={4}>
+                {demos.map((n) => (
+                <Grid item key={n.id} xs={12} sm={6} md={4}>
+                    <ExperienceCard key={"nk"+n.id}  {...n}></ExperienceCard>
+                </Grid>
+                ))}
+            </Grid>
+
+            <Box m={1} />
+            </>)}
+
+
 
         </Box>
 

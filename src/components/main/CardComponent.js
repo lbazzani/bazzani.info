@@ -1,21 +1,16 @@
 import * as React from 'react';
 import { useState, useEffect } from "react";
 import { styled } from '@mui/material/styles';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CardHeader from '@mui/material/CardHeader';
-import CardActionArea from '@mui/material/CardActionArea';
 import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
-import { red } from '@mui/material/colors';
-import moment from "moment";
+
+import YouTube from 'react-youtube';
 
 import { Card } from '@mui/material';
 
@@ -68,6 +63,7 @@ export default function ExperienceCard(n) {
             title={n.title}
 
           />
+          {n.image &&
           <CardMedia
             component="img"
             height="200"
@@ -75,6 +71,10 @@ export default function ExperienceCard(n) {
             image={`${process.env.PUBLIC_URL}/img/${n.image}`}
             alt="random"
           />
+          }
+          {n.youtube && 
+            <YouTube videoId={n.youtube} opts={{ width: "100%", playerVars: {autoplay: 1,} }} />
+          }
           <CardContent sx={{ flexGrow: 1 }}>
             <Typography gutterBottom variant="body2" component="h2">
               {n.detail}
