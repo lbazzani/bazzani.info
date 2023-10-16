@@ -1,0 +1,1 @@
+Master's Degree in Computer Engineering with a specialization in Software Engineering. For my thesis, I developed one of the pioneering tools for the automatic generation of web-based training courses.
