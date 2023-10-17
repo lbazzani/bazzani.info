@@ -14,10 +14,6 @@ import { Card } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ReactMarkdown from 'react-markdown';
 import axios from 'axios';
-
-
-
-
 import YouTube from 'react-youtube';
 
 
