@@ -8,7 +8,7 @@ import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import { Card } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';

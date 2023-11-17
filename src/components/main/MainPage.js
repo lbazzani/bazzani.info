@@ -2,27 +2,29 @@ import React from 'react';
 import { Box, Typography, Paper, Avatar, Grid, Alert, CardMedia, CardContent } from '@mui/material';
 import Image from 'mui-image'
 import ExperienceCard from './CardComponent';
+import ReactMarkdown from 'react-markdown';
+import axios from 'axios';
 
 
 
 const experiences = [
     {
         logo: "Politecnico",
-        image: "Study.png",
+        image: "Study2.jpg",
         title: "Polytechnic University of Turin",
         mdDetail: "study.md",
     },
     {
         logo: "Trim",
-        image: "Startupper.png",
+        image: "Startupper2.jpg",
         title: "Entrepreneur, Startupper",
         mdDetail: "trimDescription.md",
         mdAddittional: "trimAdditional.md"
     },
     {
         logo: "Capgemini",
-        image: "Management.png",
-        title: "Capgemini Italia",
+        image: "Management2.jpg",
+        title: "Capgemini - Deliver Director",
         mdDetail: "capDescription.md",
         mdAddittional: "capAdditional.md"
     },
@@ -75,6 +77,19 @@ const demos = [
 
 export default function MainPage() {
     const [test, setTest] = React.useState(false);
+    const [mainDescription, setMainDescription] = React.useState("");
+
+    React.useEffect(() => {
+
+          axios.get('/markdown/mainDescription.md')
+          .then((response) => {
+            setMainDescription(response.data);
+          })
+          .catch((error) => {
+            console.error('Errore nel recupero del file Markdown', error);
+          });
+    })
+
     return(
 
         <Box sx={{width: "100%", paddingTop: 2, paddingBottom:2, margin:0, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }} >  
@@ -90,7 +105,7 @@ export default function MainPage() {
                 </Grid>
                 <Grid item xs={12} sm={9}>
                     <Typography variant="body1" color="text.secondary">
-                    Delivery Director and Senior Software Engineer with extensive experience in banking, major industries, and startup ventures. Expert in managing large IT program deliveries and passionate about coding and artificial intelligence. Solid foundation in Enterprise IT Architecture and key Digital Transformation Technologies. Outstanding public speaker and communicator with strong interpersonal skills. Proven track record in solving complex business and technical challenges.
+                    <ReactMarkdown>{mainDescription}</ReactMarkdown>
                     </Typography>
                 </Grid>
 
