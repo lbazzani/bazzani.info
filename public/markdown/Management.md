@@ -1,0 +1,6 @@
+- Entrepreneurship: Demonstrated business acumen through successful startup creation and growth, culminating in acquisition.
+- Strategic Business Development: Proven track record in identifying and capitalizing on opportunities to foster business growth.
+- Program Management: Expertise in leading sizable projects from ideation to execution, with a strong focus on value delivery.
+- Sales Management: Skillful in devising and implementing sales strategies to widen market reach and meet revenue goals.
+- People Management: Committed to team leadership with an emphasis on talent development and collective achievement.
+- Financial Oversight: Proficient in crafting and overseeing financial plans aimed at rigorous control and maximizing profit for business initiatives.

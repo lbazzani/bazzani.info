@@ -1,0 +1,2 @@
+npx prisma migrate dev --name update
+shasum -a 256 prisma/migrations/20240126073207_rootuser/migration.sql
