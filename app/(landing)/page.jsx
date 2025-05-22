@@ -94,7 +94,7 @@ export default async function Home() {
         <Paper sx={{ spacing: 2, padding: 2 } }  >    
         <Grid container spacing={2} alignItems="flex-start" justifyContent="flex-start">
 
-            <Grid item xs={12} sm={"auto"} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Grid item xs={12} sm={5} md={3} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               <CardMedia
                 component="img"
                 image="/img/foto.jpeg"
@@ -102,7 +102,7 @@ export default async function Home() {
                 sx={{ maxHeight: 250, maxWidth: 250, borderRadius: 2, objectFit: "cover" }}
               />
             </Grid>
-            <Grid item xs={12} sm={9}>
+            <Grid item xs={12} sm={7} md={9}>
                 <Typography gutterBottom variant="body1" component="h2" sx={{ textAlign: 'justify' }}>
 
                     <ReactMarkdown>{mainDescription}</ReactMarkdown>
