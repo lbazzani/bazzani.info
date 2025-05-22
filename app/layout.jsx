@@ -36,7 +36,7 @@ export default async function RootLayout({children, params}) {
           <body className={inter.className}>
           <main>
             <MyAppBar/>
-            <Box sx={{ height: '20px' }} />
+            <Box sx={{ height: '15px' }} />
             <Container sx={{minHeight: '500px'}}>
                   {children}
             </Container>
