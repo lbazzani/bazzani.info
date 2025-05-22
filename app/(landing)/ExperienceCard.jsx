@@ -1,7 +1,4 @@
-'use client';
 
-import * as React from 'react';
-import { useState, useEffect } from "react";
 import { styled } from '@mui/material/styles';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -17,94 +14,21 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ReactMarkdown from 'react-markdown';
 import axios from 'axios';
 
+import ExperienceCardAdditional from "./ExperienceCardAdditional"
 
 
 
-export default function ExperienceCard(n) {
-    const [expanded, setExpanded] = React.useState(false);
-    const [favorite, setFavorite] = React.useState(n.favorite);
-    const [markdownDescription, setMarkdownDescription] = useState('');
-    const [markdownAdditional, setMarkdownAddittional] = useState('');
 
-    useEffect(() => {
-      if(n.mdDetail){
-        axios.get('/markdown/'+n.mdDetail)
-        .then((response) => {
-          setMarkdownDescription(response.data);
-        })
-        .catch((error) => {
-          console.error('Errore nel recupero del file Markdown', error);
-        });
-      }
+export default async function ExperienceCard(n) {
 
-      if(n.mdAddittional){
-        axios.get('/markdown/'+n.mdAddittional)
-        .then((response) => {
-          setMarkdownAddittional(response.data);
-        })
-        .catch((error) => {
-          console.error('Errore nel recupero del file Markdown', error);
-        });
-      }
+    var markdownDescription ="";
 
-    }, []);
-
-    const ExpandMore = styled((props) => {
-        const { expand, ...other } = props;
-        return <IconButton {...other} />;
-      })(({ theme, expand }) => ({
-        transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-        marginLeft: 'auto',
-        transition: theme.transitions.create('transform', {
-          duration: theme.transitions.duration.shortest,
-        }),
-    }));
-    
-    const handleExpandClick = () => {
-      setExpanded(!expanded);
-    };
-
-    function removeObjectWithId(arr, id) {
-      const objWithIdIndex = arr.findIndex((obj) => obj.id === id);
-    
-      if (objWithIdIndex > -1) {
-        arr.splice(objWithIdIndex, 1);
-      }
-    
-      return arr;
+    if(n.mdDetail){
+        const fs = require('fs').promises;
+        const path = require('path');
+        const filePath = path.join(process.cwd(), 'public', 'markdown', n.mdDetail);
+        markdownDescription = await fs.readFile(filePath, 'utf8');
     }
-
-    const handlePersist = () => {
-      let d=localStorage.getItem('favorites');
-      var od=new Array();
-      (d)&&(od=(JSON.parse(d)));
-      if(favorite){
-        setFavorite(false);
-        removeObjectWithId(od, n.id);
-      }
-      else{
-        setFavorite(true);
-        var newFavorite={...n, favorite: true};
-        od.unshift(newFavorite);
-      }
-      localStorage.setItem('favorites', JSON.stringify(od));
-      
-    };
-
-
-    const handleShare = async () => {
-      try {
-        await navigator
-          .share(n.site_link)
-          .then(() =>
-            console.log("Hooray! Your content was shared to tha world")
-          );
-      } catch (error) {
-        console.log(`Oops! I couldn't share to the world because: ${error}`);
-      }
-    };
-
-
 
     return (
         <Card>
@@ -131,7 +55,7 @@ export default function ExperienceCard(n) {
           }
 
           <CardContent sx={{  marginBottom: 0}}>
-            <Typography gutterBottom variant="body2" component="h2">
+            <Typography gutterBottom variant="body2" component="h2" sx={{ textAlign: 'justify' }}>
               {n.detail && (
                 n.detail
               )}
@@ -141,37 +65,11 @@ export default function ExperienceCard(n) {
             </Typography>
           </CardContent>
           
-          {(n.additional|| n.mdAddittional)? ( <>
-          <CardActions disableSpacing sx={{  marginTop: -5}} >
-
-            <ExpandMore
-              expand={expanded}
-              onClick={handleExpandClick}
-              aria-expanded={expanded}
-              aria-label="show more"
-            >
-              {!expanded && (
-              <Typography gutterBottom variant="body2" component="h2" sx={{  flex: "row", alignSelf: "flex-end"}}>
-              More Detail
-              </Typography>
-              )}
-              <ExpandMoreIcon />
-            </ExpandMore>
+          <ExperienceCardAdditional n={n}></ExperienceCardAdditional>
            
-          </CardActions>
-          <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <CardContent sx={{ flexGrow: 1 , marginTop: -6}}>
 
-              {n.additional && (
-                n.additional
-              )}
-              {n.mdAddittional && (
-                < ReactMarkdown>{markdownAdditional}</ReactMarkdown>
-              )}
+          
 
-            </CardContent>
-          </Collapse>
-          </>):""}
         </Card>
     );
 }

@@ -7,6 +7,8 @@ import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import Typography from '@mui/material/Typography';
 import Slide from '@mui/material/Slide';
+import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
 import PropTypes from 'prop-types';
 
 
@@ -40,12 +42,29 @@ export default function MyAppBar(props) {
     return (
       <>
       <HideOnScroll {...props}>
-        <AppBar color ="inherit" position="fixed">
-          <Toolbar>
+        <AppBar color ="inherit" position="fixed " sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', padding: 1, backgroundColor: '#FFFFFF' }}>
+
             <Typography variant="h6" component="div">
               Lorenzo Bazzani
             </Typography>
-          </Toolbar>
+            <Box sx={{ flexGrow: 1 }} />
+                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <a
+                    href="https://it.linkedin.com/in/lorenzo-bazzani"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                      alt="LinkedIn"
+                      style={{ width: 32, height: 32, marginRight: 8 }}
+                    />
+                    <Typography variant="body1">
+                      Follow me on LinkedIn !
+                    </Typography>
+                  </a>
+                </Box>
         </AppBar>
       </HideOnScroll>
       <Toolbar />

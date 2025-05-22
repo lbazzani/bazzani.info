@@ -22,13 +22,13 @@ const skills = [
 
 const works = [
     {
-        logo: "foto_small",
+        logo: "IconaBazzani",
         image: "GenerativeAI.png",
         title: "Independent Consultant – Cloud Infrastructure & Generative AI ",
         mdDetail: "consultantDescription.md",
     },
     {
-        logo: "foto_small",
+        logo: "XpylonIcon_Transparent",
         image: "xpylon.png",
         title: "Xyplon - Founder (Houston Texas)",
         mdDetail: "xpylonDescription.md",
@@ -103,26 +103,11 @@ export default async function Home() {
               />
             </Grid>
             <Grid item xs={12} sm={9}>
+                <Typography gutterBottom variant="body1" component="h2" sx={{ textAlign: 'justify' }}>
 
-                <ReactMarkdown>{mainDescription}</ReactMarkdown>
+                    <ReactMarkdown>{mainDescription}</ReactMarkdown>
+                </Typography>
 
-                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 2 }}>
-                  <a
-                    href="https://it.linkedin.com/in/lorenzo-bazzani"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}
-                  >
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-                      alt="LinkedIn"
-                      style={{ width: 32, height: 32, marginRight: 8 }}
-                    />
-                    <Typography variant="body1">
-                      Follow me on LinkedIn !
-                    </Typography>
-                  </a>
-                </Box>
 
             </Grid>
 
