@@ -1,0 +1,129 @@
+{
+  "tabs": [
+    {
+      "id": "professional",
+      "label": "Professional",
+      "cards": [
+        {
+          "id": "management-skills",
+          "title": "Management & Leadership",
+          "subtitle": "Strategic planning, team building & stakeholder management",
+          "sectionTitle": "Core Competencies",
+          "gradient": "linear-gradient(135deg, #d35400 0%, #e67e22 100%)",
+          "logo": "foto_small",
+          "image": "Management.png",
+          "mdDetail": "managementSkillsDetail.md",
+          "mdAdditional": "Management.md"
+        },
+        {
+          "id": "technical-skills",
+          "title": "Technical Expertise",
+          "subtitle": "Full-stack development, cloud architecture & AI solutions",
+          "sectionTitle": "Core Competencies",
+          "gradient": "linear-gradient(135deg, #d35400 0%, #e67e22 100%)",
+          "logo": "foto_small",
+          "image": "Technical.png",
+          "mdDetail": "technicalSkillsDetail.md",
+          "mdAdditional": "Technical.md"
+        },
+        {
+          "id": "consultant",
+          "title": "Independent Consultant",
+          "subtitle": "Cloud Infrastructure & Generative AI",
+          "sectionTitle": "Current Engagements",
+          "gradient": "linear-gradient(135deg, #c0392b 0%, #e74c3c 100%)",
+          "logo": "IconaBazzani",
+          "image": "GenerativeAI.png",
+          "mdDetail": "consultantDetail.md",
+          "mdAdditional": "consultantDescription.md"
+        },
+        {
+          "id": "xyplon",
+          "title": "Xyplon",
+          "subtitle": "Founder & CEO (Houston, Texas)",
+          "sectionTitle": "Current Engagements",
+          "gradient": "linear-gradient(135deg, #c0392b 0%, #e74c3c 100%)",
+          "logo": "XpylonIcon_Transparent",
+          "image": "xpylon.png",
+          "mdDetail": "xpylonDetail.md",
+          "mdAdditional": "xpylonDescription.md"
+        }
+      ]
+    },
+    {
+      "id": "experience",
+      "label": "Experience",
+      "cards": [
+        {
+          "id": "education",
+          "title": "Polytechnic University of Turin",
+          "subtitle": "Master's Degree in Computer Engineering",
+          "sectionTitle": "Education & Background",
+          "gradient": "linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%)",
+          "logo": "Politecnico",
+          "image": "Study2.jpg",
+          "mdDetail": "educationDetail.md",
+          "mdAdditional": "study.md"
+        },
+        {
+          "id": "entrepreneur",
+          "title": "Entrepreneur & Startup Founder",
+          "subtitle": "Building innovative solutions from scratch",
+          "sectionTitle": "Career Journey",
+          "gradient": "linear-gradient(135deg, #2980b9 0%, #3498db 100%)",
+          "logo": "Trim",
+          "image": "Startupper2.jpg",
+          "mdDetail": "entrepreneurDetail.md",
+          "mdAdditional": "trimDescription.md"
+        },
+        {
+          "id": "capgemini",
+          "title": "Capgemini",
+          "subtitle": "Delivery Director - Large Scale Programs",
+          "sectionTitle": "Career Journey",
+          "gradient": "linear-gradient(135deg, #2980b9 0%, #3498db 100%)",
+          "logo": "Capgemini",
+          "image": "Management2.jpg",
+          "mdDetail": "capgeminiDetail.md",
+          "mdAdditional": "capDescription.md"
+        }
+      ]
+    },
+    {
+      "id": "personal",
+      "label": "Personal",
+      "cards": [
+        {
+          "id": "sports",
+          "title": "Running & Skiing",
+          "subtitle": "Marathon runner & mountain enthusiast",
+          "sectionTitle": "Passions & Interests",
+          "gradient": "linear-gradient(135deg, #16a085 0%, #1abc9c 100%)",
+          "logo": "foto_small",
+          "image": "Running.jpg",
+          "mdDetail": "runningDetail.md"
+        },
+        {
+          "id": "engineering",
+          "title": "Software Engineering",
+          "subtitle": "30+ years of hands-on development",
+          "sectionTitle": "Passions & Interests",
+          "gradient": "linear-gradient(135deg, #16a085 0%, #1abc9c 100%)",
+          "logo": "foto_small",
+          "image": "SoftwareEngineering.jpg",
+          "mdDetail": "engineeringDetail.md"
+        },
+        {
+          "id": "leadership",
+          "title": "Team Leadership Philosophy",
+          "subtitle": "Building creative & positive environments",
+          "sectionTitle": "Passions & Interests",
+          "gradient": "linear-gradient(135deg, #16a085 0%, #1abc9c 100%)",
+          "logo": "foto_small",
+          "image": "Leader.jpeg",
+          "mdDetail": "leadershipDetail.md"
+        }
+      ]
+    }
+  ]
+}

@@ -8,14 +8,63 @@ import { Container } from '@mui/material';
 import MyAppBar from '../components/MyAppBar';
 import MyFooter from '../components/MyFooter';
 import Box from '@mui/material/Box';
+import { generateStructuredData, generateKeywords } from '../lib/seo/generateMetadata';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata = {
-  title: 'Lorenzo Bazzani - Cloud Infrastructure & Generative AI Consultant',
-  description: 'Lorenzo Bazzani - Independent Consultant specializing in Cloud Infrastructure, Generative AI, and Enterprise Software Solutions. Over 20 years of experience in project management and technical leadership.',
-  keywords: 'Lorenzo Bazzani, Cloud Infrastructure, Generative AI, Software Engineering, Project Management, Technical Leadership',
-};
+// Generate metadata dynamically from markdown files
+export async function generateMetadata() {
+  const keywords = generateKeywords();
+
+  return {
+    title: 'Lorenzo Bazzani - Cloud Infrastructure & Generative AI Consultant',
+    description: 'Lorenzo Bazzani - Independent Consultant specializing in Cloud Infrastructure, Generative AI, and Enterprise Software Solutions. Over 20 years of experience in project management and technical leadership.',
+    keywords,
+    authors: [{ name: 'Lorenzo Bazzani' }],
+    creator: 'Lorenzo Bazzani',
+    publisher: 'Lorenzo Bazzani',
+    metadataBase: new URL('https://bazzani.info'),
+    alternates: {
+      canonical: '/',
+    },
+    openGraph: {
+      type: 'profile',
+      locale: 'en_US',
+      url: 'https://bazzani.info',
+      title: 'Lorenzo Bazzani - Cloud Infrastructure & Generative AI Consultant',
+      description: 'Independent Consultant specializing in Cloud Infrastructure, Generative AI, and Enterprise Software Solutions. Over 20 years of experience in project management and technical leadership.',
+      siteName: 'Lorenzo Bazzani',
+      images: [
+        {
+          url: '/img/foto.jpeg',
+          width: 800,
+          height: 800,
+          alt: 'Lorenzo Bazzani',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary',
+      title: 'Lorenzo Bazzani - Cloud Infrastructure & Generative AI Consultant',
+      description: 'Independent Consultant specializing in Cloud Infrastructure, Generative AI, and Enterprise Software Solutions.',
+      images: ['/img/foto.jpeg'],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+    verification: {
+      google: 'G-ZMNVX8WZV5',
+    },
+  };
+}
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -24,10 +73,17 @@ interface RootLayoutProps {
 export default async function RootLayout({ children }: RootLayoutProps) {
   const session = await auth();
 
+  // Generate structured data dynamically from markdown files
+  const structuredData = generateStructuredData();
+
   return (
     <html lang="en">
       <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMNVX8WZV5"></script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </head>
       <ThemeRegistry options={{ key: 'mui-theme' }}>
         <Providers session={session}>
@@ -35,13 +91,13 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             <body className={inter.className} style={{ backgroundColor: '#f8f9fa' }}>
               <main style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
                 <MyAppBar />
-                <Box sx={{ height: '20px' }} />
+                <Box sx={{ height: '16px' }} />
                 <Container
                   sx={{
                     minHeight: '500px',
                     flex: 1,
-                    py: { xs: 3, md: 5 },
-                    px: { xs: 2, sm: 3, md: 4 },
+                    py: { xs: 2, md: 3 },
+                    px: { xs: 2, sm: 2.5, md: 3 },
                   }}
                 >
                   {children}

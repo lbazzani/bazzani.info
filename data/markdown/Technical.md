@@ -1,0 +1,6 @@
+- Enterprise IT Architecture: Building scalable and secure IT cloud infrastructures that support enterprise demands.
+- Coding: Senior Software Developer in JS/TS (Node.js, React Native/React.js, NEXT.js), experienced in Java, C# and Python
+- CI/CD: Expert in Git, Jenkins, Docker, and Kubernetes for streamlined and efficient development workflows
+- Generative AI and Machine Learning: Demonstrated expertise in applying generative AI and machine learning techniques, with substantial coding experience in integrating these technologies with cloud services.
+- Databases: Proficient in Oracle, PostgreSQL, and MongoDB.
+- SAP Banking Platforms: Managerial experience in deploying and managing SAP banking solutions.

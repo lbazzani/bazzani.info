@@ -1,0 +1,84 @@
+{
+  "profile": {
+    "name": "Lorenzo Bazzani",
+    "title": "Cloud & AI Consultant",
+    "photo": "/img/foto.jpeg",
+    "tagline": "Technology Leader & Solution Architect"
+  },
+  "managerialSkills": [
+    {
+      "name": "Team Leadership",
+      "level": "expert",
+      "color": "#c0392b"
+    },
+    {
+      "name": "Project Management",
+      "level": "expert",
+      "color": "#d35400"
+    },
+    {
+      "name": "Stakeholder Relations",
+      "level": "advanced",
+      "color": "#e67e22"
+    }
+  ],
+  "technicalSkills": [
+    {
+      "name": "Cloud Architecture",
+      "level": "expert",
+      "color": "#2980b9"
+    },
+    {
+      "name": "Generative AI",
+      "level": "advanced",
+      "color": "#8e44ad"
+    },
+    {
+      "name": "Full-Stack Development",
+      "level": "advanced",
+      "color": "#16a085"
+    }
+  ],
+  "chips": [
+    {
+      "label": "Management",
+      "bgcolor": "#fff5f0",
+      "color": "#d35400"
+    },
+    {
+      "label": "Tech",
+      "bgcolor": "#f0f5ff",
+      "color": "#2c5aa0"
+    },
+    {
+      "label": "AI",
+      "bgcolor": "#f0fff5",
+      "color": "#16a085"
+    }
+  ],
+  "contact": {
+    "location": "Italy",
+    "email": "lorenzo@bazzani.info",
+    "phone": "+39 348 3672370"
+  },
+  "social": {
+    "linkedin": {
+      "url": "https://it.linkedin.com/in/lorenzo-bazzani",
+      "label": "View LinkedIn"
+    }
+  },
+  "quickInfo": [
+    {
+      "icon": "work",
+      "label": "Experience",
+      "value": "20+ years in IT",
+      "color": "#d35400"
+    },
+    {
+      "icon": "school",
+      "label": "Education",
+      "value": "Polytechnic - Turin",
+      "color": "#9b59b6"
+    }
+  ]
+}

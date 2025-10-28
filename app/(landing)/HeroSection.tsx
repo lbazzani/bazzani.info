@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Box, Typography, Paper, Grid, CardMedia } from '@mui/material';
+import { Typography, Paper } from '@mui/material';
 import ReactMarkdown from 'react-markdown';
 
 export default function HeroSection() {
@@ -18,80 +18,33 @@ export default function HeroSection() {
     <Paper
       elevation={0}
       sx={{
-        padding: { xs: 3, sm: 4, md: 5 },
-        borderRadius: '16px',
+        padding: { xs: 2, sm: 3, md: 3 },
+        borderRadius: '12px',
         background: '#ffffff',
         border: '1px solid',
         borderColor: '#e8e8e8',
-        boxShadow: '0 2px 12px rgba(0, 0, 0, 0.04)',
+        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.04)',
+        mb: 3,
       }}
     >
-      <Grid container spacing={4} alignItems="center" justifyContent="center">
-        <Grid
-          item
-          xs={12}
-          sm={5}
-          md={3}
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
-          }}
-        >
-          <Box
-            sx={{
-              position: 'relative',
-              '&::before': {
-                content: '""',
-                position: 'absolute',
-                top: -10,
-                left: -10,
-                right: 10,
-                bottom: 10,
-                background: 'linear-gradient(135deg, #d35400 0%, #e67e22 100%)',
-                borderRadius: '16px',
-                zIndex: 0,
-              },
-            }}
-          >
-            <CardMedia
-              component="img"
-              image="/img/foto.jpeg"
-              alt="Lorenzo Bazzani"
-              sx={{
-                maxHeight: 260,
-                maxWidth: 260,
-                borderRadius: '16px',
-                objectFit: "cover",
-                position: 'relative',
-                zIndex: 1,
-                boxShadow: '0 8px 24px rgba(0,0,0,0.08)',
-                border: '4px solid white',
-              }}
-            />
-          </Box>
-        </Grid>
-        <Grid item xs={12} sm={7} md={9}>
-          <Typography
-            variant="body1"
-            component="div"
-            sx={{
-              textAlign: 'justify',
-              lineHeight: 1.8,
-              color: 'text.secondary',
-              '& p': {
-                marginBottom: 2,
-              },
-              '& strong': {
-                color: 'text.primary',
-                fontWeight: 600,
-              }
-            }}
-          >
-            <ReactMarkdown>{mainDescription}</ReactMarkdown>
-          </Typography>
-        </Grid>
-      </Grid>
+      <Typography
+        variant="body2"
+        component="div"
+        sx={{
+          lineHeight: 1.7,
+          color: 'text.secondary',
+          fontSize: '0.95rem',
+          '& p': {
+            marginBottom: 1.5,
+          },
+          '& strong': {
+            color: 'text.primary',
+            fontWeight: 600,
+          }
+        }}
+      >
+        <ReactMarkdown>{mainDescription}</ReactMarkdown>
+      </Typography>
     </Paper>
   );
 }

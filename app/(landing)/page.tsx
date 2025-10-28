@@ -1,89 +1,31 @@
-import { Box, Typography, Grid } from '@mui/material';
+'use client';
+
+import { Box, Typography, Tabs, Tab, Paper } from '@mui/material';
+import { useState } from 'react';
 import ExperienceCard from './ExperienceCard';
-import HeroSection from './HeroSection';
+import IntroSection from './IntroSection';
+import Sidebar from './Sidebar';
+import MobileHeader from './MobileHeader';
+import AIAssistantPanel from '../../components/AIAssistantPanel';
+import contentData from '../../data/content.json';
 
 interface CardData {
+  id: string;
   logo: string;
   image: string;
   title: string;
+  subtitle?: string;
+  sectionTitle: string;
+  gradient: string;
   mdDetail?: string;
-  detail?: string;
-  mdAddittional?: string;
+  mdAdditional?: string;
 }
 
-const skills: CardData[] = [
-  {
-    logo: "foto_small",
-    image: "Management.png",
-    title: "Management and Leadership Skills",
-    mdDetail: "Management.md",
-  },
-  {
-    logo: "foto_small",
-    image: "Technical.png",
-    title: "Technical Skills",
-    mdDetail: "Technical.md",
-  },
-];
-
-const works: CardData[] = [
-  {
-    logo: "IconaBazzani",
-    image: "GenerativeAI.png",
-    title: "Independent Consultant – Cloud Infrastructure & Generative AI",
-    mdDetail: "consultantDescription.md",
-  },
-  {
-    logo: "XpylonIcon_Transparent",
-    image: "xpylon.png",
-    title: "Xyplon - Founder (Houston Texas)",
-    mdDetail: "xpylonDescription.md",
-  },
-];
-
-const experiences: CardData[] = [
-  {
-    logo: "Politecnico",
-    image: "Study2.jpg",
-    title: "Polytechnic University of Turin",
-    mdDetail: "study.md",
-  },
-  {
-    logo: "Trim",
-    image: "Startupper2.jpg",
-    title: "Entrepreneur, Startupper",
-    mdDetail: "trimDescription.md",
-    mdAddittional: "trimAdditional.md"
-  },
-  {
-    logo: "Capgemini",
-    image: "Management2.jpg",
-    title: "Capgemini - Deliver Director",
-    mdDetail: "capDescription.md",
-    mdAddittional: "capAdditional.md"
-  },
-];
-
-const passions: CardData[] = [
-  {
-    logo: "foto_small",
-    image: "Running.jpg",
-    title: "Running and Skiing",
-    detail: "Personal marathon time: 3:35. It's been a few years, but the desire for high-intensity sports remains strong. Sports, mountains, and the great outdoors are medicine for both the body and the mind."
-  },
-  {
-    logo: "foto_small",
-    image: "SoftwareEngineering.jpg",
-    title: "Software Engineer Inside",
-    detail: "I love to create, invent, and experiment. In over thirty years I've worked with at least 10 different programming languages. I enjoy personally testing everything that's new and innovative."
-  },
-  {
-    logo: "foto_small",
-    image: "Leader.jpeg",
-    title: "Management and Leadership",
-    detail: "Over twenty years of experience as an entrepreneur, project manager and director of delivery for large programs, have taught me that, in order to achieve results, it's essential to work on the team maintaining a creative and positive environment both with the team and with stakeholders."
-  },
-];
+interface TabData {
+  id: string;
+  label: string;
+  cards: CardData[];
+}
 
 interface SectionHeaderProps {
   children: React.ReactNode;
@@ -94,16 +36,16 @@ function SectionHeader({ children, gradient = "linear-gradient(135deg, #d35400 0
   return (
     <Box
       sx={{
-        mb: 5,
-        mt: 8,
+        mb: 2,
+        mt: 4,
         position: 'relative',
-        paddingBottom: 2,
+        paddingBottom: 1.5,
         '&::before': {
           content: '""',
           position: 'absolute',
           left: 0,
           bottom: 0,
-          width: '80px',
+          width: '60px',
           height: '3px',
           background: gradient,
           borderRadius: '2px',
@@ -111,13 +53,13 @@ function SectionHeader({ children, gradient = "linear-gradient(135deg, #d35400 0
       }}
     >
       <Typography
-        variant="h4"
+        variant="h5"
         component="h2"
         sx={{
           fontWeight: 600,
           color: '#2c3e50',
-          letterSpacing: '-0.5px',
-          fontSize: { xs: '1.75rem', md: '2rem' }
+          letterSpacing: '-0.3px',
+          fontSize: { xs: '1.25rem', md: '1.5rem' }
         }}
       >
         {children}
@@ -126,60 +68,117 @@ function SectionHeader({ children, gradient = "linear-gradient(135deg, #d35400 0
   );
 }
 
-export default function Home() {
+interface TabPanelProps {
+  children?: React.ReactNode;
+  index: number;
+  value: number;
+}
+
+function TabPanel(props: TabPanelProps) {
+  const { children, value, index, ...other } = props;
+
   return (
-    <Box sx={{ width: "100%", margin: 0, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-      <HeroSection />
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`tabpanel-${index}`}
+      aria-labelledby={`tab-${index}`}
+      {...other}
+    >
+      {value === index && <Box>{children}</Box>}
+    </div>
+  );
+}
 
-      <SectionHeader gradient="linear-gradient(135deg, #d35400 0%, #e67e22 100%)">
-        Skills & Expertise
-      </SectionHeader>
+export default function Home() {
+  const [tabValue, setTabValue] = useState(0);
+  const tabs = contentData.tabs as TabData[];
 
-      <Grid container spacing={3}>
-        {skills.map((skill, index) => (
-          <Grid item key={`skill-${index}`} xs={12} md={6}>
-            <ExperienceCard {...skill} />
-          </Grid>
-        ))}
-      </Grid>
+  const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
+    setTabValue(newValue);
+  };
 
-      <SectionHeader gradient="linear-gradient(135deg, #c0392b 0%, #e74c3c 100%)">
-        Current Work
-      </SectionHeader>
+  return (
+    <Box sx={{ width: "100%", display: 'flex', gap: 3, maxWidth: '1400px', mx: 'auto' }}>
+      {/* Sidebar - visible only on medium+ screens */}
+      <Sidebar />
 
-      <Grid container spacing={3}>
-        {works.map((work, index) => (
-          <Grid item key={`work-${index}`} xs={12} md={6}>
-            <ExperienceCard {...work} />
-          </Grid>
-        ))}
-      </Grid>
+      {/* Main Content */}
+      <Box sx={{ flex: 1, minWidth: 0 }}>
+        <MobileHeader />
+        <AIAssistantPanel />
+        <IntroSection />
 
-      <SectionHeader gradient="linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%)">
-        Professional Journey
-      </SectionHeader>
+        {/* Tabs Navigation */}
+        <Paper
+          elevation={0}
+          sx={{
+            borderRadius: '12px',
+            border: '1px solid',
+            borderColor: '#e8e8e8',
+            mb: 3,
+            overflow: 'hidden',
+          }}
+        >
+          <Tabs
+            value={tabValue}
+            onChange={handleTabChange}
+            variant="fullWidth"
+            sx={{
+              minHeight: 48,
+              '& .MuiTab-root': {
+                textTransform: 'none',
+                fontWeight: 600,
+                fontSize: '0.95rem',
+                color: 'text.secondary',
+                minHeight: 48,
+                '&.Mui-selected': {
+                  color: '#d35400',
+                },
+              },
+              '& .MuiTabs-indicator': {
+                backgroundColor: '#d35400',
+                height: 3,
+              },
+            }}
+          >
+            {tabs.map((tab) => (
+              <Tab key={tab.id} label={tab.label} />
+            ))}
+          </Tabs>
+        </Paper>
 
-      <Grid container spacing={3}>
-        {experiences.map((exp, index) => (
-          <Grid item key={`exp-${index}`} xs={12} md={4}>
-            <ExperienceCard {...exp} />
-          </Grid>
-        ))}
-      </Grid>
+        {/* Tab Panels */}
+        {tabs.map((tab, tabIndex) => {
+          // Group cards by sectionTitle
+          const sections = tab.cards.reduce((acc, card) => {
+            if (!acc[card.sectionTitle]) {
+              acc[card.sectionTitle] = [];
+            }
+            acc[card.sectionTitle].push(card);
+            return acc;
+          }, {} as Record<string, CardData[]>);
 
-      <SectionHeader gradient="linear-gradient(135deg, #16a085 0%, #1abc9c 100%)">
-        Passions & Interests
-      </SectionHeader>
+          return (
+            <TabPanel key={tab.id} value={tabValue} index={tabIndex}>
+              {Object.entries(sections).map(([sectionTitle, cards], sectionIndex) => (
+                <Box key={`${tab.id}-section-${sectionIndex}`}>
+                  <SectionHeader gradient={cards[0].gradient}>
+                    {sectionTitle}
+                  </SectionHeader>
+                  <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
+                    {cards.map((card) => (
+                      <ExperienceCard key={card.id} {...card} />
+                    ))}
+                  </Box>
+                </Box>
+              ))}
+            </TabPanel>
+          );
+        })}
 
-      <Grid container spacing={3}>
-        {passions.map((passion, index) => (
-          <Grid item key={`passion-${index}`} xs={12} md={4}>
-            <ExperienceCard {...passion} />
-          </Grid>
-        ))}
-      </Grid>
-
-      <Box sx={{ height: 40 }} />
+        <Box sx={{ height: 24 }} />
+      </Box>
     </Box>
   );
 }

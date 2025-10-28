@@ -1,96 +1,73 @@
-export const runtime = "nodejs"; // Forza il runtime su Node.js
-export const preferredRegion = "auto"; // (Opzionale per Vercel)
+export const runtime = "nodejs";
+export const preferredRegion = "auto";
 
 import NextAuth from "next-auth";
-import { PrismaAdapter } from "@auth/prisma-adapter";
-import Nodemailer from "next-auth/providers/nodemailer";
 import CredentialsProvider from "next-auth/providers/credentials";
-
-import prisma from "./db"
-
+import bcrypt from "bcryptjs";
 
 export const authOptions = {
-  adapter: PrismaAdapter(prisma),
   session: {
     strategy: 'jwt',
+    maxAge: 30 * 24 * 60 * 60, // 30 days
+  },
+  pages: {
+    signIn: '/login',
   },
   callbacks: {
     async session({ session, token }) {
-      // Aggiungi user.id alla sessione
-      if (token?.id) {
+      if (token) {
         session.user.id = token.id;
+        session.user.email = token.email;
+        session.user.name = token.name;
       }
       return session;
     },
     async jwt({ token, user }) {
-      // Aggiungi user.id al token JWT
       if (user) {
         token.id = user.id;
+        token.email = user.email;
+        token.name = user.name;
       }
       return token;
     },
   },
   providers: [
-    Nodemailer({
-      id: "mail",
-      name: "mail",
-      service: "Outlook365",
-      tls: {
-        ciphers:'SSLv3',
-        rejectUnauthorized: false 
-      },
-      server:"smtp://info@xpylon.com:P1l1$$0!12$@smtp.office365.com:587",
-      from: "Pianificato <info@xpylon.com>",
-    }),
     CredentialsProvider({
-      id: "whatsapp",
-      name: "WhatsApp",
+      id: "credentials",
+      name: "Credentials",
       credentials: {
-        phone: { label: "Phone", type: "text" },
-        code: { label: "Code", type: "text" }
+        username: { label: "Username", type: "text" },
+        password: { label: "Password", type: "password" }
       },
-      async authorize(credentials, req) {
-        const phone = credentials?.phone;
-        const code = credentials?.code;
-
-        if (!phone || !code) return null;
-
-        const client = require('twilio')(
-          process.env.TWILIO_SID,
-          process.env.TWILIO_AUTH_TOKEN
-        );
-
-        const verification = await client.verify.v2.services(process.env.TWILIO_VERIFY_SERVICE_SID)
-          .verificationChecks
-          .create({ to: `whatsapp:${phone}`, code });
-
-        if (verification.status !== "approved") return null;
-
-      
-        const users = await prisma.user.findMany({
-          where: { phone: phone }
-        });
-
-        var user = null;
-        //se users non non nullo o vuoto prendo il priimo
-        if (users && users.length > 0) {
-          user = users[0];
+      async authorize(credentials) {
+        if (!credentials?.username || !credentials?.password) {
+          throw new Error("Username and password required");
         }
 
-        if (!user) {
-          return await prisma.user.create({
-            data: {
-              name: "Not Set",
-              phone: phone,
-              email: phone + "@mailnotset.xpylon",
-            },
-          });
+        // Hard-coded user for Lorenzo
+        const ADMIN_USERNAME = process.env.ADMIN_USERNAME || "lorenzo";
+        const ADMIN_PASSWORD_HASH = process.env.ADMIN_PASSWORD_HASH;
+
+        if (credentials.username !== ADMIN_USERNAME) {
+          throw new Error("Invalid credentials");
         }
-        return user;
+
+        // Verify password
+        const isValid = await bcrypt.compare(credentials.password, ADMIN_PASSWORD_HASH);
+
+        if (!isValid) {
+          throw new Error("Invalid credentials");
+        }
+
+        // Return user object
+        return {
+          id: "1",
+          email: "lorenzo@bazzani.info",
+          name: "Lorenzo Bazzani",
+        };
       }
     }),
   ],
-  //debug: true, // Aggiunge log per il debug
 };
 
 export const { handlers, signIn, signOut, auth } = NextAuth(authOptions);

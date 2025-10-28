@@ -7,8 +7,12 @@ import Typography from '@mui/material/Typography';
 import Slide from '@mui/material/Slide';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import IconButton from '@mui/material/IconButton';
+import Avatar from '@mui/material/Avatar';
+import PersonIcon from '@mui/icons-material/Person';
 import { ReactNode } from 'react';
+import { useSession } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 
 interface HideOnScrollProps {
   children: ReactNode;
@@ -32,6 +36,9 @@ interface MyAppBarProps {
 }
 
 export default function MyAppBar(props: MyAppBarProps) {
+  const { data: session } = useSession();
+  const router = useRouter();
+
   return (
     <>
       <HideOnScroll {...props}>
@@ -87,45 +94,31 @@ export default function MyAppBar(props: MyAppBarProps) {
 
             <Box sx={{ flexGrow: 1 }} />
 
-            <Button
-              href="https://it.linkedin.com/in/lorenzo-bazzani"
-              target="_blank"
-              rel="noopener noreferrer"
-              startIcon={<LinkedInIcon />}
-              variant="outlined"
+            {/* Avatar Button */}
+            <IconButton
+              onClick={() => router.push(session ? '/profile' : '/login')}
               sx={{
-                borderRadius: 2,
-                textTransform: 'none',
-                fontWeight: 500,
-                borderColor: 'divider',
-                color: 'text.primary',
+                p: 0,
+                border: '2px solid',
+                borderColor: session ? '#4caf50' : '#e0e0e0',
                 '&:hover': {
-                  borderColor: '#0077b5',
-                  backgroundColor: 'rgba(0, 119, 181, 0.04)',
-                  transform: 'translateY(-2px)',
-                  boxShadow: '0 4px 12px rgba(0, 119, 181, 0.15)',
+                  borderColor: session ? '#45a049' : '#999',
+                  transform: 'scale(1.05)',
                 },
                 transition: 'all 0.2s ease',
-                display: { xs: 'none', sm: 'flex' },
               }}
             >
-              LinkedIn
-            </Button>
-
-            <Button
-              href="https://it.linkedin.com/in/lorenzo-bazzani"
-              target="_blank"
-              rel="noopener noreferrer"
-              sx={{
-                minWidth: 'auto',
-                p: 1,
-                display: { xs: 'flex', sm: 'none' },
-                borderRadius: 2,
-                color: '#0077b5',
-              }}
-            >
-              <LinkedInIcon />
-            </Button>
+              <Avatar
+                sx={{
+                  width: 36,
+                  height: 36,
+                  bgcolor: session ? '#333' : '#999',
+                  fontSize: '0.9rem',
+                }}
+              >
+                {session?.user?.name?.charAt(0) || <PersonIcon fontSize="small" />}
+              </Avatar>
+            </IconButton>
           </Toolbar>
         </AppBar>
       </HideOnScroll>

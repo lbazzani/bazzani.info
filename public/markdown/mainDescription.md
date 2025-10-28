@@ -1,5 +1,7 @@
-Dynamic technology leader with over 20 years of experience in entrepreneurship, technical innovation, and executive roles in multinational corporations. Proven track record in driving digital transformation, developing scalable cloud architectures, and leading large-scale projects for top-tier clients. 
+**Technology leader** with 20+ years bridging entrepreneurship, hands-on development, and executive leadership.
 
-Full stack developer skilled in Kubernetes, Generative AI, and DevOps practices, delivering cutting-edge business solutions.
+I help organizations **transform through cloud technologies and AI**, combining deep technical expertise with strategic vision. From architecting scalable systems to leading global teams, I thrive at the intersection of **technology and business**.
 
-Experienced in managing projects with over 100 resources, leveraging offshore teams for efficient and effective project execution.
+**Full-stack developer at heart** — I still code, experiment, and build. Whether it's Kubernetes orchestration, generative AI solutions, or DevOps automation, I believe in **understanding technology deeply** to lead effectively.
+
+Currently focused on **cloud infrastructure and generative AI consulting**, helping companies leverage cutting-edge technology to solve real business problems.
