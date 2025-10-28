@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
         name: 'xpylon',
         short_name: "xpilon app",
         description: "Go Global, Expand Boundaries",
-        start_url: '/',
+        start_url: '/?v=2.1.0',
         display: 'standalone',
         icons: [
             {

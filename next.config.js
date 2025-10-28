@@ -2,11 +2,29 @@
 
 
 const nextConfig = {
+    // Add cache busting for PWA updates
+    generateBuildId: async () => {
+      return `build-${Date.now()}`;
+    },
 
     logging: {
       fetches: {
         fullUrl: true,
       },
+    },
+
+    async headers() {
+      return [
+        {
+          source: '/:path*',
+          headers: [
+            {
+              key: 'Cache-Control',
+              value: 'public, max-age=0, must-revalidate',
+            },
+          ],
+        },
+      ];
     },
     webpack: (config, { isServer }) => {
       if (!isServer) {
