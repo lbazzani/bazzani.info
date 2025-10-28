@@ -1,13 +1,12 @@
 export const runtime = "nodejs"; // Forza il runtime su Node.js
 export const preferredRegion = "auto"; // (Opzionale per Vercel)
-import "dotenv/config";
 
 import NextAuth from "next-auth";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import Nodemailer from "next-auth/providers/nodemailer";
 import CredentialsProvider from "next-auth/providers/credentials";
 
-import prisma from "@/db"
+import prisma from "./db"
 
 
 export const authOptions = {

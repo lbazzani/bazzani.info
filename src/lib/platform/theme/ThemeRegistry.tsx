@@ -1,6 +1,7 @@
 'use client';
-import { useState } from 'react';
-import createCache from '@emotion/cache';
+
+import { useState, ReactNode } from 'react';
+import createCache, { EmotionCache, Options } from '@emotion/cache';
 import { useServerInsertedHTML } from 'next/navigation';
 import { CacheProvider } from '@emotion/react';
 import { ThemeProvider } from '@mui/material/styles';
@@ -8,18 +9,22 @@ import CssBaseline from '@mui/material/CssBaseline';
 import theme from './theme';
 import themeGreen from './themeGreen';
 
-
-
+interface ThemeRegistryProps {
+  options: Options;
+  children: ReactNode;
+  variant?: 'default' | 'green';
+}
 
 // This implementation is from emotion-js
 // https://github.com/emotion-js/emotion/issues/2928#issuecomment-1319747902
-export default function ThemeRegistry(props) {
+export default function ThemeRegistry(props: ThemeRegistryProps) {
   const { options, children, variant } = props;
+
   const [{ cache, flush }] = useState(() => {
     const cache = createCache(options);
     cache.compat = true;
     const prevInsert = cache.insert;
-    let inserted = [];
+    let inserted: string[] = [];
     cache.insert = (...args) => {
       const serialized = args[1];
       if (cache.inserted[serialized.name] === undefined) {
@@ -34,6 +39,7 @@ export default function ThemeRegistry(props) {
     };
     return { cache, flush };
   });
+
   useServerInsertedHTML(() => {
     const names = flush();
     if (names.length === 0) {
