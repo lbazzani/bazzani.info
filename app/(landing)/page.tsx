@@ -10,6 +10,7 @@ import AIAssistantPanel from '../../components/AIAssistantPanel';
 import ArchitectureDemo from '../../components/ArchitectureDemo';
 import CO2DataDemo from '../../components/CO2DataDemo';
 import CO2AssistantDemo from '../../components/CO2AssistantDemo';
+import GenerativeArtDemo from '../../components/GenerativeArtDemo';
 import DemoShowcase from '../../components/DemoShowcase';
 import contentData from '../../data/content.json';
 
@@ -99,6 +100,7 @@ export default function Home() {
   const [isArchitectureDemoOpen, setIsArchitectureDemoOpen] = useState(false);
   const [isCO2DemoOpen, setIsCO2DemoOpen] = useState(false);
   const [isCO2AssistantOpen, setIsCO2AssistantOpen] = useState(false);
+  const [isGenerativeArtOpen, setIsGenerativeArtOpen] = useState(false);
   const tabs = contentData.tabs as TabData[];
 
   const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -112,6 +114,8 @@ export default function Home() {
       setIsCO2DemoOpen(true);
     } else if (demoId === 'co2-assistant') {
       setIsCO2AssistantOpen(true);
+    } else if (demoId === 'generative-art') {
+      setIsGenerativeArtOpen(true);
     }
   };
 
@@ -216,6 +220,12 @@ export default function Home() {
       <CO2AssistantDemo
         isOpen={isCO2AssistantOpen}
         onClose={() => setIsCO2AssistantOpen(false)}
+      />
+
+      {/* Generative Art Demo */}
+      <GenerativeArtDemo
+        isOpen={isGenerativeArtOpen}
+        onClose={() => setIsGenerativeArtOpen(false)}
       />
     </Box>
   );

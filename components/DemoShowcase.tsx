@@ -6,6 +6,7 @@ import PublicIcon from '@mui/icons-material/Public';
 import SmartToyIcon from '@mui/icons-material/SmartToy';
 import NewReleasesIcon from '@mui/icons-material/NewReleases';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import BrushIcon from '@mui/icons-material/Brush';
 
 interface DemoShowcaseProps {
   onDemoOpen: (demoId: string) => void;
@@ -42,6 +43,16 @@ const DEMOS = [
   //   gradient: 'linear-gradient(135deg, rgba(255,217,61,0.1) 0%, rgba(255,217,61,0.05) 100%)',
   //   borderColor: '#FFD93D',
   // },
+  {
+    id: 'generative-art',
+    title: 'Generative Art Gallery',
+    description: 'Collection of creative coding experiments using p5.js. Interactive sketches exploring patterns, animations, and mathematical art (2022).',
+    icon: <BrushIcon sx={{ fontSize: 48, color: '#9B59B6' }} />,
+    features: ['P5.js', 'Interactive', 'Generative Design', 'Mathematical Art'],
+    isNew: false,
+    gradient: 'linear-gradient(135deg, rgba(155,89,182,0.1) 0%, rgba(155,89,182,0.05) 100%)',
+    borderColor: '#9B59B6',
+  },
 ];
 
 export default function DemoShowcase({ onDemoOpen }: DemoShowcaseProps) {
