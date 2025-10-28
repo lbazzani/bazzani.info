@@ -1,0 +1,405 @@
+{
+  "year": 2023,
+  "countries": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 37791.57,
+      "co2_per_capita": 4.67,
+      "population": 8091734935,
+      "year": 2023
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 11902.503,
+      "co2_per_capita": 8.367,
+      "population": 1422584937,
+      "year": 2023
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4911.391,
+      "co2_per_capita": 14.299,
+      "population": 343477332,
+      "year": 2023
+    },
+    {
+      "country": "India",
+      "iso_code": "IND",
+      "co2": 3062.324,
+      "co2_per_capita": 2.129,
+      "population": 1438069597,
+      "year": 2023
+    },
+    {
+      "country": "Russia",
+      "iso_code": "RUS",
+      "co2": 1815.925,
+      "co2_per_capita": 12.486,
+      "population": 145440504,
+      "year": 2023
+    },
+    {
+      "country": "Japan",
+      "iso_code": "JPN",
+      "co2": 988.785,
+      "co2_per_capita": 7.95,
+      "population": 124370947,
+      "year": 2023
+    },
+    {
+      "country": "Iran",
+      "iso_code": "IRN",
+      "co2": 817.88,
+      "co2_per_capita": 9.027,
+      "population": 90608708,
+      "year": 2023
+    },
+    {
+      "country": "Saudi Arabia",
+      "iso_code": "SAU",
+      "co2": 736.205,
+      "co2_per_capita": 22.132,
+      "population": 33264288,
+      "year": 2023
+    },
+    {
+      "country": "Indonesia",
+      "iso_code": "IDN",
+      "co2": 733.224,
+      "co2_per_capita": 2.608,
+      "population": 281190068,
+      "year": 2023
+    },
+    {
+      "country": "Germany",
+      "iso_code": "DEU",
+      "co2": 596.151,
+      "co2_per_capita": 7.051,
+      "population": 84548234,
+      "year": 2023
+    },
+    {
+      "country": "South Korea",
+      "iso_code": "KOR",
+      "co2": 577.417,
+      "co2_per_capita": 11.158,
+      "population": 51748744,
+      "year": 2023
+    },
+    {
+      "country": "Canada",
+      "iso_code": "CAN",
+      "co2": 549.299,
+      "co2_per_capita": 13.977,
+      "population": 39299099,
+      "year": 2023
+    },
+    {
+      "country": "Brazil",
+      "iso_code": "BRA",
+      "co2": 486.47,
+      "co2_per_capita": 2.304,
+      "population": 211140731,
+      "year": 2023
+    },
+    {
+      "country": "Mexico",
+      "iso_code": "MEX",
+      "co2": 482.623,
+      "co2_per_capita": 3.72,
+      "population": 129739764,
+      "year": 2023
+    },
+    {
+      "country": "Turkey",
+      "iso_code": "TUR",
+      "co2": 432.077,
+      "co2_per_capita": 4.951,
+      "population": 87270503,
+      "year": 2023
+    },
+    {
+      "country": "South Africa",
+      "iso_code": "ZAF",
+      "co2": 401.893,
+      "co2_per_capita": 6.358,
+      "population": 63212386,
+      "year": 2023
+    },
+    {
+      "country": "Australia",
+      "iso_code": "AUS",
+      "co2": 382.972,
+      "co2_per_capita": 14.478,
+      "population": 26451125,
+      "year": 2023
+    },
+    {
+      "country": "Vietnam",
+      "iso_code": "VNM",
+      "co2": 334.726,
+      "co2_per_capita": 3.336,
+      "population": 100352189,
+      "year": 2023
+    },
+    {
+      "country": "Italy",
+      "iso_code": "ITA",
+      "co2": 313.461,
+      "co2_per_capita": 5.268,
+      "population": 59499452,
+      "year": 2023
+    },
+    {
+      "country": "United Kingdom",
+      "iso_code": "GBR",
+      "co2": 305.146,
+      "co2_per_capita": 4.443,
+      "population": 68682965,
+      "year": 2023
+    },
+    {
+      "country": "Poland",
+      "iso_code": "POL",
+      "co2": 289.282,
+      "co2_per_capita": 7.463,
+      "population": 38762847,
+      "year": 2023
+    },
+    {
+      "country": "Malaysia",
+      "iso_code": "MYS",
+      "co2": 288.824,
+      "co2_per_capita": 8.222,
+      "population": 35126295,
+      "year": 2023
+    },
+    {
+      "country": "France",
+      "iso_code": "FRA",
+      "co2": 272.476,
+      "co2_per_capita": 4.101,
+      "population": 66438828,
+      "year": 2023
+    },
+    {
+      "country": "Egypt",
+      "iso_code": "EGY",
+      "co2": 269.006,
+      "co2_per_capita": 2.349,
+      "population": 114535772,
+      "year": 2023
+    },
+    {
+      "country": "Thailand",
+      "iso_code": "THA",
+      "co2": 264.389,
+      "co2_per_capita": 3.687,
+      "population": 71702438,
+      "year": 2023
+    },
+    {
+      "country": "Taiwan",
+      "iso_code": "TWN",
+      "co2": 261.153,
+      "co2_per_capita": 11.2,
+      "population": 23317145,
+      "year": 2023
+    },
+    {
+      "country": "Kazakhstan",
+      "iso_code": "KAZ",
+      "co2": 255.161,
+      "co2_per_capita": 12.551,
+      "population": 20330106,
+      "year": 2023
+    },
+    {
+      "country": "United Arab Emirates",
+      "iso_code": "ARE",
+      "co2": 229.384,
+      "co2_per_capita": 21.554,
+      "population": 10642089,
+      "year": 2023
+    },
+    {
+      "country": "Spain",
+      "iso_code": "ESP",
+      "co2": 221.616,
+      "co2_per_capita": 4.626,
+      "population": 47911583,
+      "year": 2023
+    },
+    {
+      "country": "Pakistan",
+      "iso_code": "PAK",
+      "co2": 200.667,
+      "co2_per_capita": 0.811,
+      "population": 247504504,
+      "year": 2023
+    },
+    {
+      "country": "Argentina",
+      "iso_code": "ARG",
+      "co2": 195.806,
+      "co2_per_capita": 4.3,
+      "population": 45538402,
+      "year": 2023
+    },
+    {
+      "country": "Algeria",
+      "iso_code": "DZA",
+      "co2": 178.133,
+      "co2_per_capita": 3.859,
+      "population": 46164221,
+      "year": 2023
+    },
+    {
+      "country": "Iraq",
+      "iso_code": "IRQ",
+      "co2": 176.458,
+      "co2_per_capita": 3.915,
+      "population": 45074055,
+      "year": 2023
+    },
+    {
+      "country": "Philippines",
+      "iso_code": "PHL",
+      "co2": 154.579,
+      "co2_per_capita": 1.345,
+      "population": 114891200,
+      "year": 2023
+    },
+    {
+      "country": "Ukraine",
+      "iso_code": "UKR",
+      "co2": 136.461,
+      "co2_per_capita": 3.616,
+      "population": 37732832,
+      "year": 2023
+    },
+    {
+      "country": "Nigeria",
+      "iso_code": "NGA",
+      "co2": 128.54,
+      "co2_per_capita": 0.564,
+      "population": 227882949,
+      "year": 2023
+    },
+    {
+      "country": "Uzbekistan",
+      "iso_code": "UZB",
+      "co2": 124.768,
+      "co2_per_capita": 3.5,
+      "population": 35652309,
+      "year": 2023
+    },
+    {
+      "country": "Netherlands",
+      "iso_code": "NLD",
+      "co2": 118.668,
+      "co2_per_capita": 6.559,
+      "population": 18092525,
+      "year": 2023
+    },
+    {
+      "country": "Qatar",
+      "iso_code": "QAT",
+      "co2": 115.712,
+      "co2_per_capita": 38.841,
+      "population": 2979087,
+      "year": 2023
+    },
+    {
+      "country": "Bangladesh",
+      "iso_code": "BGD",
+      "co2": 113.427,
+      "co2_per_capita": 0.662,
+      "population": 171466986,
+      "year": 2023
+    },
+    {
+      "country": "Colombia",
+      "iso_code": "COL",
+      "co2": 105.239,
+      "co2_per_capita": 2.011,
+      "population": 52321152,
+      "year": 2023
+    },
+    {
+      "country": "Venezuela",
+      "iso_code": "VEN",
+      "co2": 99.569,
+      "co2_per_capita": 3.518,
+      "population": 28300860,
+      "year": 2023
+    },
+    {
+      "country": "Kuwait",
+      "iso_code": "KWT",
+      "co2": 99.233,
+      "co2_per_capita": 20.508,
+      "population": 4838780,
+      "year": 2023
+    },
+    {
+      "country": "Czechia",
+      "iso_code": "CZE",
+      "co2": 85.624,
+      "co2_per_capita": 7.921,
+      "population": 10809722,
+      "year": 2023
+    },
+    {
+      "country": "Belgium",
+      "iso_code": "BEL",
+      "co2": 83.368,
+      "co2_per_capita": 7.118,
+      "population": 11712894,
+      "year": 2023
+    },
+    {
+      "country": "Oman",
+      "iso_code": "OMN",
+      "co2": 78.511,
+      "co2_per_capita": 15.549,
+      "population": 5049268,
+      "year": 2023
+    },
+    {
+      "country": "Chile",
+      "iso_code": "CHL",
+      "co2": 77.288,
+      "co2_per_capita": 3.931,
+      "population": 19658834,
+      "year": 2023
+    },
+    {
+      "country": "Morocco",
+      "iso_code": "MAR",
+      "co2": 68.668,
+      "co2_per_capita": 1.821,
+      "population": 37712517,
+      "year": 2023
+    },
+    {
+      "country": "Romania",
+      "iso_code": "ROU",
+      "co2": 68.239,
+      "co2_per_capita": 3.569,
+      "population": 19118481,
+      "year": 2023
+    },
+    {
+      "country": "Turkmenistan",
+      "iso_code": "TKM",
+      "co2": 63.363,
+      "co2_per_capita": 8.604,
+      "population": 7364437,
+      "year": 2023
+    }
+  ]
+}

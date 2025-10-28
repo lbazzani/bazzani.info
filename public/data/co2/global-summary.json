@@ -1,0 +1,668 @@
+[
+  {
+    "year": 1950,
+    "total_co2": 40298.55800000002,
+    "total_coal": 19867.159000000003,
+    "total_gas": 1464.0850000000005,
+    "total_oil": 6706.670999999999,
+    "total_cement": 339.8059999999999,
+    "countries_count": 204
+  },
+  {
+    "year": 1951,
+    "total_co2": 43447.14200000002,
+    "total_coal": 21091.761,
+    "total_gas": 1722.8619999999999,
+    "total_oil": 7445.741999999999,
+    "total_cement": 385.10000000000014,
+    "countries_count": 205
+  },
+  {
+    "year": 1952,
+    "total_co2": 44134.380999999994,
+    "total_coal": 20979.665,
+    "total_gas": 1852.524,
+    "total_oil": 7900.7339999999995,
+    "total_cement": 412.18199999999996,
+    "countries_count": 205
+  },
+  {
+    "year": 1953,
+    "total_co2": 45396.72200000001,
+    "total_coal": 21183.254999999994,
+    "total_gas": 1973.4830000000006,
+    "total_oil": 8448.214000000002,
+    "total_cement": 458.0499999999999,
+    "countries_count": 206
+  },
+  {
+    "year": 1954,
+    "total_co2": 46613.93400000001,
+    "total_coal": 21387.712000000007,
+    "total_gas": 2089.614,
+    "total_oil": 9048.541000000003,
+    "total_cement": 497.3199999999999,
+    "countries_count": 208
+  },
+  {
+    "year": 1955,
+    "total_co2": 51025.600999999995,
+    "total_coal": 23076.193000000003,
+    "total_gas": 2288.811,
+    "total_oil": 10161.636000000004,
+    "total_cement": 551.5930000000001,
+    "countries_count": 212
+  },
+  {
+    "year": 1956,
+    "total_co2": 54357.53099999998,
+    "total_coal": 24248.736999999986,
+    "total_gas": 2470.352,
+    "total_oil": 11110.914999999999,
+    "total_cement": 596.4919999999998,
+    "countries_count": 212
+  },
+  {
+    "year": 1957,
+    "total_co2": 56169.193,
+    "total_coal": 24732.16099999999,
+    "total_gas": 2747.642999999999,
+    "total_oil": 11663.912999999999,
+    "total_cement": 629.8259999999999,
+    "countries_count": 212
+  },
+  {
+    "year": 1958,
+    "total_co2": 57728.11899999999,
+    "total_coal": 24894.770999999993,
+    "total_gas": 3032.281,
+    "total_oil": 12289.222000000003,
+    "total_cement": 666.78,
+    "countries_count": 212
+  },
+  {
+    "year": 1959,
+    "total_co2": 60536.221,
+    "total_coal": 25616.179000000022,
+    "total_gas": 3289.9010000000003,
+    "total_oil": 13176.087000000001,
+    "total_cement": 748.2909999999998,
+    "countries_count": 217
+  },
+  {
+    "year": 1960,
+    "total_co2": 64219.55100000001,
+    "total_coal": 26675.524000000012,
+    "total_gas": 3655.3629999999985,
+    "total_oil": 14284.706000000002,
+    "total_cement": 815.1109999999998,
+    "countries_count": 217
+  },
+  {
+    "year": 1961,
+    "total_co2": 64656.53500000001,
+    "total_coal": 25876.69300000001,
+    "total_gas": 3911.773,
+    "total_oil": 15217.319000000003,
+    "total_cement": 860.0130000000003,
+    "countries_count": 218
+  },
+  {
+    "year": 1962,
+    "total_co2": 67131.26599999999,
+    "total_coal": 25912.287999999986,
+    "total_gas": 4329.651,
+    "total_oil": 16524.825000000004,
+    "total_cement": 925.8240000000001,
+    "countries_count": 220
+  },
+  {
+    "year": 1963,
+    "total_co2": 70817.04800000002,
+    "total_coal": 26833.442000000025,
+    "total_gas": 4713.682,
+    "total_oil": 17808.920999999995,
+    "total_cement": 975.0849999999995,
+    "countries_count": 221
+  },
+  {
+    "year": 1964,
+    "total_co2": 74638.32499999995,
+    "total_coal": 27315.753000000008,
+    "total_gas": 5240.115,
+    "total_oil": 19328.730000000007,
+    "total_cement": 1082.5159999999998,
+    "countries_count": 224
+  },
+  {
+    "year": 1965,
+    "total_co2": 77902.11399999993,
+    "total_coal": 27561.765000000007,
+    "total_gas": 5640.405999999999,
+    "total_oil": 20859.52500000001,
+    "total_cement": 1135.305,
+    "countries_count": 225
+  },
+  {
+    "year": 1966,
+    "total_co2": 81556.33700000001,
+    "total_coal": 27747.56800000001,
+    "total_gas": 6159.409999999999,
+    "total_oil": 22597.924999999996,
+    "total_cement": 1222.1090000000002,
+    "countries_count": 225
+  },
+  {
+    "year": 1967,
+    "total_co2": 84088.26799999997,
+    "total_coal": 27293.141000000025,
+    "total_gas": 6624.291000000001,
+    "total_oil": 24168.48700000002,
+    "total_cement": 1265.0049999999999,
+    "countries_count": 225
+  },
+  {
+    "year": 1968,
+    "total_co2": 88668.28799999991,
+    "total_coal": 27578.72499999999,
+    "total_gas": 7251.726000000001,
+    "total_oil": 26400.561000000005,
+    "total_cement": 1345.68,
+    "countries_count": 226
+  },
+  {
+    "year": 1969,
+    "total_co2": 94508.99999999997,
+    "total_coal": 28517.42199999999,
+    "total_gas": 7961.8640000000005,
+    "total_oil": 28635.57800000001,
+    "total_cement": 1423.29,
+    "countries_count": 226
+  },
+  {
+    "year": 1970,
+    "total_co2": 102066.89899999992,
+    "total_coal": 29212.90300000001,
+    "total_gas": 8350.382000000001,
+    "total_oil": 32625.285999999996,
+    "total_cement": 1514.5320000000002,
+    "countries_count": 229
+  },
+  {
+    "year": 1971,
+    "total_co2": 106226.78599999998,
+    "total_coal": 29168.034000000003,
+    "total_gas": 9108.919999999998,
+    "total_oil": 34577.821999999986,
+    "total_cement": 1589.0659999999996,
+    "countries_count": 230
+  },
+  {
+    "year": 1972,
+    "total_co2": 111030.15799999998,
+    "total_coal": 29002.244999999995,
+    "total_gas": 9749.395000000002,
+    "total_oil": 37295.531000000025,
+    "total_cement": 1682.496999999999,
+    "countries_count": 231
+  },
+  {
+    "year": 1973,
+    "total_co2": 116840.44299999996,
+    "total_coal": 29771.159000000014,
+    "total_gas": 10504.376999999999,
+    "total_oil": 39552.642000000014,
+    "total_cement": 1781.2430000000018,
+    "countries_count": 230
+  },
+  {
+    "year": 1974,
+    "total_co2": 116633.91599999998,
+    "total_coal": 29772.87800000001,
+    "total_gas": 10888.704,
+    "total_oil": 39067.268,
+    "total_cement": 1782.693,
+    "countries_count": 230
+  },
+  {
+    "year": 1975,
+    "total_co2": 117141.57599999987,
+    "total_coal": 30500.317000000006,
+    "total_gas": 11026.231000000003,
+    "total_oil": 38809.65,
+    "total_cement": 1779.441,
+    "countries_count": 230
+  },
+  {
+    "year": 1976,
+    "total_co2": 123752.843,
+    "total_coal": 31631.274000000005,
+    "total_gas": 11735.583000000002,
+    "total_oil": 41319.123999999996,
+    "total_cement": 1859.9279999999999,
+    "countries_count": 230
+  },
+  {
+    "year": 1977,
+    "total_co2": 127012.72500000002,
+    "total_coal": 32237.32499999999,
+    "total_gas": 12060.121999999998,
+    "total_oil": 42629.654999999984,
+    "total_cement": 1940.0410000000018,
+    "countries_count": 230
+  },
+  {
+    "year": 1978,
+    "total_co2": 130935.266,
+    "total_coal": 32677.933999999997,
+    "total_gas": 12623.954000000002,
+    "total_oil": 44248.26799999999,
+    "total_cement": 2060.2599999999998,
+    "countries_count": 230
+  },
+  {
+    "year": 1979,
+    "total_co2": 134702.314,
+    "total_coal": 34131.177,
+    "total_gas": 13351.962,
+    "total_oil": 44911.157999999996,
+    "total_cement": 2081.3850000000007,
+    "countries_count": 230
+  },
+  {
+    "year": 1980,
+    "total_co2": 134069.45200000005,
+    "total_coal": 35078.661,
+    "total_gas": 13727.804999999997,
+    "total_oil": 43388.638999999974,
+    "total_cement": 2090.342,
+    "countries_count": 230
+  },
+  {
+    "year": 1981,
+    "total_co2": 130814.32599999996,
+    "total_coal": 34752.88100000003,
+    "total_gas": 13981.280000000002,
+    "total_oil": 41454.71799999999,
+    "total_cement": 2081.149999999999,
+    "countries_count": 231
+  },
+  {
+    "year": 1982,
+    "total_co2": 129955.89399999999,
+    "total_coal": 35285.58300000001,
+    "total_gas": 13748.294000000002,
+    "total_oil": 40547.93600000002,
+    "total_cement": 2064.3,
+    "countries_count": 231
+  },
+  {
+    "year": 1983,
+    "total_co2": 130778.83199999997,
+    "total_coal": 36061.26500000001,
+    "total_gas": 14006.119000000002,
+    "total_oil": 40126.57599999999,
+    "total_cement": 2103.846,
+    "countries_count": 231
+  },
+  {
+    "year": 1984,
+    "total_co2": 134950.229,
+    "total_coal": 37545.89900000001,
+    "total_gas": 15240.681,
+    "total_oil": 40370.77399999998,
+    "total_cement": 2126.781000000001,
+    "countries_count": 230
+  },
+  {
+    "year": 1985,
+    "total_co2": 139668.71699999995,
+    "total_coal": 40344.78,
+    "total_gas": 15908.876000000004,
+    "total_oil": 40307.173,
+    "total_cement": 2133.4980000000014,
+    "countries_count": 230
+  },
+  {
+    "year": 1986,
+    "total_co2": 141475.19499999998,
+    "total_coal": 40870.47200000001,
+    "total_gas": 15519.652999999998,
+    "total_oil": 41394.893999999986,
+    "total_cement": 2205.3900000000003,
+    "countries_count": 230
+  },
+  {
+    "year": 1987,
+    "total_co2": 144887.99099999995,
+    "total_coal": 42045.604000000014,
+    "total_gas": 16894.90100000001,
+    "total_oil": 41151.67699999999,
+    "total_cement": 2277.9669999999996,
+    "countries_count": 231
+  },
+  {
+    "year": 1988,
+    "total_co2": 150191.277,
+    "total_coal": 43237.079000000005,
+    "total_gas": 17701.145999999997,
+    "total_oil": 42527.029999999984,
+    "total_cement": 2387.935,
+    "countries_count": 231
+  },
+  {
+    "year": 1989,
+    "total_co2": 152010.75699999995,
+    "total_coal": 43072.27900000001,
+    "total_gas": 18551.896,
+    "total_oil": 43204.354999999996,
+    "total_cement": 2439.7740000000013,
+    "countries_count": 231
+  },
+  {
+    "year": 1990,
+    "total_co2": 154633.29899999997,
+    "total_coal": 41847.57300000001,
+    "total_gas": 19482.331999999995,
+    "total_oil": 44137.07800000001,
+    "total_cement": 2436.998,
+    "countries_count": 238
+  },
+  {
+    "year": 1991,
+    "total_co2": 157419.00000000003,
+    "total_coal": 41111.08000000001,
+    "total_gas": 19755.434000000012,
+    "total_oil": 46844.14400000003,
+    "total_cement": 2474.407,
+    "countries_count": 240
+  },
+  {
+    "year": 1992,
+    "total_co2": 151842.2879999999,
+    "total_coal": 39717.054000000004,
+    "total_gas": 19993.396000000008,
+    "total_oil": 43422.793,
+    "total_cement": 2548.857,
+    "countries_count": 241
+  },
+  {
+    "year": 1993,
+    "total_co2": 152737.06400000004,
+    "total_coal": 39869.81500000002,
+    "total_gas": 20445.08,
+    "total_oil": 43252.81799999999,
+    "total_cement": 2625.4140000000016,
+    "countries_count": 241
+  },
+  {
+    "year": 1994,
+    "total_co2": 153499.084,
+    "total_coal": 39764.073,
+    "total_gas": 20506.352000000003,
+    "total_oil": 43150.71000000002,
+    "total_cement": 2783.4339999999993,
+    "countries_count": 242
+  },
+  {
+    "year": 1995,
+    "total_co2": 156622.807,
+    "total_coal": 40716.564000000006,
+    "total_gas": 21201.32900000001,
+    "total_oil": 43388.31400000002,
+    "total_cement": 2928.2859999999987,
+    "countries_count": 242
+  },
+  {
+    "year": 1996,
+    "total_co2": 161032.159,
+    "total_coal": 41566.285,
+    "total_gas": 22175.215000000004,
+    "total_oil": 44492.615000000005,
+    "total_cement": 2970.624,
+    "countries_count": 242
+  },
+  {
+    "year": 1997,
+    "total_co2": 161462.97199999995,
+    "total_coal": 41170.409999999996,
+    "total_gas": 22195.143000000004,
+    "total_oil": 44939.059,
+    "total_cement": 3085.207,
+    "countries_count": 242
+  },
+  {
+    "year": 1998,
+    "total_co2": 160566.63900000005,
+    "total_coal": 40008.522000000004,
+    "total_gas": 22487.34000000001,
+    "total_oil": 45306.636000000006,
+    "total_cement": 3062.605,
+    "countries_count": 243
+  },
+  {
+    "year": 1999,
+    "total_co2": 163828.61200000005,
+    "total_coal": 40377.458999999995,
+    "total_gas": 23216.906000000006,
+    "total_oil": 46313.91299999998,
+    "total_cement": 3203.95,
+    "countries_count": 243
+  },
+  {
+    "year": 2000,
+    "total_co2": 168010.11200000002,
+    "total_coal": 41997.546,
+    "total_gas": 23839.945000000003,
+    "total_oil": 46750.41299999999,
+    "total_cement": 3344.1270000000004,
+    "countries_count": 243
+  },
+  {
+    "year": 2001,
+    "total_co2": 169567.21799999996,
+    "total_coal": 42320.43700000001,
+    "total_gas": 24143.669000000013,
+    "total_oil": 47206.112,
+    "total_cement": 3481.4979999999982,
+    "countries_count": 243
+  },
+  {
+    "year": 2002,
+    "total_co2": 172974.648,
+    "total_coal": 44029.467999999986,
+    "total_gas": 24796.625999999997,
+    "total_oil": 47038.861999999994,
+    "total_cement": 3605.867,
+    "countries_count": 243
+  },
+  {
+    "year": 2003,
+    "total_co2": 181764.62199999992,
+    "total_coal": 47570.452000000005,
+    "total_gas": 25805.151,
+    "total_oil": 48121.242999999995,
+    "total_cement": 3928.0870000000014,
+    "countries_count": 243
+  },
+  {
+    "year": 2004,
+    "total_co2": 187514.49999999997,
+    "total_coal": 48992.239000000016,
+    "total_gas": 26623.693999999985,
+    "total_oil": 49628.65299999999,
+    "total_cement": 4106.397,
+    "countries_count": 244
+  },
+  {
+    "year": 2005,
+    "total_co2": 193423.93700000003,
+    "total_coal": 51662.972000000016,
+    "total_gas": 27210.995999999985,
+    "total_oil": 50038.348,
+    "total_cement": 4382.798,
+    "countries_count": 244
+  },
+  {
+    "year": 2006,
+    "total_co2": 199677.51299999995,
+    "total_coal": 54465.305,
+    "total_gas": 27963.003000000004,
+    "total_oil": 50386.18799999999,
+    "total_cement": 4754.0070000000005,
+    "countries_count": 244
+  },
+  {
+    "year": 2007,
+    "total_co2": 204943.2909999999,
+    "total_coal": 56932.83500000001,
+    "total_gas": 28851.228000000003,
+    "total_oil": 50224.149,
+    "total_cement": 5101.851000000002,
+    "countries_count": 244
+  },
+  {
+    "year": 2008,
+    "total_co2": 208095.33099999977,
+    "total_coal": 58440.084,
+    "total_gas": 29670.799,
+    "total_oil": 50010.085,
+    "total_cement": 5148.801000000002,
+    "countries_count": 243
+  },
+  {
+    "year": 2009,
+    "total_co2": 204004.61399999994,
+    "total_coal": 57376.42599999999,
+    "total_gas": 28798.229999999996,
+    "total_oil": 48882.543000000005,
+    "total_cement": 5226.908,
+    "countries_count": 243
+  },
+  {
+    "year": 2010,
+    "total_co2": 215482.7339999999,
+    "total_coal": 61289.10900000001,
+    "total_gas": 31022.823999999997,
+    "total_oil": 50287.19600000002,
+    "total_cement": 5568.23,
+    "countries_count": 243
+  },
+  {
+    "year": 2011,
+    "total_co2": 222389.49399999995,
+    "total_coal": 64564.30800000001,
+    "total_gas": 31778.102,
+    "total_oil": 50306.97399999999,
+    "total_cement": 5972.1630000000005,
+    "countries_count": 243
+  },
+  {
+    "year": 2012,
+    "total_co2": 225593.49600000007,
+    "total_coal": 65383.345000000016,
+    "total_gas": 32297.463000000003,
+    "total_oil": 50924.439,
+    "total_cement": 6121.399,
+    "countries_count": 243
+  },
+  {
+    "year": 2013,
+    "total_co2": 227013.33999999994,
+    "total_coal": 65624.17999999996,
+    "total_gas": 32358.837999999992,
+    "total_oil": 51113.79700000002,
+    "total_cement": 6371.892000000002,
+    "countries_count": 243
+  },
+  {
+    "year": 2014,
+    "total_co2": 227470.44400000008,
+    "total_coal": 65536.31199999999,
+    "total_gas": 32366.131000000016,
+    "total_oil": 51130.733,
+    "total_cement": 6575.906,
+    "countries_count": 243
+  },
+  {
+    "year": 2015,
+    "total_co2": 227211.44199999984,
+    "total_coal": 64120.15299999997,
+    "total_gas": 32966.045,
+    "total_oil": 52097.09299999999,
+    "total_cement": 6361.8640000000005,
+    "countries_count": 243
+  },
+  {
+    "year": 2016,
+    "total_co2": 227301.95500000016,
+    "total_coal": 62639.358,
+    "total_gas": 33897.744,
+    "total_oil": 52627.76400000001,
+    "total_cement": 6529.731000000001,
+    "countries_count": 243
+  },
+  {
+    "year": 2017,
+    "total_co2": 230881.49800000005,
+    "total_coal": 63377.617000000006,
+    "total_gas": 34760.241,
+    "total_oil": 53364.18499999999,
+    "total_cement": 6620.144000000001,
+    "countries_count": 243
+  },
+  {
+    "year": 2018,
+    "total_co2": 235257.25699999995,
+    "total_coal": 64300.974,
+    "total_gas": 36257.53800000001,
+    "total_oil": 53620.50599999999,
+    "total_cement": 6816.900999999997,
+    "countries_count": 243
+  },
+  {
+    "year": 2019,
+    "total_co2": 237289.3780000001,
+    "total_coal": 63806.18099999998,
+    "total_gas": 36938.51999999998,
+    "total_oil": 54313.42100000001,
+    "total_cement": 7098.154000000002,
+    "countries_count": 243
+  },
+  {
+    "year": 2020,
+    "total_co2": 225815.581,
+    "total_coal": 61685.014000000025,
+    "total_gas": 36555.553,
+    "total_oil": 48636.463999999985,
+    "total_cement": 7163.938999999996,
+    "countries_count": 243
+  },
+  {
+    "year": 2021,
+    "total_co2": 237662.364,
+    "total_coal": 65331.15900000001,
+    "total_gas": 38317.467,
+    "total_oil": 51102.467000000004,
+    "total_cement": 7423.762999999999,
+    "countries_count": 243
+  },
+  {
+    "year": 2022,
+    "total_co2": 238962.60899999988,
+    "total_coal": 65574.62699999998,
+    "total_gas": 38004.62599999998,
+    "total_oil": 52538.003000000026,
+    "total_cement": 7018.615999999999,
+    "countries_count": 243
+  },
+  {
+    "year": 2023,
+    "total_co2": 241116.66799999995,
+    "total_coal": 66113.45199999999,
+    "total_gas": 37929.581,
+    "total_oil": 53524.355000000025,
+    "total_cement": 6882.585999999998,
+    "countries_count": 243
+  }
+]

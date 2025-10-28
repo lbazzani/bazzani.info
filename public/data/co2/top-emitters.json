@@ -1,0 +1,7920 @@
+{
+  "1950": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 5930.244,
+      "co2_per_capita": 2.379,
+      "population": 2493092843
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 5117.058,
+      "co2_per_capita": 6.394,
+      "population": 692078530
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 4671.77,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 2744.908,
+      "co2_per_capita": 12.471,
+      "population": 222818944
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 2726.24,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 2541.485,
+      "co2_per_capita": 16.481,
+      "population": 154202683
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 2383.328,
+      "co2_per_capita": 4.34,
+      "population": 549361682
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 2383.328,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 1778.561,
+      "co2_per_capita": 4.702,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 1277.769,
+      "co2_per_capita": 3.894,
+      "population": 328139848
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 1130.08,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 1105.559,
+      "co2_per_capita": 5.002,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 604.767,
+      "co2_per_capita": 3.539,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 552.599,
+      "co2_per_capita": 0.595,
+      "population": 976969482
+    },
+    {
+      "country": "Germany",
+      "iso_code": "DEU",
+      "co2": 510.682,
+      "co2_per_capita": 7.311,
+      "population": 69847777
+    }
+  ],
+  "1951": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 6381.429,
+      "co2_per_capita": 2.515,
+      "population": 2536927039
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 5466.807,
+      "co2_per_capita": 6.752,
+      "population": 699973521
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 4985.998,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 2840.86,
+      "co2_per_capita": 12.681,
+      "population": 226777848
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 2816.4,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 2630.209,
+      "co2_per_capita": 4.747,
+      "population": 554336222
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 2630.209,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 2618.711,
+      "co2_per_capita": 16.735,
+      "population": 156481322
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 1975.018,
+      "co2_per_capita": 5.185,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 1429.766,
+      "co2_per_capita": 4.325,
+      "population": 330569542
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 1242.254,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 1200.444,
+      "co2_per_capita": 5.37,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 655.191,
+      "co2_per_capita": 3.783,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 621.133,
+      "co2_per_capita": 0.655,
+      "population": 996119509
+    },
+    {
+      "country": "Germany",
+      "iso_code": "DEU",
+      "co2": 576.866,
+      "co2_per_capita": 8.267,
+      "population": 69782048
+    }
+  ],
+  "1952": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 6467.46,
+      "co2_per_capita": 2.503,
+      "population": 2584086332
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 5477.358,
+      "co2_per_capita": 6.686,
+      "population": 708049916
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 4962.665,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 2768.363,
+      "co2_per_capita": 12.136,
+      "population": 230880345
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 2747.98,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 2713.979,
+      "co2_per_capita": 4.854,
+      "population": 559299025
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 2713.979,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 2551.219,
+      "co2_per_capita": 16.066,
+      "population": 158794225
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 2015.523,
+      "co2_per_capita": 5.256,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 1486.817,
+      "co2_per_capita": 4.465,
+      "population": 332995707
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 1348.64,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 1227.162,
+      "co2_per_capita": 5.428,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 698.456,
+      "co2_per_capita": 3.978,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 682.791,
+      "co2_per_capita": 0.705,
+      "population": 1017329707
+    },
+    {
+      "country": "Germany",
+      "iso_code": "DEU",
+      "co2": 610.981,
+      "co2_per_capita": 8.75,
+      "population": 69826946
+    }
+  ],
+  "1953": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 6650.885,
+      "co2_per_capita": 2.525,
+      "population": 2634106246
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 5626.197,
+      "co2_per_capita": 6.784,
+      "population": 716619694
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 5077.39,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 2832.025,
+      "co2_per_capita": 12.19,
+      "population": 235114818
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 2810.436,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 2791.516,
+      "co2_per_capita": 4.946,
+      "population": 564660786
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 2791.516,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 2612.971,
+      "co2_per_capita": 16.213,
+      "population": 161168319
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 2055.214,
+      "co2_per_capita": 5.319,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 1515.004,
+      "co2_per_capita": 4.514,
+      "population": 335659119
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 1411.392,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 1276.512,
+      "co2_per_capita": 5.58,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 736.302,
+      "co2_per_capita": 4.135,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 705.888,
+      "co2_per_capita": 0.712,
+      "population": 1040007806
+    },
+    {
+      "country": "Germany",
+      "iso_code": "DEU",
+      "co2": 623.492,
+      "co2_per_capita": 8.915,
+      "population": 69935116
+    }
+  ],
+  "1954": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 6789.529,
+      "co2_per_capita": 2.528,
+      "population": 2685894869
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 5677.856,
+      "co2_per_capita": 6.761,
+      "population": 725421137
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 5065.618,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 2970.04,
+      "co2_per_capita": 5.21,
+      "population": 570269625
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 2970.04,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 2718.288,
+      "co2_per_capita": 11.485,
+      "population": 239512118
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 2688.836,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 2489.462,
+      "co2_per_capita": 15.213,
+      "population": 163636304
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 2164.378,
+      "co2_per_capita": 5.558,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 1611.368,
+      "co2_per_capita": 4.761,
+      "population": 338440576
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 1561.219,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 1358.672,
+      "co2_per_capita": 5.866,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 805.663,
+      "co2_per_capita": 4.46,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 773.303,
+      "co2_per_capita": 0.763,
+      "population": 1063267880
+    },
+    {
+      "country": "Germany",
+      "iso_code": "DEU",
+      "co2": 659.732,
+      "co2_per_capita": 9.411,
+      "population": 70104623
+    }
+  ],
+  "1955": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 7443.896,
+      "co2_per_capita": 2.717,
+      "population": 2740213784
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 6163.038,
+      "co2_per_capita": 7.246,
+      "population": 734350520
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 5472.809,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 3233.7,
+      "co2_per_capita": 5.616,
+      "population": 575977754
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 3233.7,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 2966.307,
+      "co2_per_capita": 12.298,
+      "population": 244056551
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 2937.893,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 2728.512,
+      "co2_per_capita": 16.417,
+      "population": 166200030
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 2320.317,
+      "co2_per_capita": 5.913,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 1783.996,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 1743.365,
+      "co2_per_capita": 5.109,
+      "population": 341203656
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 1490.335,
+      "co2_per_capita": 6.354,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 913.383,
+      "co2_per_capita": 4.981,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 900.425,
+      "co2_per_capita": 0.868,
+      "population": 1087842388
+    },
+    {
+      "country": "Germany",
+      "iso_code": "DEU",
+      "co2": 723.498,
+      "co2_per_capita": 10.287,
+      "population": 70334148
+    }
+  ],
+  "1956": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 7926.013,
+      "co2_per_capita": 2.835,
+      "population": 2795409978
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 6528.384,
+      "co2_per_capita": 7.58,
+      "population": 743307506
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 5769.558,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 3445.256,
+      "co2_per_capita": 5.925,
+      "population": 581699676
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 3445.256,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 3124.132,
+      "co2_per_capita": 12.707,
+      "population": 248743638
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 3092.107,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 2859.995,
+      "co2_per_capita": 16.941,
+      "population": 168824963
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 2441.416,
+      "co2_per_capita": 6.176,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 1955.232,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 1867.092,
+      "co2_per_capita": 5.429,
+      "population": 343895758
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 1578.164,
+      "co2_per_capita": 6.642,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 1003.841,
+      "co2_per_capita": 5.392,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 992.638,
+      "co2_per_capita": 0.935,
+      "population": 1112470379
+    },
+    {
+      "country": "Germany",
+      "iso_code": "DEU",
+      "co2": 766.191,
+      "co2_per_capita": 10.85,
+      "population": 70613899
+    }
+  ],
+  "1957": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 8185.645,
+      "co2_per_capita": 2.87,
+      "population": 2852618346
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 6641.646,
+      "co2_per_capita": 7.614,
+      "population": 752493085
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 5822.927,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 3593.218,
+      "co2_per_capita": 6.116,
+      "population": 587740737
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 3593.218,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 3103.312,
+      "co2_per_capita": 12.379,
+      "population": 253588807
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 3068.063,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 2835.772,
+      "co2_per_capita": 16.535,
+      "population": 171499235
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 2497.081,
+      "co2_per_capita": 6.267,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 2139.034,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 1926.367,
+      "co2_per_capita": 5.555,
+      "population": 346772758
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 1666.851,
+      "co2_per_capita": 6.924,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 1096.137,
+      "co2_per_capita": 5.797,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 1093.85,
+      "co2_per_capita": 1.006,
+      "population": 1138383794
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 843.674,
+      "co2_per_capita": 0.529,
+      "population": 1594675240
+    }
+  ],
+  "1958": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 8417.188,
+      "co2_per_capita": 2.891,
+      "population": 2911249658
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 6572.121,
+      "co2_per_capita": 7.437,
+      "population": 762008123
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 5697.999,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 3631.7,
+      "co2_per_capita": 6.114,
+      "population": 594183460
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 3631.7,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 3022.799,
+      "co2_per_capita": 11.827,
+      "population": 258514836
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 2983.538,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 2747.108,
+      "co2_per_capita": 15.768,
+      "population": 174215305
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 2511.283,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 2467.203,
+      "co2_per_capita": 6.139,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 1910.887,
+      "co2_per_capita": 5.461,
+      "population": 349930207
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 1720.813,
+      "co2_per_capita": 7.052,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 1394.998,
+      "co2_per_capita": 1.253,
+      "population": 1164707663
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 1164.497,
+      "co2_per_capita": 6.062,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 1138.101,
+      "co2_per_capita": 0.697,
+      "population": 1631866814
+    }
+  ],
+  "1959": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 8854.689,
+      "co2_per_capita": 2.985,
+      "population": 2965950358
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 6745.509,
+      "co2_per_capita": 7.535,
+      "population": 771670473
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 5824.176,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 3713.172,
+      "co2_per_capita": 6.187,
+      "population": 600394949
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 3713.172,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 3115.081,
+      "co2_per_capita": 11.948,
+      "population": 263669401
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 3074.959,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 2831.923,
+      "co2_per_capita": 15.986,
+      "population": 177145772
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 2817.144,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 2487.216,
+      "co2_per_capita": 6.138,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 1940.61,
+      "co2_per_capita": 5.498,
+      "population": 352992941
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 1772.562,
+      "co2_per_capita": 7.171,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 1638.267,
+      "co2_per_capita": 1.445,
+      "population": 1185874465
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 1373.835,
+      "co2_per_capita": 0.825,
+      "population": 1664697435
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 1303.228,
+      "co2_per_capita": 0,
+      "population": 0
+    }
+  ],
+  "1960": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 9387.011,
+      "co2_per_capita": 3.113,
+      "population": 3015470890
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 7106.421,
+      "co2_per_capita": 7.839,
+      "population": 781414180
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 6144.675,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 3964.941,
+      "co2_per_capita": 6.541,
+      "population": 606404009
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 3964.941,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 3189.242,
+      "co2_per_capita": 11.985,
+      "population": 269079989
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 3153.344,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 3004.163,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 2897.315,
+      "co2_per_capita": 16.072,
+      "population": 180274554
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 2683.998,
+      "co2_per_capita": 6.571,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 2099.978,
+      "co2_per_capita": 5.9,
+      "population": 355933711
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 1864.963,
+      "co2_per_capita": 7.452,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 1757.546,
+      "co2_per_capita": 1.53,
+      "population": 1200970474
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 1538.649,
+      "co2_per_capita": 0.909,
+      "population": 1691762689
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 1448.553,
+      "co2_per_capita": 0,
+      "population": 0
+    }
+  ],
+  "1961": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 9415.042,
+      "co2_per_capita": 3.072,
+      "population": 3064869656
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 7292.641,
+      "co2_per_capita": 7.944,
+      "population": 791125040
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 6290.086,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 4109.839,
+      "co2_per_capita": 6.713,
+      "population": 612457729
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 4109.839,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 3184.442,
+      "co2_per_capita": 11.723,
+      "population": 274662993
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 3146.454,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 2886.873,
+      "co2_per_capita": 15.733,
+      "population": 183489491
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 2861.64,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 2788.26,
+      "co2_per_capita": 6.772,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 2199.646,
+      "co2_per_capita": 6.13,
+      "population": 358836283
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 1910.193,
+      "co2_per_capita": 7.538,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 1559.155,
+      "co2_per_capita": 1.341,
+      "population": 1215340522
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 1393.511,
+      "co2_per_capita": 0.811,
+      "population": 1718156542
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 1321.578,
+      "co2_per_capita": 6.591,
+      "population": 0
+    }
+  ],
+  "1962": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 9747.287,
+      "co2_per_capita": 3.121,
+      "population": 3123374299
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 7654.104,
+      "co2_per_capita": 8.237,
+      "population": 800800512
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 6581.798,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 4336.908,
+      "co2_per_capita": 7.015,
+      "population": 618417566
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 4336.908,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 3309.487,
+      "co2_per_capita": 11.937,
+      "population": 280344703
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 3264.933,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 2993.902,
+      "co2_per_capita": 16.034,
+      "population": 186724277
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 2947.538,
+      "co2_per_capita": 7.101,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 2892.465,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 2354.607,
+      "co2_per_capita": 6.508,
+      "population": 361790852
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 1982.301,
+      "co2_per_capita": 7.731,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 1492.811,
+      "co2_per_capita": 1.259,
+      "population": 1238261821
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 1389.37,
+      "co2_per_capita": 6.84,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 1342.609,
+      "co2_per_capita": 0.766,
+      "population": 1753318917
+    }
+  ],
+  "1963": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 10266.772,
+      "co2_per_capita": 3.216,
+      "population": 3192807820
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 8083.264,
+      "co2_per_capita": 8.598,
+      "population": 810371647
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 6927.277,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 4609.9,
+      "co2_per_capita": 7.388,
+      "population": 624200480
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 4609.9,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 3442.646,
+      "co2_per_capita": 12.172,
+      "population": 285962472
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 3404.057,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 3126.488,
+      "co2_per_capita": 16.47,
+      "population": 189825228
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 3116.284,
+      "co2_per_capita": 7.447,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 3053.674,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 2512.899,
+      "co2_per_capita": 6.888,
+      "population": 364808683
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 2097.002,
+      "co2_per_capita": 8.091,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 1545.207,
+      "co2_per_capita": 1.268,
+      "population": 1271530391
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 1493.616,
+      "co2_per_capita": 7.268,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 1423.141,
+      "co2_per_capita": 0.791,
+      "population": 1799305118
+    }
+  ],
+  "1964": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 10824.466,
+      "co2_per_capita": 3.316,
+      "population": 3264487340
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 8508.14,
+      "co2_per_capita": 8.941,
+      "population": 820591419
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 7270.259,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 4839.824,
+      "co2_per_capita": 7.688,
+      "population": 629767760
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 4839.824,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 3621.593,
+      "co2_per_capita": 12.559,
+      "population": 291551205
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 3576.454,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 3264.313,
+      "co2_per_capita": 16.929,
+      "population": 192819456
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 3252.094,
+      "co2_per_capita": 7.709,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 3241.081,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 2644.228,
+      "co2_per_capita": 7.188,
+      "population": 367854447
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 2195.596,
+      "co2_per_capita": 8.39,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 1632.331,
+      "co2_per_capita": 1.303,
+      "population": 1305681736
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 1587.73,
+      "co2_per_capita": 7.645,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 1507.418,
+      "co2_per_capita": 0.816,
+      "population": 1847441779
+    }
+  ],
+  "1965": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 11310.601,
+      "co2_per_capita": 3.392,
+      "population": 3334533717
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 8828.324,
+      "co2_per_capita": 9.169,
+      "population": 830887229
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 7504.327,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 4982.21,
+      "co2_per_capita": 7.848,
+      "population": 635030906
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 4982.21,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 3771.814,
+      "co2_per_capita": 12.837,
+      "population": 297056448
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 3727.016,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 3482.825,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 3399.547,
+      "co2_per_capita": 17.375,
+      "population": 195653775
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 3299.237,
+      "co2_per_capita": 7.759,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 2677.126,
+      "co2_per_capita": 7.219,
+      "population": 370867293
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 2305.085,
+      "co2_per_capita": 8.734,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 1747.514,
+      "co2_per_capita": 1.359,
+      "population": 1337859677
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 1682.973,
+      "co2_per_capita": 8.031,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 1649.873,
+      "co2_per_capita": 0.871,
+      "population": 1894030096
+    }
+  ],
+  "1966": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 11862.646,
+      "co2_per_capita": 3.485,
+      "population": 3404041107
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 9196.254,
+      "co2_per_capita": 9.45,
+      "population": 840211916
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 7807.357,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 5153.738,
+      "co2_per_capita": 8.055,
+      "population": 640036994
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 5153.738,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 3956.438,
+      "co2_per_capita": 13.227,
+      "population": 302406120
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 3911.773,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 3705.295,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 3571.421,
+      "co2_per_capita": 18.013,
+      "population": 198265397
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 3376.733,
+      "co2_per_capita": 7.881,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 2758.658,
+      "co2_per_capita": 7.38,
+      "population": 373786471
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 2395.08,
+      "co2_per_capita": 9.004,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 1877.983,
+      "co2_per_capita": 1.424,
+      "population": 1370318281
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 1797.063,
+      "co2_per_capita": 0.926,
+      "population": 1940186410
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 1777.005,
+      "co2_per_capita": 8.408,
+      "population": 0
+    }
+  ],
+  "1967": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 12237.369,
+      "co2_per_capita": 3.523,
+      "population": 3473412894
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 9547.306,
+      "co2_per_capita": 9.719,
+      "population": 848562240
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 8077.131,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 5267.683,
+      "co2_per_capita": 8.173,
+      "population": 644732600
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 5267.682,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 4127.06,
+      "co2_per_capita": 13.563,
+      "population": 307620055
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 4077.573,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 3785.768,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 3705.461,
+      "co2_per_capita": 18.463,
+      "population": 200699913
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 3412.407,
+      "co2_per_capita": 7.909,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 2820.35,
+      "co2_per_capita": 7.491,
+      "population": 376493998
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 2447.332,
+      "co2_per_capita": 9.132,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 1867.19,
+      "co2_per_capita": 1.381,
+      "population": 1402759152
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 1855.275,
+      "co2_per_capita": 8.709,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 1825.098,
+      "co2_per_capita": 0.919,
+      "population": 1986308204
+    }
+  ],
+  "1968": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 12905.283,
+      "co2_per_capita": 3.64,
+      "population": 3545187239
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 10023.559,
+      "co2_per_capita": 10.11,
+      "population": 857007316
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 8502.891,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 5513.144,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 5513.143,
+      "co2_per_capita": 8.495,
+      "population": 649249404
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 4289.614,
+      "co2_per_capita": 13.867,
+      "population": 312721533
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 4238.651,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 4006.296,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 3840.919,
+      "co2_per_capita": 18.92,
+      "population": 203011021
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 3600.078,
+      "co2_per_capita": 8.287,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 2993.59,
+      "co2_per_capita": 7.895,
+      "population": 379165167
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 2519.553,
+      "co2_per_capita": 9.337,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 2015.996,
+      "co2_per_capita": 0.991,
+      "population": 2034769705
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 1992.629,
+      "co2_per_capita": 1.437,
+      "population": 1436741266
+    },
+    {
+      "country": "Europe (excl. EU-28)",
+      "iso_code": "",
+      "co2": 1913.065,
+      "co2_per_capita": 8.914,
+      "population": 0
+    }
+  ],
+  "1969": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 13761.785,
+      "co2_per_capita": 3.802,
+      "population": 3619491592
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 10645.816,
+      "co2_per_capita": 10.631,
+      "population": 866243691
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 9022.272,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 5813.301,
+      "co2_per_capita": 8.895,
+      "population": 653780348
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 5813.301,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 4501.617,
+      "co2_per_capita": 14.319,
+      "population": 317807448
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 4444.88,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 4324.855,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4035.145,
+      "co2_per_capita": 19.655,
+      "population": 205300032
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 3820.681,
+      "co2_per_capita": 8.734,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3192.299,
+      "co2_per_capita": 8.357,
+      "population": 381993932
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 2621.002,
+      "co2_per_capita": 9.652,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 2289.412,
+      "co2_per_capita": 1.098,
+      "population": 2085428644
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 2187.512,
+      "co2_per_capita": 1.538,
+      "population": 1472041730
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 2021.633,
+      "co2_per_capita": 0,
+      "population": 0
+    }
+  ],
+  "1970": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 14899.124,
+      "co2_per_capita": 4.033,
+      "population": 3694683801
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 11404.3,
+      "co2_per_capita": 11.277,
+      "population": 875442737
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 9682.492,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6095.201,
+      "co2_per_capita": 9.272,
+      "population": 657646308
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6095.201,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 4862.468,
+      "co2_per_capita": 15.206,
+      "population": 323225986
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 4795.231,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 4779.501,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4339.686,
+      "co2_per_capita": 20.884,
+      "population": 207796339
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 3984.364,
+      "co2_per_capita": 9.054,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3331.787,
+      "co2_per_capita": 8.668,
+      "population": 384384510
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 2763.415,
+      "co2_per_capita": 10.122,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 2697.75,
+      "co2_per_capita": 1.262,
+      "population": 2136911800
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 2507.283,
+      "co2_per_capita": 1.719,
+      "population": 1507362256
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 2413.14,
+      "co2_per_capita": 0,
+      "population": 0
+    }
+  ],
+  "1971": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 15503.854,
+      "co2_per_capita": 4.113,
+      "population": 3769847834
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 11702.471,
+      "co2_per_capita": 11.458,
+      "population": 884930243
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 9867.988,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6324.005,
+      "co2_per_capita": 9.562,
+      "population": 661610573
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6324.005,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 5174.254,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 4915.923,
+      "co2_per_capita": 15.11,
+      "population": 328861429
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 4844.452,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4365.465,
+      "co2_per_capita": 20.746,
+      "population": 210426424
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4086.178,
+      "co2_per_capita": 9.23,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3425.79,
+      "co2_per_capita": 8.856,
+      "population": 386827084
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 2953.393,
+      "co2_per_capita": 1.35,
+      "population": 2187672734
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 2898.215,
+      "co2_per_capita": 10.557,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 2722.145,
+      "co2_per_capita": 1.821,
+      "population": 1542426515
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 2619.828,
+      "co2_per_capita": 0,
+      "population": 0
+    }
+  ],
+  "1972": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 16224.597,
+      "co2_per_capita": 4.22,
+      "population": 3844917687
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 12234.84,
+      "co2_per_capita": 11.861,
+      "population": 894399024
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 10295.234,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6552.929,
+      "co2_per_capita": 9.84,
+      "population": 666182813
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6552.929,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 5437.109,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5161.898,
+      "co2_per_capita": 15.613,
+      "population": 334187762
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5086.691,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4573.015,
+      "co2_per_capita": 21.485,
+      "population": 212842574
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4204.028,
+      "co2_per_capita": 9.431,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3556.001,
+      "co2_per_capita": 9.125,
+      "population": 389707306
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 3129.125,
+      "co2_per_capita": 1.398,
+      "population": 2237825637
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 2996.927,
+      "co2_per_capita": 10.85,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 2871.966,
+      "co2_per_capita": 1.877,
+      "population": 1576682671
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 2769.598,
+      "co2_per_capita": 0,
+      "population": 0
+    }
+  ],
+  "1973": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 17085.094,
+      "co2_per_capita": 4.358,
+      "population": 3920805030
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 12832.953,
+      "co2_per_capita": 12.326,
+      "population": 903246702
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 10781.8,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6845.589,
+      "co2_per_capita": 10.214,
+      "population": 670465967
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6845.589,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 5776.581,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5397.119,
+      "co2_per_capita": 16.081,
+      "population": 339231480
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5311.345,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4785.434,
+      "co2_per_capita": 22.257,
+      "population": 215006548
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4388.854,
+      "co2_per_capita": 9.783,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3729.277,
+      "co2_per_capita": 9.503,
+      "population": 392415693
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 3351.564,
+      "co2_per_capita": 1.464,
+      "population": 2288852578
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3116.313,
+      "co2_per_capita": 11.218,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 3057.582,
+      "co2_per_capita": 1.955,
+      "population": 1610438011
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 2924.332,
+      "co2_per_capita": 0,
+      "population": 0
+    }
+  ],
+  "1974": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 17011.072,
+      "co2_per_capita": 4.257,
+      "population": 3996416108
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 12665.3,
+      "co2_per_capita": 12.059,
+      "population": 911648528
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 10557.314,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6863.87,
+      "co2_per_capita": 10.182,
+      "population": 674404989
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6863.87,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 5964.5,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5251.302,
+      "co2_per_capita": 15.42,
+      "population": 344226863
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5166.338,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4621.419,
+      "co2_per_capita": 21.289,
+      "population": 217076474
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4327.357,
+      "co2_per_capita": 9.593,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3710.173,
+      "co2_per_capita": 9.396,
+      "population": 394860421
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 3411.199,
+      "co2_per_capita": 1.458,
+      "population": 2339398093
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 3159.159,
+      "co2_per_capita": 1.977,
+      "population": 1643192402
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3153.696,
+      "co2_per_capita": 11.292,
+      "population": 0
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 2968.936,
+      "co2_per_capita": 0,
+      "population": 0
+    }
+  ],
+  "1975": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 17052.752,
+      "co2_per_capita": 4.189,
+      "population": 4070735264
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 12489.165,
+      "co2_per_capita": 11.794,
+      "population": 919414286
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 10298.265,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6903.233,
+      "co2_per_capita": 10.187,
+      "population": 677939371
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6903.233,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 6306.66,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5128.3,
+      "co2_per_capita": 14.843,
+      "population": 349224548
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5039.992,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4478.563,
+      "co2_per_capita": 20.438,
+      "population": 219129300
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4240.608,
+      "co2_per_capita": 9.359,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3637.361,
+      "co2_per_capita": 9.165,
+      "population": 396893072
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 3577.897,
+      "co2_per_capita": 1.498,
+      "population": 2388510796
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 3392.738,
+      "co2_per_capita": 2.082,
+      "population": 1674173251
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3265.872,
+      "co2_per_capita": 11.631,
+      "population": 0
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 3144.838,
+      "co2_per_capita": 0,
+      "population": 0
+    }
+  ],
+  "1976": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 17989.111,
+      "co2_per_capita": 4.341,
+      "population": 4144246391
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 13219.542,
+      "co2_per_capita": 12.387,
+      "population": 926781732
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 10907.034,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 7277.801,
+      "co2_per_capita": 10.686,
+      "population": 681319207
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 7277.801,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 6642.963,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5434.773,
+      "co2_per_capita": 15.51,
+      "population": 354178873
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5331.035,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4748.111,
+      "co2_per_capita": 21.468,
+      "population": 221168756
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4511.528,
+      "co2_per_capita": 9.916,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3913.002,
+      "co2_per_capita": 9.812,
+      "population": 398786968
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 3803.975,
+      "co2_per_capita": 1.561,
+      "population": 2436467523
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 3580.411,
+      "co2_per_capita": 2.156,
+      "population": 1703863901
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3364.799,
+      "co2_per_capita": 11.921,
+      "population": 0
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 3297.372,
+      "co2_per_capita": 0,
+      "population": 0
+    }
+  ],
+  "1977": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 18498.635,
+      "co2_per_capita": 4.386,
+      "population": 4217863819
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 13467.995,
+      "co2_per_capita": 12.522,
+      "population": 934182213
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 11085.069,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 7334.162,
+      "co2_per_capita": 10.715,
+      "population": 684767363
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 7334.162,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 6964.262,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5591.318,
+      "co2_per_capita": 15.736,
+      "population": 359152719
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5490.84,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4889.953,
+      "co2_per_capita": 21.903,
+      "population": 223259417
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4479.002,
+      "co2_per_capita": 9.802,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 4048.552,
+      "co2_per_capita": 1.63,
+      "population": 2484229194
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3874.641,
+      "co2_per_capita": 9.668,
+      "population": 400767780
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 3802.217,
+      "co2_per_capita": 2.249,
+      "population": 1732830998
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 3515.664,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3459.521,
+      "co2_per_capita": 12.193,
+      "population": 0
+    }
+  ],
+  "1978": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 19069.291,
+      "co2_per_capita": 4.443,
+      "population": 4292097508
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 13730.829,
+      "co2_per_capita": 12.669,
+      "population": 941523828
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 11261.497,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 7566.62,
+      "co2_per_capita": 11.001,
+      "population": 688106257
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 7566.62,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 7351.759,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5677.353,
+      "co2_per_capita": 15.758,
+      "population": 364168538
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5579.71,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4941.708,
+      "co2_per_capita": 21.925,
+      "population": 225396098
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4609.85,
+      "co2_per_capita": 10.047,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 4230.989,
+      "co2_per_capita": 1.671,
+      "population": 2531837751
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 4091.487,
+      "co2_per_capita": 2.379,
+      "population": 1761448949
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 4005.137,
+      "co2_per_capita": 9.947,
+      "population": 402652101
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 3696.118,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3561.483,
+      "co2_per_capita": 12.488,
+      "population": 0
+    }
+  ],
+  "1979": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 19609.02,
+      "co2_per_capita": 4.489,
+      "population": 4368539472
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 14087.414,
+      "co2_per_capita": 12.9,
+      "population": 948957672
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 11591.729,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 7746.167,
+      "co2_per_capita": 11.208,
+      "population": 691423810
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 7746.166,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 7559.59,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5792.686,
+      "co2_per_capita": 15.858,
+      "population": 369229436
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5691.416,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5008.956,
+      "co2_per_capita": 22.01,
+      "population": 227575083
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4759.123,
+      "co2_per_capita": 10.329,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 4405.182,
+      "co2_per_capita": 1.707,
+      "population": 2580755579
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 4212.743,
+      "co2_per_capita": 2.407,
+      "population": 1790483109
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 4114.61,
+      "co2_per_capita": 10.171,
+      "population": 404555043
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 3837.386,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3631.557,
+      "co2_per_capita": 12.671,
+      "population": 0
+    }
+  ],
+  "1980": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 19488.523,
+      "co2_per_capita": 4.382,
+      "population": 4447606208
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 13911.117,
+      "co2_per_capita": 12.64,
+      "population": 956729253
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 11322.521,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 7750.178,
+      "co2_per_capita": 11.156,
+      "population": 694962025
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 7750.178,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 7719.354,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5620.345,
+      "co2_per_capita": 15.174,
+      "population": 374396442
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5519.97,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4808.877,
+      "co2_per_capita": 20.921,
+      "population": 229858654
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4658.052,
+      "co2_per_capita": 10.061,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 4399.586,
+      "co2_per_capita": 1.672,
+      "population": 2631643578
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 4246.653,
+      "co2_per_capita": 2.384,
+      "population": 1820390317
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 4079.017,
+      "co2_per_capita": 10.03,
+      "population": 406687009
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 3846.755,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3671.161,
+      "co2_per_capita": 12.747,
+      "population": 0
+    }
+  ],
+  "1981": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 19022.902,
+      "co2_per_capita": 4.2,
+      "population": 4528777285
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 13480.261,
+      "co2_per_capita": 12.157,
+      "population": 964322114
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 10962.632,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 7647.951,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 7468.539,
+      "co2_per_capita": 10.7,
+      "population": 698282872
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 7468.538,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5494.563,
+      "co2_per_capita": 14.632,
+      "population": 379564350
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5400.527,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4686.743,
+      "co2_per_capita": 20.184,
+      "population": 232201613
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4425.475,
+      "co2_per_capita": 9.519,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 4373.089,
+      "co2_per_capita": 1.629,
+      "population": 2683999130
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 4212.564,
+      "co2_per_capita": 2.322,
+      "population": 1851233657
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3864.92,
+      "co2_per_capita": 9.459,
+      "population": 408606101
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 3822.526,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3603.618,
+      "co2_per_capita": 12.452,
+      "population": 0
+    }
+  ],
+  "1982": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 18871.098,
+      "co2_per_capita": 4.091,
+      "population": 4612673436
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 13118.634,
+      "co2_per_capita": 11.746,
+      "population": 971412307
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 10597.3,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 7900.531,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 7408.562,
+      "co2_per_capita": 10.57,
+      "population": 701148276
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 7408.562,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5262.526,
+      "co2_per_capita": 13.825,
+      "population": 384744466
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5166.377,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 4522.608,
+      "co2_per_capita": 1.651,
+      "population": 2738669561
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4447.602,
+      "co2_per_capita": 18.96,
+      "population": 234583158
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 4436.711,
+      "co2_per_capita": 2.399,
+      "population": 1883620120
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4321.203,
+      "co2_per_capita": 9.267,
+      "population": 0
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 3960.004,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3772.963,
+      "co2_per_capita": 9.202,
+      "population": 410027893
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3635.6,
+      "co2_per_capita": 12.5,
+      "population": 0
+    }
+  ],
+  "1983": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 18991.91,
+      "co2_per_capita": 4.043,
+      "population": 4697327604
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 13071.353,
+      "co2_per_capita": 11.622,
+      "population": 978200993
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 10483.847,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 8149.671,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 7415.053,
+      "co2_per_capita": 10.537,
+      "population": 703986058
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 7415.053,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5202.27,
+      "co2_per_capita": 13.483,
+      "population": 389995263
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5115.876,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 4704.945,
+      "co2_per_capita": 1.684,
+      "population": 2794057024
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 4572.305,
+      "co2_per_capita": 2.428,
+      "population": 1916110802
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4429.711,
+      "co2_per_capita": 18.692,
+      "population": 236986362
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4275.541,
+      "co2_per_capita": 9.145,
+      "population": 0
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 4111.966,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3730.056,
+      "co2_per_capita": 9.071,
+      "population": 411187478
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3684.997,
+      "co2_per_capita": 12.597,
+      "population": 0
+    }
+  ],
+  "1984": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 19647.801,
+      "co2_per_capita": 4.109,
+      "population": 4782175500
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 13464.98,
+      "co2_per_capita": 11.891,
+      "population": 984765166
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 10849.929,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 8438.182,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 7466.038,
+      "co2_per_capita": 10.567,
+      "population": 706830247
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 7466.038,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5460.077,
+      "co2_per_capita": 13.963,
+      "population": 395240034
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5364.817,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 4979.162,
+      "co2_per_capita": 1.747,
+      "population": 2849479890
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 4795.472,
+      "co2_per_capita": 2.502,
+      "population": 1948204203
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4662.488,
+      "co2_per_capita": 19.479,
+      "population": 239353968
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 4358.219,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4294.281,
+      "co2_per_capita": 9.163,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3765.173,
+      "co2_per_capita": 9.134,
+      "population": 412217994
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3700.865,
+      "co2_per_capita": 12.574,
+      "population": 0
+    }
+  ],
+  "1985": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 20311.902,
+      "co2_per_capita": 4.172,
+      "population": 4868943460
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 13733.229,
+      "co2_per_capita": 12.047,
+      "population": 991314463
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 10926.285,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 9018.215,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 7791.125,
+      "co2_per_capita": 10.983,
+      "population": 709671971
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 7791.125,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5463.63,
+      "co2_per_capita": 13.789,
+      "population": 400471532
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5362.38,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 5269.918,
+      "co2_per_capita": 1.813,
+      "population": 2906232637
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 5118.616,
+      "co2_per_capita": 2.623,
+      "population": 1981304725
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4652.938,
+      "co2_per_capita": 19.252,
+      "population": 241690439
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 4600.61,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4382.789,
+      "co2_per_capita": 9.328,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3967.963,
+      "co2_per_capita": 13.4,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3823.162,
+      "co2_per_capita": 9.251,
+      "population": 413267716
+    }
+  ],
+  "1986": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 20614.963,
+      "co2_per_capita": 4.158,
+      "population": 4958072822
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 13771.053,
+      "co2_per_capita": 11.997,
+      "population": 998041869
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 10940.159,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 9281.143,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 7805.437,
+      "co2_per_capita": 10.956,
+      "population": 712736045
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 7805.437,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 5495.256,
+      "co2_per_capita": 1.853,
+      "population": 2964898212
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5448.31,
+      "co2_per_capita": 13.574,
+      "population": 405669381
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5362.013,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 5303.645,
+      "co2_per_capita": 2.668,
+      "population": 2015859148
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 4782.951,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4663.711,
+      "co2_per_capita": 19.117,
+      "population": 243953810
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4377.022,
+      "co2_per_capita": 9.29,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3996.969,
+      "co2_per_capita": 13.411,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3808.468,
+      "co2_per_capita": 9.19,
+      "population": 414423599
+    }
+  ],
+  "1987": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 21250.074,
+      "co2_per_capita": 4.208,
+      "population": 5049746378
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 13998.042,
+      "co2_per_capita": 12.108,
+      "population": 1004927715
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 11190.183,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 9532.439,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 7825.856,
+      "co2_per_capita": 10.935,
+      "population": 715923439
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 7825.856,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 5730.537,
+      "co2_per_capita": 1.894,
+      "population": 3025641761
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5654.344,
+      "co2_per_capita": 13.908,
+      "population": 410877346
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5563.07,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 5516.314,
+      "co2_per_capita": 2.724,
+      "population": 2052095831
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 5002.522,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4826.013,
+      "co2_per_capita": 19.605,
+      "population": 246161292
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4412.739,
+      "co2_per_capita": 9.339,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3984.785,
+      "co2_per_capita": 13.282,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3841.071,
+      "co2_per_capita": 9.242,
+      "population": 415621390
+    }
+  ],
+  "1988": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 22085.131,
+      "co2_per_capita": 4.295,
+      "population": 5141992550
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 14450.271,
+      "co2_per_capita": 12.41,
+      "population": 1012055657
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 11521.345,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 10018.313,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 7868.776,
+      "co2_per_capita": 10.946,
+      "population": 719141825
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 7868.775,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 6189.667,
+      "co2_per_capita": 2.005,
+      "population": 3086642984
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5903.792,
+      "co2_per_capita": 14.336,
+      "population": 416201789
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5812.558,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 5788.671,
+      "co2_per_capita": 2.806,
+      "population": 2088216499
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 5413.931,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5050.858,
+      "co2_per_capita": 20.334,
+      "population": 248393235
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4373.01,
+      "co2_per_capita": 9.226,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 4066.059,
+      "co2_per_capita": 13.468,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3802.716,
+      "co2_per_capita": 9.12,
+      "population": 416955489
+    }
+  ],
+  "1989": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 22386.637,
+      "co2_per_capita": 4.277,
+      "population": 5234431714
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 14656.879,
+      "co2_per_capita": 12.498,
+      "population": 1019510721
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 11759.166,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 10062.311,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 7833.485,
+      "co2_per_capita": 10.851,
+      "population": 722202127
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 7833.484,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 6405.749,
+      "co2_per_capita": 2.035,
+      "population": 3147693774
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6015.955,
+      "co2_per_capita": 14.419,
+      "population": 421643638
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5919.22,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 5829.618,
+      "co2_per_capita": 2.776,
+      "population": 2123659151
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 5585.143,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5132.543,
+      "co2_per_capita": 20.475,
+      "population": 250675047
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4421.271,
+      "co2_per_capita": 9.295,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3993.79,
+      "co2_per_capita": 13.162,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3839.695,
+      "co2_per_capita": 9.175,
+      "population": 418482238
+    }
+  ],
+  "1990": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 22728.988,
+      "co2_per_capita": 4.266,
+      "population": 5327803075
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 14994.972,
+      "co2_per_capita": 12.701,
+      "population": 1026904557
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 12042.389,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 10135.065,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 8038.27,
+      "co2_per_capita": 11.093,
+      "population": 724928030
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 8038.27,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 6584.308,
+      "co2_per_capita": 2.052,
+      "population": 3209094416
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5988.813,
+      "co2_per_capita": 14.156,
+      "population": 427527961
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5896.434,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 5887.481,
+      "co2_per_capita": 2.755,
+      "population": 2159140714
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 5767.457,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5120.957,
+      "co2_per_capita": 20.211,
+      "population": 253373385
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4472.053,
+      "co2_per_capita": 9.368,
+      "population": 0
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 4168.162,
+      "co2_per_capita": 13.682,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3870.108,
+      "co2_per_capita": 9.215,
+      "population": 419997513
+    }
+  ],
+  "1991": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 23186.102,
+      "co2_per_capita": 4.279,
+      "population": 5418735879
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 15320.779,
+      "co2_per_capita": 12.888,
+      "population": 1034760366
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 12029.642,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 10610.013,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 7738.573,
+      "co2_per_capita": 10.645,
+      "population": 727282708
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 7738.573,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 7361.138,
+      "co2_per_capita": 2.252,
+      "population": 3268207591
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 5996.165,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 5983.565,
+      "co2_per_capita": 2.756,
+      "population": 2191486397
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5934.664,
+      "co2_per_capita": 13.825,
+      "population": 433792302
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5843.253,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5062.957,
+      "co2_per_capita": 19.741,
+      "population": 256471425
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4413.811,
+      "co2_per_capita": 9.215,
+      "population": 0
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 4139.677,
+      "co2_per_capita": 3.411,
+      "population": 1201470848
+    },
+    {
+      "country": "Europe (excl. EU-27)",
+      "iso_code": "",
+      "co2": 3934.174,
+      "co2_per_capita": 12.875,
+      "population": 0
+    }
+  ],
+  "1992": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 22528.172,
+      "co2_per_capita": 4.092,
+      "population": 5505989821
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 14508.868,
+      "co2_per_capita": 12.127,
+      "population": 1043066596
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 12104.732,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 9865.958,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 7209.855,
+      "co2_per_capita": 2.168,
+      "population": 3324812376
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 7096.633,
+      "co2_per_capita": 9.746,
+      "population": 728427305
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 7096.633,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 6231.186,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 6074.665,
+      "co2_per_capita": 2.759,
+      "population": 2219027313
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6060.854,
+      "co2_per_capita": 13.917,
+      "population": 440060880
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5970.869,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5174.228,
+      "co2_per_capita": 19.931,
+      "population": 259606020
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4271.353,
+      "co2_per_capita": 8.888,
+      "population": 0
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 3823.621,
+      "co2_per_capita": 3.09,
+      "population": 1223748352
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3677.507,
+      "co2_per_capita": 8.697,
+      "population": 422863645
+    }
+  ],
+  "1993": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 22755.787,
+      "co2_per_capita": 4.07,
+      "population": 5591544841
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 14530.375,
+      "co2_per_capita": 12.078,
+      "population": 1050617542
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 12177.359,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 10017.371,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 7540.911,
+      "co2_per_capita": 2.231,
+      "population": 3380039932
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6806.002,
+      "co2_per_capita": 9.342,
+      "population": 728832223
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6806.002,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 6477.511,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 6236.975,
+      "co2_per_capita": 2.797,
+      "population": 2245411404
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6165.8,
+      "co2_per_capita": 13.963,
+      "population": 446185587
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6075.352,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5272.851,
+      "co2_per_capita": 20.077,
+      "population": 262633235
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4187.481,
+      "co2_per_capita": 8.688,
+      "population": 0
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 3941.96,
+      "co2_per_capita": 3.127,
+      "population": 1246032768
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3607.869,
+      "co2_per_capita": 8.507,
+      "population": 424104728
+    }
+  ],
+  "1994": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 22992.947,
+      "co2_per_capita": 4.051,
+      "population": 5675551281
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 14512.632,
+      "co2_per_capita": 11.993,
+      "population": 1057690314
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 12369.433,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 10035.237,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 7895.757,
+      "co2_per_capita": 2.3,
+      "population": 3433680246
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 6773.18,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6446.058,
+      "co2_per_capita": 8.837,
+      "population": 729729624
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6446.058,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 6379.54,
+      "co2_per_capita": 2.828,
+      "population": 2271450343
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6289.066,
+      "co2_per_capita": 14.056,
+      "population": 452083590
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6195.009,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5364.279,
+      "co2_per_capita": 20.206,
+      "population": 265474811
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4163.21,
+      "co2_per_capita": 8.616,
+      "population": 0
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 4077.954,
+      "co2_per_capita": 3.177,
+      "population": 1268324224
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3589.193,
+      "co2_per_capita": 8.441,
+      "population": 425189035
+    }
+  ],
+  "1995": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 23532.084,
+      "co2_per_capita": 4.086,
+      "population": 5758878997
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 14627.597,
+      "co2_per_capita": 12.023,
+      "population": 1064207746
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 12529.193,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 10382.133,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 8265.562,
+      "co2_per_capita": 2.371,
+      "population": 3486817941
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 7132.377,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 6700.975,
+      "co2_per_capita": 2.937,
+      "population": 2296572057
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6423.223,
+      "co2_per_capita": 8.8,
+      "population": 730243556
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6423.223,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6349.006,
+      "co2_per_capita": 14.01,
+      "population": 457858561
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6248.183,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5425.259,
+      "co2_per_capita": 20.228,
+      "population": 268205794
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4201.687,
+      "co2_per_capita": 8.681,
+      "population": 0
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 4143.464,
+      "co2_per_capita": 3.172,
+      "population": 1290621824
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3635.528,
+      "co2_per_capita": 8.537,
+      "population": 425847862
+    }
+  ],
+  "1996": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 24258.168,
+      "co2_per_capita": 4.152,
+      "population": 5842055726
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 14988.649,
+      "co2_per_capita": 12.261,
+      "population": 1070361837
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 12932.423,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 10653.596,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 8605.014,
+      "co2_per_capita": 2.431,
+      "population": 3539849815
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 7453.14,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 6911.432,
+      "co2_per_capita": 2.995,
+      "population": 2321191504
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6569.388,
+      "co2_per_capita": 14.318,
+      "population": 463530240
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6471.548,
+      "co2_per_capita": 8.866,
+      "population": 730250394
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6471.548,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6462.922,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5612.983,
+      "co2_per_capita": 20.723,
+      "population": 270860696
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4307.067,
+      "co2_per_capita": 8.89,
+      "population": 0
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 4272.576,
+      "co2_per_capita": 3.214,
+      "population": 1311356032
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3720.306,
+      "co2_per_capita": 8.729,
+      "population": 426181942
+    }
+  ],
+  "1997": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 24401.906,
+      "co2_per_capita": 4.119,
+      "population": 5924787787
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 14913.173,
+      "co2_per_capita": 12.14,
+      "population": 1076649211
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 13015.059,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 10679.813,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 8723.257,
+      "co2_per_capita": 2.428,
+      "population": 3592367924
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 7587.756,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 7020.316,
+      "co2_per_capita": 3.01,
+      "population": 2344947883
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6686.24,
+      "co2_per_capita": 14.399,
+      "population": 469106558
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6573.292,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6266.118,
+      "co2_per_capita": 8.584,
+      "population": 730322947
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6266.118,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5688.142,
+      "co2_per_capita": 20.8,
+      "population": 273468014
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 4349.651,
+      "co2_per_capita": 3.217,
+      "population": 1332095744
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4216.618,
+      "co2_per_capita": 8.692,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3653.909,
+      "co2_per_capita": 8.564,
+      "population": 426651678
+    }
+  ],
+  "1998": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 24303.777,
+      "co2_per_capita": 4.046,
+      "population": 6007066714
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 14853.022,
+      "co2_per_capita": 12.038,
+      "population": 1082453834
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 13007.386,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 10546.38,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 8481.06,
+      "co2_per_capita": 2.327,
+      "population": 3644341777
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 7306.425,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 6895.056,
+      "co2_per_capita": 2.926,
+      "population": 2367947542
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6757.986,
+      "co2_per_capita": 14.382,
+      "population": 474677555
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6644.67,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6239.436,
+      "co2_per_capita": 8.553,
+      "population": 729778939
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6239.436,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5733.281,
+      "co2_per_capita": 20.764,
+      "population": 276119323
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 4240.7,
+      "co2_per_capita": 3.085,
+      "population": 1352834688
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4212.842,
+      "co2_per_capita": 8.681,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3644.299,
+      "co2_per_capita": 8.542,
+      "population": 426655462
+    }
+  ],
+  "1999": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 24853.729,
+      "co2_per_capita": 4.082,
+      "population": 6089006330
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 15028.869,
+      "co2_per_capita": 12.127,
+      "population": 1088386729
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 13139.32,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 10937.171,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 8971.64,
+      "co2_per_capita": 2.428,
+      "population": 3695620593
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 7706.508,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 7133.178,
+      "co2_per_capita": 2.997,
+      "population": 2390215892
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6853.051,
+      "co2_per_capita": 14.415,
+      "population": 480238626
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6734.473,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6156.371,
+      "co2_per_capita": 8.447,
+      "population": 729149183
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6156.371,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5803.918,
+      "co2_per_capita": 20.819,
+      "population": 278785482
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 4453.602,
+      "co2_per_capita": 3.187,
+      "population": 1373564032
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4150.611,
+      "co2_per_capita": 8.546,
+      "population": 0
+    },
+    {
+      "country": "European Union (27)",
+      "iso_code": "",
+      "co2": 3588.961,
+      "co2_per_capita": 8.408,
+      "population": 426830674
+    }
+  ],
+  "2000": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 25510.553,
+      "co2_per_capita": 4.133,
+      "population": 6171703018
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 15444.175,
+      "co2_per_capita": 12.401,
+      "population": 1095101864
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 13472.809,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 11250.033,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 9336.837,
+      "co2_per_capita": 2.492,
+      "population": 3746832774
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 7937.751,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 7286.903,
+      "co2_per_capita": 3.032,
+      "population": 2412334272
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 7098.336,
+      "co2_per_capita": 14.758,
+      "population": 485805119
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6968.559,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6154.3,
+      "co2_per_capita": 8.444,
+      "population": 729112155
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6154.3,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 6010.136,
+      "co2_per_capita": 21.352,
+      "population": 281484127
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 4701.167,
+      "co2_per_capita": 3.312,
+      "population": 1394278144
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4169.245,
+      "co2_per_capita": 8.567,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 3649.227,
+      "co2_per_capita": 2.874,
+      "population": 1269581164
+    }
+  ],
+  "2001": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 25706.293,
+      "co2_per_capita": 4.11,
+      "population": 6254936479
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 15467.07,
+      "co2_per_capita": 12.355,
+      "population": 1102263781
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 13427.914,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 11496.845,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 9521.609,
+      "co2_per_capita": 2.507,
+      "population": 3797954098
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 8087.821,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 7442.479,
+      "co2_per_capita": 3.067,
+      "population": 2433860984
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 7009.265,
+      "co2_per_capita": 14.405,
+      "population": 491432288
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6874.258,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6280.917,
+      "co2_per_capita": 8.617,
+      "population": 729202129
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6280.917,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5907.74,
+      "co2_per_capita": 20.781,
+      "population": 284279629
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 4792.573,
+      "co2_per_capita": 3.325,
+      "population": 1414560640
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4234.892,
+      "co2_per_capita": 8.68,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 3728.51,
+      "co2_per_capita": 2.916,
+      "population": 1278725057
+    }
+  ],
+  "2002": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 26276.869,
+      "co2_per_capita": 4.146,
+      "population": 6337730319
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 15557.402,
+      "co2_per_capita": 12.356,
+      "population": 1109748738
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 13517.191,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 11958.792,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 10040.597,
+      "co2_per_capita": 2.61,
+      "population": 3847359676
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 8595.659,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 7866.023,
+      "co2_per_capita": 3.213,
+      "population": 2454687919
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 7060.732,
+      "co2_per_capita": 14.345,
+      "population": 497028237
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6920.977,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6248.751,
+      "co2_per_capita": 8.562,
+      "population": 730108231
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6248.751,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5946.308,
+      "co2_per_capita": 20.713,
+      "population": 287084336
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 4905.411,
+      "co2_per_capita": 3.353,
+      "population": 1434827392
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4217.927,
+      "co2_per_capita": 8.618,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 4103.046,
+      "co2_per_capita": 3.188,
+      "population": 1286866839
+    }
+  ],
+  "2003": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 27669.49,
+      "co2_per_capita": 4.31,
+      "population": 6420361649
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 15848.628,
+      "co2_per_capita": 12.513,
+      "population": 1117363372
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 13750.774,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 13085.453,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 11046.249,
+      "co2_per_capita": 2.835,
+      "population": 3895799452
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 9506.611,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 8829.109,
+      "co2_per_capita": 3.575,
+      "population": 2474881829
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 7174.326,
+      "co2_per_capita": 14.413,
+      "population": 502587581
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 7027.618,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6389.753,
+      "co2_per_capita": 8.74,
+      "population": 731376242
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6389.753,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 6010.146,
+      "co2_per_capita": 20.731,
+      "population": 289908091
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 5137.394,
+      "co2_per_capita": 3.461,
+      "population": 1455085696
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 4841.119,
+      "co2_per_capita": 3.74,
+      "population": 1294517315
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4308.061,
+      "co2_per_capita": 8.769,
+      "population": 0
+    }
+  ],
+  "2004": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 28632.506,
+      "co2_per_capita": 4.403,
+      "population": 6503377778
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 16054.051,
+      "co2_per_capita": 12.606,
+      "population": 1125062576
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 13888.731,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 13836.635,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 11699.782,
+      "co2_per_capita": 2.966,
+      "population": 3944378409
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 10054.005,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 9402.838,
+      "co2_per_capita": 3.775,
+      "population": 2494291255
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 7274.384,
+      "co2_per_capita": 14.452,
+      "population": 508166865
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 7131.104,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6419.04,
+      "co2_per_capita": 8.77,
+      "population": 732264288
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6419.04,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 6112.655,
+      "co2_per_capita": 20.878,
+      "population": 292786247
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 5348.604,
+      "co2_per_capita": 3.551,
+      "population": 1475345408
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 5217.351,
+      "co2_per_capita": 4.007,
+      "population": 1302100319
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4317.239,
+      "co2_per_capita": 8.753,
+      "population": 0
+    }
+  ],
+  "2005": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 29614.395,
+      "co2_per_capita": 4.496,
+      "population": 6586970145
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 16130.242,
+      "co2_per_capita": 12.594,
+      "population": 1132862796
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 14717.787,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 13953.751,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 12552.623,
+      "co2_per_capita": 3.144,
+      "population": 3992890562
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 10838.288,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 10172.082,
+      "co2_per_capita": 4.048,
+      "population": 2514090676
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 7321.313,
+      "co2_per_capita": 14.384,
+      "population": 513798973
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 7169.176,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6422.172,
+      "co2_per_capita": 8.764,
+      "population": 733082921
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6422.171,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 6132.183,
+      "co2_per_capita": 20.737,
+      "population": 295716665
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 5882.106,
+      "co2_per_capita": 4.49,
+      "population": 1310027138
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 5475.925,
+      "co2_per_capita": 3.583,
+      "population": 1495613952
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4305.823,
+      "co2_per_capita": 8.696,
+      "population": 0
+    }
+  ],
+  "2006": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 30628.396,
+      "co2_per_capita": 4.591,
+      "population": 6671452018
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 16195.988,
+      "co2_per_capita": 12.573,
+      "population": 1140768633
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 15730.36,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 13903.977,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 13404.329,
+      "co2_per_capita": 3.316,
+      "population": 4041771421
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 11583.487,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 10940.672,
+      "co2_per_capita": 4.316,
+      "population": 2533509030
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 7258.981,
+      "co2_per_capita": 14.102,
+      "population": 519545237
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 7096.107,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6529.996,
+      "co2_per_capita": 8.904,
+      "population": 733738758
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6529.996,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 6494.331,
+      "co2_per_capita": 4.927,
+      "population": 1318054037
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 6052.686,
+      "co2_per_capita": 20.261,
+      "population": 298730210
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 5617.514,
+      "co2_per_capita": 3.622,
+      "population": 1515745664
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4320.333,
+      "co2_per_capita": 8.697,
+      "population": 0
+    }
+  ],
+  "2007": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 31534.645,
+      "co2_per_capita": 4.667,
+      "population": 6757308750
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 16449.951,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 16315.113,
+      "co2_per_capita": 12.583,
+      "population": 1149583667
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 14136.139,
+      "co2_per_capita": 3.456,
+      "population": 4090564354
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 14033.289,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 12304.732,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 11531.098,
+      "co2_per_capita": 4.512,
+      "population": 2552488291
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 7363.736,
+      "co2_per_capita": 14.141,
+      "population": 525495111
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 7196.326,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 6983.547,
+      "co2_per_capita": 5.267,
+      "population": 1325813580
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6473.897,
+      "co2_per_capita": 8.812,
+      "population": 734969351
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6473.897,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 6130.123,
+      "co2_per_capita": 20.309,
+      "population": 301844227
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 5760.085,
+      "co2_per_capita": 3.659,
+      "population": 1535886592
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4262.018,
+      "co2_per_capita": 8.549,
+      "population": 0
+    }
+  ],
+  "2008": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 32074.199,
+      "co2_per_capita": 4.686,
+      "population": 6844457675
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 17347.49,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 16041.604,
+      "co2_per_capita": 12.285,
+      "population": 1158834826
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 14858.406,
+      "co2_per_capita": 3.59,
+      "population": 4139267473
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 13665.111,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 12884.495,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 12181.279,
+      "co2_per_capita": 4.727,
+      "population": 2572822454
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 7501.498,
+      "co2_per_capita": 5.624,
+      "population": 1333821009
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 7131.514,
+      "co2_per_capita": 13.537,
+      "population": 531569985
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6964.613,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6406.544,
+      "co2_per_capita": 8.701,
+      "population": 736640719
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6406.544,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5915.119,
+      "co2_per_capita": 19.396,
+      "population": 304970328
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 5867.472,
+      "co2_per_capita": 3.673,
+      "population": 1556035456
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 4170.858,
+      "co2_per_capita": 8.332,
+      "population": 0
+    }
+  ],
+  "2009": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 31541.922,
+      "co2_per_capita": 4.55,
+      "population": 6932766459
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 17717.643,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 15394.146,
+      "co2_per_capita": 3.675,
+      "population": 4188829442
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 15083.762,
+      "co2_per_capita": 11.477,
+      "population": 1167213406
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 13338.318,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 12801.312,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 12519.018,
+      "co2_per_capita": 4.815,
+      "population": 2594471375
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 7891.078,
+      "co2_per_capita": 5.878,
+      "population": 1342522709
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6649.442,
+      "co2_per_capita": 12.479,
+      "population": 537617445
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6484.488,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 5892.903,
+      "co2_per_capita": 7.988,
+      "population": 738045338
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 5892.903,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 5890.85,
+      "co2_per_capita": 3.635,
+      "population": 1576189568
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5480.726,
+      "co2_per_capita": 17.793,
+      "population": 308023451
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 3824.658,
+      "co2_per_capita": 7.616,
+      "population": 0
+    }
+  ],
+  "2010": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 33355.902,
+      "co2_per_capita": 4.75,
+      "population": 7021732131
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 19034.871,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 16554.266,
+      "co2_per_capita": 3.906,
+      "population": 4238694946
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 15720.304,
+      "co2_per_capita": 11.891,
+      "population": 1175005249
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 14384.035,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 13498.407,
+      "co2_per_capita": 5.145,
+      "population": 2616260761
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 13239.72,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 8620.576,
+      "co2_per_capita": 6.378,
+      "population": 1351561511
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6863.159,
+      "co2_per_capita": 12.736,
+      "population": 543593306
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6691.604,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 6256.353,
+      "co2_per_capita": 3.806,
+      "population": 1597083136
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6116.594,
+      "co2_per_capita": 8.278,
+      "population": 739273391
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6116.594,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5679.715,
+      "co2_per_capita": 18.259,
+      "population": 311062786
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 3935.961,
+      "co2_per_capita": 7.815,
+      "population": 0
+    }
+  ],
+  "2011": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 34504.539,
+      "co2_per_capita": 4.852,
+      "population": 7110923797
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 20299.816,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 17787.42,
+      "co2_per_capita": 4.148,
+      "population": 4288349990
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 15612.542,
+      "co2_per_capita": 11.738,
+      "population": 1182995321
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 15564.787,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 14586.628,
+      "co2_per_capita": 5.512,
+      "population": 2637667896
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 13095.325,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 9532.332,
+      "co2_per_capita": 7.008,
+      "population": 1360250657
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6765.769,
+      "co2_per_capita": 12.417,
+      "population": 549552423
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6593.53,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 6490.375,
+      "co2_per_capita": 3.894,
+      "population": 1616812416
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 6045.117,
+      "co2_per_capita": 8.167,
+      "population": 740505908
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 6045.117,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5546.116,
+      "co2_per_capita": 17.657,
+      "population": 314105078
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 3796.547,
+      "co2_per_capita": 7.519,
+      "population": 0
+    }
+  ],
+  "2012": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 35000.02,
+      "co2_per_capita": 4.86,
+      "population": 7201202531
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 20959.424,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 18455.439,
+      "co2_per_capita": 4.254,
+      "population": 4338443549
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 16082.872,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 15533.979,
+      "co2_per_capita": 11.607,
+      "population": 1190970747
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 15021.875,
+      "co2_per_capita": 5.625,
+      "population": 2660486384
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 12942.731,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 9779.292,
+      "co2_per_capita": 7.141,
+      "population": 1369520865
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 6750.448,
+      "co2_per_capita": 3.994,
+      "population": 1635507328
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6581.796,
+      "co2_per_capita": 11.949,
+      "population": 555486379
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6410.441,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 5998.561,
+      "co2_per_capita": 8.092,
+      "population": 741624513
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 5998.561,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5344.086,
+      "co2_per_capita": 16.852,
+      "population": 317115348
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 3745.053,
+      "co2_per_capita": 7.402,
+      "population": 0
+    }
+  ],
+  "2013": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 35301.656,
+      "co2_per_capita": 4.841,
+      "population": 7291793608
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 21192.18,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 18692.012,
+      "co2_per_capita": 4.26,
+      "population": 4387757389
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 16365.106,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 15483.349,
+      "co2_per_capita": 11.501,
+      "population": 1198613271
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 15276.198,
+      "co2_per_capita": 5.667,
+      "population": 2684237754
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 12995.378,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 9956.329,
+      "co2_per_capita": 7.22,
+      "population": 1379008046
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 6740.584,
+      "co2_per_capita": 3.935,
+      "population": 1655209600
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6716.957,
+      "co2_per_capita": 12.065,
+      "population": 561345646
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6545.054,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 5841.422,
+      "co2_per_capita": 7.869,
+      "population": 742654890
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 5841.422,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5480.157,
+      "co2_per_capita": 17.12,
+      "population": 320110753
+    },
+    {
+      "country": "European Union (28)",
+      "iso_code": "",
+      "co2": 3652.721,
+      "co2_per_capita": 7.208,
+      "population": 0
+    }
+  ],
+  "2014": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 35450.094,
+      "co2_per_capita": 4.802,
+      "population": 7381616239
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 21534.436,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 18940.043,
+      "co2_per_capita": 4.27,
+      "population": 4435744582
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 16570.561,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 15373.059,
+      "co2_per_capita": 5.652,
+      "population": 2707340381
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 15287.873,
+      "co2_per_capita": 11.288,
+      "population": 1206398013
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 12795.846,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 9990.257,
+      "co2_per_capita": 7.198,
+      "population": 1387951973
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 6801.443,
+      "co2_per_capita": 3.919,
+      "population": 1674412928
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6754.753,
+      "co2_per_capita": 12.008,
+      "population": 567078661
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6579.783,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 5611.03,
+      "co2_per_capita": 7.547,
+      "population": 743842712
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 5611.03,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5528.681,
+      "co2_per_capita": 17.111,
+      "population": 323115378
+    },
+    {
+      "country": "Lower-middle-income countries",
+      "iso_code": "",
+      "co2": 3497.819,
+      "co2_per_capita": 1.285,
+      "population": 2887643268
+    }
+  ],
+  "2015": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 35404.898,
+      "co2_per_capita": 4.739,
+      "population": 7470491904
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 21569.926,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 19047.488,
+      "co2_per_capita": 4.25,
+      "population": 4482088478
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 16588.639,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 15227.755,
+      "co2_per_capita": 5.55,
+      "population": 2729749191
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 15226.152,
+      "co2_per_capita": 11.171,
+      "population": 1214694337
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 12678.008,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 9863.457,
+      "co2_per_capita": 7.065,
+      "population": 1396134164
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 6949.812,
+      "co2_per_capita": 3.953,
+      "population": 1693619072
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6604.085,
+      "co2_per_capita": 11.624,
+      "population": 572637311
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6422.143,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 5616.481,
+      "co2_per_capita": 7.538,
+      "population": 745456775
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 5616.481,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5376.473,
+      "co2_per_capita": 16.486,
+      "population": 326126498
+    },
+    {
+      "country": "Lower-middle-income countries",
+      "iso_code": "",
+      "co2": 3643.334,
+      "co2_per_capita": 1.318,
+      "population": 2931203604
+    }
+  ],
+  "2016": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 35416.656,
+      "co2_per_capita": 4.686,
+      "population": 7558554580
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 21705.105,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 19192.705,
+      "co2_per_capita": 4.239,
+      "population": 4527178156
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 16681.146,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 15141.622,
+      "co2_per_capita": 5.474,
+      "population": 2750717130
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 15084.555,
+      "co2_per_capita": 10.998,
+      "population": 1222832495
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 12538.746,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 9762.714,
+      "co2_per_capita": 6.953,
+      "population": 1404052626
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 7075.333,
+      "co2_per_capita": 3.977,
+      "population": 1712843008
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6467.17,
+      "co2_per_capita": 11.272,
+      "population": 578186325
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6291.224,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 5602.062,
+      "co2_per_capita": 7.501,
+      "population": 747240427
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 5602.062,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5252.932,
+      "co2_per_capita": 15.958,
+      "population": 329179421
+    },
+    {
+      "country": "Lower-middle-income countries",
+      "iso_code": "",
+      "co2": 3859.967,
+      "co2_per_capita": 1.376,
+      "population": 2974455559
+    }
+  ],
+  "2017": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 35989.898,
+      "co2_per_capita": 4.707,
+      "population": 7645618013
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 22252.854,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 19737.521,
+      "co2_per_capita": 4.318,
+      "population": 4571224662
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 17163.291,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 15479.511,
+      "co2_per_capita": 5.552,
+      "population": 2771247027
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 15072.403,
+      "co2_per_capita": 10.931,
+      "population": 1229624584
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 12527.139,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 10006.343,
+      "co2_per_capita": 7.085,
+      "population": 1412354742
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 7304.572,
+      "co2_per_capita": 4.06,
+      "population": 1732068480
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6417.92,
+      "co2_per_capita": 11.079,
+      "population": 583669315
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6246.781,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 5635.927,
+      "co2_per_capita": 7.531,
+      "population": 748683743
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 5635.927,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5212.162,
+      "co2_per_capita": 15.69,
+      "population": 332204656
+    },
+    {
+      "country": "Lower-middle-income countries",
+      "iso_code": "",
+      "co2": 4028.302,
+      "co2_per_capita": 1.415,
+      "population": 3017492364
+    }
+  ],
+  "2018": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 36730.426,
+      "co2_per_capita": 4.752,
+      "population": 7729902724
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 22884.207,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 20335.523,
+      "co2_per_capita": 4.409,
+      "population": 4612352863
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 17738.896,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 15855.511,
+      "co2_per_capita": 5.646,
+      "population": 2789942381
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 15212.384,
+      "co2_per_capita": 10.984,
+      "population": 1235448192
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 12599.128,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 10332.992,
+      "co2_per_capita": 7.282,
+      "population": 1419008963
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 7409.474,
+      "co2_per_capita": 4.074,
+      "population": 1751295744
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6597.806,
+      "co2_per_capita": 11.283,
+      "population": 589049568
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6425.893,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 5617.016,
+      "co2_per_capita": 7.495,
+      "population": 749835851
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 5617.015,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5377.797,
+      "co2_per_capita": 16.05,
+      "population": 335056495
+    },
+    {
+      "country": "Lower-middle-income countries",
+      "iso_code": "",
+      "co2": 4218.262,
+      "co2_per_capita": 1.461,
+      "population": 3059616981
+    }
+  ],
+  "2019": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 37104.273,
+      "co2_per_capita": 4.75,
+      "population": 7811293714
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 23598.059,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 20889.145,
+      "co2_per_capita": 4.491,
+      "population": 4651098712
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 18221.055,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 16352.597,
+      "co2_per_capita": 5.788,
+      "population": 2805469377
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 14912.153,
+      "co2_per_capita": 10.721,
+      "population": 1241335088
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 12255.44,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 10713.984,
+      "co2_per_capita": 7.526,
+      "population": 1423520354
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 7562.272,
+      "co2_per_capita": 4.113,
+      "population": 1770525184
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6493.359,
+      "co2_per_capita": 11.004,
+      "population": 594346833
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6313.027,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 5436.906,
+      "co2_per_capita": 7.245,
+      "population": 750791010
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 5436.906,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5262.145,
+      "co2_per_capita": 15.578,
+      "population": 337790068
+    },
+    {
+      "country": "Lower-middle-income countries",
+      "iso_code": "",
+      "co2": 4379.94,
+      "co2_per_capita": 1.496,
+      "population": 3101052697
+    }
+  ],
+  "2020": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 35126.527,
+      "co2_per_capita": 4.454,
+      "population": 7887001284
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 23102.908,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 20634.852,
+      "co2_per_capita": 4.403,
+      "population": 4686811205
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 18029.971,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 16202.027,
+      "co2_per_capita": 5.707,
+      "population": 2817793595
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 13688.639,
+      "co2_per_capita": 9.817,
+      "population": 1245004614
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 11169.778,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 10905.693,
+      "co2_per_capita": 7.647,
+      "population": 1426106083
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 7307.606,
+      "co2_per_capita": 3.933,
+      "population": 1788807936
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 5826.628,
+      "co2_per_capita": 9.809,
+      "population": 598250660
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5670.749,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 5026.315,
+      "co2_per_capita": 6.698,
+      "population": 750826495
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 5026.315,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4714.628,
+      "co2_per_capita": 13.89,
+      "population": 339436157
+    },
+    {
+      "country": "Lower-middle-income countries",
+      "iso_code": "",
+      "co2": 4181.05,
+      "co2_per_capita": 1.409,
+      "population": 3141910276
+    }
+  ],
+  "2021": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 36991.734,
+      "co2_per_capita": 4.65,
+      "population": 7954448405
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 24323.074,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 21640.396,
+      "co2_per_capita": 4.588,
+      "population": 4716999175
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 18894.787,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 16980.641,
+      "co2_per_capita": 5.961,
+      "population": 2826094366
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 14433.055,
+      "co2_per_capita": 10.342,
+      "population": 1246789058
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 11775.04,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 11447.913,
+      "co2_per_capita": 8.026,
+      "population": 1426437276
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 7518.262,
+      "co2_per_capita": 4.007,
+      "population": 1806393856
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6192.752,
+      "co2_per_capita": 10.379,
+      "population": 600876352
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6019.98,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 5304.04,
+      "co2_per_capita": 7.076,
+      "population": 749931027
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 5304.04,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5032.213,
+      "co2_per_capita": 14.794,
+      "population": 340161441
+    },
+    {
+      "country": "Lower-middle-income countries",
+      "iso_code": "",
+      "co2": 4489.79,
+      "co2_per_capita": 1.494,
+      "population": 3180608875
+    }
+  ],
+  "2022": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 37293.836,
+      "co2_per_capita": 4.649,
+      "population": 8021407170
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 24582.254,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 21815.756,
+      "co2_per_capita": 4.596,
+      "population": 4746329726
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 19010.197,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 16989.541,
+      "co2_per_capita": 5.952,
+      "population": 2833258826
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 14464.458,
+      "co2_per_capita": 10.325,
+      "population": 1252308750
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 11691.496,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 11350.538,
+      "co2_per_capita": 7.964,
+      "population": 1425179562
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 7634.052,
+      "co2_per_capita": 4.027,
+      "population": 1822759552
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6267.443,
+      "co2_per_capita": 10.443,
+      "population": 604356251
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 6095.459,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 5228.87,
+      "co2_per_capita": 6.991,
+      "population": 748296158
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 5228.87,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 5078.871,
+      "co2_per_capita": 14.871,
+      "population": 341534041
+    },
+    {
+      "country": "Lower-middle-income countries",
+      "iso_code": "",
+      "co2": 4626.718,
+      "co2_per_capita": 1.521,
+      "population": 3216231214
+    }
+  ],
+  "2023": [
+    {
+      "country": "World",
+      "iso_code": "",
+      "co2": 37791.57,
+      "co2_per_capita": 4.67,
+      "population": 8091734935
+    },
+    {
+      "country": "Non-OECD (GCP)",
+      "iso_code": "",
+      "co2": 25442.199,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia",
+      "iso_code": "",
+      "co2": 22600.221,
+      "co2_per_capita": 4.731,
+      "population": 4776659632
+    },
+    {
+      "country": "Asia (GCP)",
+      "iso_code": "",
+      "co2": 19747.367,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Upper-middle-income countries",
+      "iso_code": "",
+      "co2": 17581.07,
+      "co2_per_capita": 6.147,
+      "population": 2839926083
+    },
+    {
+      "country": "High-income countries",
+      "iso_code": "",
+      "co2": 14014.305,
+      "co2_per_capita": 9.957,
+      "population": 1259131468
+    },
+    {
+      "country": "China",
+      "iso_code": "CHN",
+      "co2": 11902.503,
+      "co2_per_capita": 8.367,
+      "population": 1422584937
+    },
+    {
+      "country": "OECD (GCP)",
+      "iso_code": "",
+      "co2": 11232.802,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Asia (excl. China and India)",
+      "iso_code": "",
+      "co2": 7635.394,
+      "co2_per_capita": 3.985,
+      "population": 1839126400
+    },
+    {
+      "country": "North America",
+      "iso_code": "",
+      "co2": 6123.55,
+      "co2_per_capita": 10.128,
+      "population": 608770557
+    },
+    {
+      "country": "North America (GCP)",
+      "iso_code": "",
+      "co2": 5943.966,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "Europe",
+      "iso_code": "",
+      "co2": 4993.221,
+      "co2_per_capita": 6.688,
+      "population": 746948103
+    },
+    {
+      "country": "Europe (GCP)",
+      "iso_code": "",
+      "co2": 4993.221,
+      "co2_per_capita": 0,
+      "population": 0
+    },
+    {
+      "country": "United States",
+      "iso_code": "USA",
+      "co2": 4911.391,
+      "co2_per_capita": 14.299,
+      "population": 343477332
+    },
+    {
+      "country": "Lower-middle-income countries",
+      "iso_code": "",
+      "co2": 4882.584,
+      "co2_per_capita": 1.585,
+      "population": 3253459279
+    }
+  ]
+}

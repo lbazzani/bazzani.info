@@ -36,7 +36,7 @@ export async function generateMetadata() {
       siteName: 'Lorenzo Bazzani',
       images: [
         {
-          url: '/img/foto.jpeg',
+          url: 'https://bazzani.info/img/foto.jpeg',
           width: 800,
           height: 800,
           alt: 'Lorenzo Bazzani',
@@ -44,10 +44,10 @@ export async function generateMetadata() {
       ],
     },
     twitter: {
-      card: 'summary',
+      card: 'summary_large_image',
       title: 'Lorenzo Bazzani - Cloud Infrastructure & Generative AI Consultant',
       description: 'Independent Consultant specializing in Cloud Infrastructure, Generative AI, and Enterprise Software Solutions.',
-      images: ['/img/foto.jpeg'],
+      images: ['https://bazzani.info/img/foto.jpeg'],
     },
     robots: {
       index: true,

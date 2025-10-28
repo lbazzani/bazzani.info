@@ -7,6 +7,11 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
+import PublicIcon from '@mui/icons-material/Public';
+import SmartToyIcon from '@mui/icons-material/SmartToy';
+import NewReleasesIcon from '@mui/icons-material/NewReleases';
+import LaunchIcon from '@mui/icons-material/Launch';
 import sidebarConfig from '../../data/sidebarConfig.json';
 
 const iconMap: any = {
@@ -14,8 +19,30 @@ const iconMap: any = {
   school: SchoolIcon,
 };
 
-export default function Sidebar() {
+interface SidebarProps {
+  onDemoOpen?: (demoId: string) => void;
+}
+
+export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
   const config = sidebarConfig;
+
+  const latestReleases = [
+    {
+      id: 'k8s-architecture',
+      title: 'K8s Architecture',
+      icon: <AccountTreeIcon sx={{ fontSize: 16 }} />,
+    },
+    {
+      id: 'co2-data',
+      title: 'CO₂ Explorer',
+      icon: <PublicIcon sx={{ fontSize: 16 }} />,
+    },
+    // {
+    //   id: 'co2-assistant',
+    //   title: 'CO₂ AI Assistant',
+    //   icon: <SmartToyIcon sx={{ fontSize: 16 }} />,
+    // },
+  ];
 
   return (
     <Box
@@ -346,6 +373,70 @@ export default function Sidebar() {
             );
           })}
         </Box>
+      </Paper>
+
+      {/* Latest Releases */}
+      <Paper
+        elevation={0}
+        sx={{
+          p: 2,
+          borderRadius: '12px',
+          border: '1px solid',
+          borderColor: '#e8e8e8',
+          backgroundColor: '#ffffff',
+          mt: 2,
+        }}
+      >
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1.5 }}>
+          <NewReleasesIcon sx={{ fontSize: 18, color: '#FF6B6B' }} />
+          <Typography
+            variant="subtitle2"
+            sx={{
+              fontWeight: 600,
+              color: '#2c3e50',
+              fontSize: '0.85rem',
+            }}
+          >
+            Latest Releases
+          </Typography>
+        </Box>
+
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+          {latestReleases.map((release) => (
+            <Box
+              key={release.id}
+              onClick={() => onDemoOpen?.(release.id)}
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                p: 1,
+                borderRadius: '8px',
+                bgcolor: 'rgba(50,108,229,0.05)',
+                border: '1px solid rgba(50,108,229,0.1)',
+                cursor: 'pointer',
+                transition: 'all 0.2s',
+                '&:hover': {
+                  bgcolor: 'rgba(50,108,229,0.1)',
+                  borderColor: 'rgba(50,108,229,0.3)',
+                  transform: 'translateX(4px)',
+                },
+              }}
+            >
+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                <Box sx={{ color: '#326CE5' }}>{release.icon}</Box>
+                <Typography variant="caption" sx={{ fontWeight: 600, color: '#2c3e50', fontSize: '0.75rem' }}>
+                  {release.title}
+                </Typography>
+              </Box>
+              <LaunchIcon sx={{ fontSize: 14, color: '#326CE5' }} />
+            </Box>
+          ))}
+        </Box>
+
+        <Typography variant="caption" sx={{ color: 'text.secondary', display: 'block', mt: 1.5, textAlign: 'center', fontSize: '0.65rem' }}>
+          Click to explore interactive demos
+        </Typography>
       </Paper>
     </Box>
   );

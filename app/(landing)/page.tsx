@@ -7,6 +7,10 @@ import IntroSection from './IntroSection';
 import Sidebar from './Sidebar';
 import MobileHeader from './MobileHeader';
 import AIAssistantPanel from '../../components/AIAssistantPanel';
+import ArchitectureDemo from '../../components/ArchitectureDemo';
+import CO2DataDemo from '../../components/CO2DataDemo';
+import CO2AssistantDemo from '../../components/CO2AssistantDemo';
+import DemoShowcase from '../../components/DemoShowcase';
 import contentData from '../../data/content.json';
 
 interface CardData {
@@ -92,16 +96,29 @@ function TabPanel(props: TabPanelProps) {
 
 export default function Home() {
   const [tabValue, setTabValue] = useState(0);
+  const [isArchitectureDemoOpen, setIsArchitectureDemoOpen] = useState(false);
+  const [isCO2DemoOpen, setIsCO2DemoOpen] = useState(false);
+  const [isCO2AssistantOpen, setIsCO2AssistantOpen] = useState(false);
   const tabs = contentData.tabs as TabData[];
 
   const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
     setTabValue(newValue);
   };
 
+  const handleDemoOpen = (demoId: string) => {
+    if (demoId === 'k8s-architecture') {
+      setIsArchitectureDemoOpen(true);
+    } else if (demoId === 'co2-data') {
+      setIsCO2DemoOpen(true);
+    } else if (demoId === 'co2-assistant') {
+      setIsCO2AssistantOpen(true);
+    }
+  };
+
   return (
     <Box sx={{ width: "100%", display: 'flex', gap: 3, maxWidth: '1400px', mx: 'auto' }}>
       {/* Sidebar - visible only on medium+ screens */}
-      <Sidebar />
+      <Sidebar onDemoOpen={handleDemoOpen} />
 
       {/* Main Content */}
       <Box sx={{ flex: 1, minWidth: 0 }}>
@@ -177,8 +194,29 @@ export default function Home() {
           );
         })}
 
+        {/* Demo Showcase */}
+        <DemoShowcase onDemoOpen={handleDemoOpen} />
+
         <Box sx={{ height: 24 }} />
       </Box>
+
+      {/* Architecture Demo */}
+      <ArchitectureDemo
+        isOpen={isArchitectureDemoOpen}
+        onClose={() => setIsArchitectureDemoOpen(false)}
+      />
+
+      {/* CO2 Data Demo */}
+      <CO2DataDemo
+        isOpen={isCO2DemoOpen}
+        onClose={() => setIsCO2DemoOpen(false)}
+      />
+
+      {/* CO2 Assistant Demo */}
+      <CO2AssistantDemo
+        isOpen={isCO2AssistantOpen}
+        onClose={() => setIsCO2AssistantOpen(false)}
+      />
     </Box>
   );
 }
