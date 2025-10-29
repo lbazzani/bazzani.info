@@ -20,10 +20,12 @@ export default function AIAssistantPanel() {
   const [isInteractive, setIsInteractive] = useState(false);
   const [invitationMessage, setInvitationMessage] = useState(0);
   const [hasUserSentMessage, setHasUserSentMessage] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const animationIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
 
   // Invitation messages that rotate
   const invitationMessages = [
@@ -224,12 +226,65 @@ export default function AIAssistantPanel() {
       // Add first invitation message immediately when clicked
       setInvitationMessage(0);
     }
+
+    // Scroll panel to top on mobile
+    if (panelRef.current && window.innerWidth < 900) {
+      // Small delay to ensure state updates
+      setTimeout(() => {
+        const rect = panelRef.current?.getBoundingClientRect();
+        if (rect) {
+          window.scrollTo({
+            top: window.pageYOffset + rect.top - 4, // 4px from top
+            behavior: 'smooth'
+          });
+        }
+      }, 100);
+    }
+
     // Always focus on input when clicking anywhere in the component
     setTimeout(() => inputRef.current?.focus(), 0);
   };
 
+  // Prevent scroll on keyboard open (mobile)
+  useEffect(() => {
+    if (isInteractive && window.innerWidth < 900) {
+      // Save original viewport height
+      const viewportHeight = window.visualViewport?.height || window.innerHeight;
+
+      const handleResize = () => {
+        // When keyboard opens, viewport height changes
+        const newHeight = window.visualViewport?.height || window.innerHeight;
+        if (newHeight < viewportHeight) {
+          // Keyboard is open - prevent any scroll
+          document.body.style.position = 'fixed';
+          document.body.style.width = '100%';
+          document.body.style.top = `-${window.scrollY}px`;
+        }
+      };
+
+      const handleVisualViewportResize = () => handleResize();
+
+      window.visualViewport?.addEventListener('resize', handleVisualViewportResize);
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.visualViewport?.removeEventListener('resize', handleVisualViewportResize);
+        window.removeEventListener('resize', handleResize);
+        // Restore scroll
+        const scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.width = '';
+        document.body.style.top = '';
+        if (scrollY) {
+          window.scrollTo(0, parseInt(scrollY || '0') * -1);
+        }
+      };
+    }
+  }, [isInteractive]);
+
   return (
     <Paper
+      ref={panelRef}
       elevation={0}
       sx={{
         borderRadius: '4px',
@@ -251,9 +306,62 @@ export default function AIAssistantPanel() {
       >
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
           <TerminalIcon sx={{ color: '#4caf50', fontSize: 16 }} />
-          <Box component="span" sx={{ color: '#4caf50', fontSize: '0.7rem', fontFamily: 'monospace' }}>
+          <Box component="span" sx={{ color: '#4caf50', fontSize: '0.7rem', fontFamily: 'monospace', flex: 1 }}>
             lorenzo@ai-avatar:~
           </Box>
+          {/* Terminal control buttons - only show in interactive mode */}
+          {isInteractive && (
+            <Box sx={{ display: 'flex', gap: 0.5 }}>
+              <Box
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsInteractive(false);
+                }}
+                sx={{
+                  width: 12,
+                  height: 12,
+                  borderRadius: '50%',
+                  bgcolor: '#ff5f56',
+                  cursor: 'pointer',
+                  '&:hover': {
+                    opacity: 0.8,
+                  }
+                }}
+              />
+              <Box
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsExpanded(!isExpanded);
+                }}
+                sx={{
+                  width: 12,
+                  height: 12,
+                  borderRadius: '50%',
+                  bgcolor: '#ffbd2e',
+                  cursor: 'pointer',
+                  '&:hover': {
+                    opacity: 0.8,
+                  }
+                }}
+              />
+              <Box
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsExpanded(!isExpanded);
+                }}
+                sx={{
+                  width: 12,
+                  height: 12,
+                  borderRadius: '50%',
+                  bgcolor: '#27c93f',
+                  cursor: 'pointer',
+                  '&:hover': {
+                    opacity: 0.8,
+                  }
+                }}
+              />
+            </Box>
+          )}
         </Box>
 
         {!isInteractive ? (
@@ -312,25 +420,30 @@ export default function AIAssistantPanel() {
               >
                 $
               </Box>
-              <input
-                ref={inputRef}
-                type="text"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                onKeyDown={handleKeyDown}
-                disabled={isStreaming}
-                style={{
-                  flex: 1,
-                  background: 'transparent',
-                  border: 'none',
-                  outline: 'none',
-                  color: '#e0e0e0',
-                  fontSize: '0.75rem',
-                  fontFamily: 'monospace',
-                  padding: '4px 0',
-                }}
-                placeholder="Type your question here..."
-              />
+              <Box sx={{ position: 'relative', flex: 1 }}>
+                <input
+                  ref={inputRef}
+                  type="text"
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
+                  onKeyDown={handleKeyDown}
+                  disabled={isStreaming}
+                  style={{
+                    width: '100%',
+                    background: 'transparent',
+                    border: 'none',
+                    outline: 'none',
+                    color: '#e0e0e0',
+                    fontSize: '0.75rem',
+                    fontFamily: 'monospace',
+                    padding: '4px 0',
+                  }}
+                  placeholder="Type your question here..."
+                />
+                {showCursor && !input && !isStreaming && (
+                  <Box component="span" sx={{ position: 'absolute', left: 0, top: '4px', color: '#4caf50', fontSize: '0.75rem', fontFamily: 'monospace', pointerEvents: 'none' }}>▊</Box>
+                )}
+              </Box>
             </Box>
           </Box>
         ) : (
@@ -339,11 +452,12 @@ export default function AIAssistantPanel() {
             <Box
               ref={scrollRef}
               sx={{
-                height: '350px',
+                height: isExpanded ? '450px' : '250px',
                 overflowY: 'auto',
                 overflowX: 'hidden',
                 mb: 1,
                 pr: 1,
+                transition: 'height 0.3s ease',
                 '&::-webkit-scrollbar': {
                   width: '8px',
                 },
@@ -478,29 +592,31 @@ export default function AIAssistantPanel() {
               >
                 $
               </Box>
-              <input
-                ref={inputRef}
-                type="text"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                onKeyDown={handleKeyDown}
-                disabled={isStreaming}
-                autoFocus
-                style={{
-                  flex: 1,
-                  background: 'transparent',
-                  border: 'none',
-                  outline: 'none',
-                  color: '#e0e0e0',
-                  fontFamily: 'monospace',
-                  fontSize: '0.75rem',
-                  padding: 0,
-                }}
-                placeholder={isStreaming ? 'Processing...' : 'type your question...'}
-              />
-              {showCursor && !input && !isStreaming && (
-                <Box component="span" sx={{ color: '#4caf50', fontSize: '0.75rem', fontFamily: 'monospace' }}>▊</Box>
-              )}
+              <Box sx={{ position: 'relative', flex: 1 }}>
+                <input
+                  ref={inputRef}
+                  type="text"
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
+                  onKeyDown={handleKeyDown}
+                  disabled={isStreaming}
+                  autoFocus
+                  style={{
+                    width: '100%',
+                    background: 'transparent',
+                    border: 'none',
+                    outline: 'none',
+                    color: '#e0e0e0',
+                    fontFamily: 'monospace',
+                    fontSize: '0.75rem',
+                    padding: 0,
+                  }}
+                  placeholder={isStreaming ? 'Processing...' : 'type your question...'}
+                />
+                {showCursor && !input && !isStreaming && (
+                  <Box component="span" sx={{ position: 'absolute', left: 0, top: 0, color: '#4caf50', fontSize: '0.75rem', fontFamily: 'monospace', pointerEvents: 'none' }}>▊</Box>
+                )}
+              </Box>
             </Box>
           </Box>
         )}

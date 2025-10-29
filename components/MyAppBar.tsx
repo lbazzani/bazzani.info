@@ -47,6 +47,7 @@ export default function MyAppBar(props: MyAppBarProps) {
           position="fixed"
           elevation={0}
           sx={{
+            display: { xs: 'none', md: 'flex' },
             backdropFilter: 'blur(8px)',
             backgroundColor: 'rgba(255, 255, 255, 0.9)',
             borderBottom: '1px solid',
@@ -122,7 +123,7 @@ export default function MyAppBar(props: MyAppBarProps) {
           </Toolbar>
         </AppBar>
       </HideOnScroll>
-      <Toolbar />
+      <Toolbar sx={{ display: { xs: 'none', md: 'block' } }} />
     </>
   );
 }

@@ -27,6 +27,17 @@ export async function generateMetadata() {
     alternates: {
       canonical: '/',
     },
+    viewport: {
+      width: 'device-width',
+      initialScale: 1,
+      maximumScale: 1,
+      userScalable: false,
+    },
+    appleWebApp: {
+      capable: true,
+      statusBarStyle: 'default',
+      title: 'Lorenzo Bazzani',
+    },
     openGraph: {
       type: 'profile',
       locale: 'en_US',
@@ -79,6 +90,10 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <head>
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="theme-color" content="#ffffff" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMNVX8WZV5"></script>
         <script
           type="application/ld+json"
@@ -91,13 +106,13 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             <body className={inter.className} style={{ backgroundColor: '#f8f9fa' }}>
               <main style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
                 <MyAppBar />
-                <Box sx={{ height: '16px' }} />
+                <Box sx={{ display: { xs: 'none', md: 'block' }, height: '16px' }} />
                 <Container
                   sx={{
                     minHeight: '500px',
                     flex: 1,
-                    py: { xs: 2, md: 3 },
-                    px: { xs: 2, sm: 2.5, md: 3 },
+                    py: { xs: 0, md: 3 },
+                    px: { xs: 0.25, sm: 2, md: 3 },
                   }}
                 >
                   {children}

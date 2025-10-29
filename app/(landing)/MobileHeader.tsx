@@ -1,86 +1,62 @@
 'use client';
 
-import { Box, Paper, Typography, Avatar, Chip } from '@mui/material';
+import { Box, Paper, Chip } from '@mui/material';
+import ProfileInfo from '../../components/ProfileInfo';
+import sidebarConfig from '../../data/sidebarConfig.json';
 
 export default function MobileHeader() {
+  const config = sidebarConfig;
+
   return (
     <Paper
       elevation={0}
       sx={{
         display: { xs: 'block', md: 'none' },
-        p: 2.5,
-        borderRadius: '12px',
+        p: 1.5,
+        borderRadius: '8px',
         border: '1px solid',
         borderColor: '#e8e8e8',
         backgroundColor: '#ffffff',
-        mb: 3,
+        mb: 1.5,
+        mt: 0.5,
       }}
     >
-      <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-        <Avatar
-          src="/img/foto.jpeg"
-          alt="Lorenzo Bazzani"
-          sx={{
-            width: 80,
-            height: 80,
-            border: '3px solid',
-            borderColor: '#d35400',
-            boxShadow: '0 3px 10px rgba(211, 84, 0, 0.2)',
-          }}
-        />
+      <Box sx={{ display: 'flex', gap: 2 }}>
+        {/* Left column - Profile info */}
         <Box sx={{ flex: 1 }}>
-          <Typography
-            variant="h6"
+          <ProfileInfo variant="mobile" showLocation={true} />
+        </Box>
+
+        {/* Right column - Photo and chips */}
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 1 }}>
+          <Box
+            component="img"
+            src={config.profile.photo}
+            alt={config.profile.name}
             sx={{
-              fontWeight: 600,
-              color: '#2c3e50',
-              mb: 0.5,
-              fontSize: '1.2rem',
+              width: 80,
+              height: 80,
+              border: '3px solid',
+              borderColor: '#d35400',
+              boxShadow: '0 3px 10px rgba(211, 84, 0, 0.2)',
+              borderRadius: '8px',
+              objectFit: 'cover',
             }}
-          >
-            Lorenzo Bazzani
-          </Typography>
-          <Typography
-            variant="caption"
-            sx={{
-              color: 'text.secondary',
-              display: 'block',
-              mb: 1,
-            }}
-          >
-            Cloud & AI Consultant
-          </Typography>
-          <Box sx={{ display: 'flex', gap: 0.5, flexWrap: 'wrap' }}>
-            <Chip
-              label="Management"
-              size="small"
-              sx={{
-                bgcolor: '#fff5f0',
-                color: '#d35400',
-                fontSize: '0.65rem',
-                height: '20px',
-              }}
-            />
-            <Chip
-              label="Tech"
-              size="small"
-              sx={{
-                bgcolor: '#f0f5ff',
-                color: '#2c5aa0',
-                fontSize: '0.65rem',
-                height: '20px',
-              }}
-            />
-            <Chip
-              label="AI"
-              size="small"
-              sx={{
-                bgcolor: '#f0fff5',
-                color: '#16a085',
-                fontSize: '0.65rem',
-                height: '20px',
-              }}
-            />
+          />
+          <Box sx={{ display: 'flex', gap: 0.5, flexWrap: 'wrap', justifyContent: 'center', maxWidth: 80 }}>
+            {config.chips.map((chip, index) => (
+              <Chip
+                key={index}
+                label={chip.label}
+                size="small"
+                sx={{
+                  bgcolor: chip.bgcolor,
+                  color: chip.color,
+                  fontSize: '0.6rem',
+                  height: '18px',
+                }}
+              />
+            ))}
           </Box>
         </Box>
       </Box>

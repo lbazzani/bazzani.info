@@ -12,6 +12,7 @@ import PublicIcon from '@mui/icons-material/Public';
 import SmartToyIcon from '@mui/icons-material/SmartToy';
 import NewReleasesIcon from '@mui/icons-material/NewReleases';
 import LaunchIcon from '@mui/icons-material/Launch';
+import ProfileInfo from '../../components/ProfileInfo';
 import sidebarConfig from '../../data/sidebarConfig.json';
 
 const iconMap: any = {
@@ -102,29 +103,7 @@ export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
         </Box>
 
         <Box sx={{ p: 2.5 }}>
-          <Typography
-            variant="subtitle1"
-            sx={{
-              fontWeight: 600,
-              color: '#2c3e50',
-              textAlign: 'center',
-              mb: 0.5,
-              fontSize: '1.1rem',
-            }}
-          >
-            {config.profile.name}
-          </Typography>
-          <Typography
-            variant="caption"
-            sx={{
-              color: 'text.secondary',
-              textAlign: 'center',
-              mb: 1.5,
-              display: 'block',
-            }}
-          >
-            {config.profile.title}
-          </Typography>
+          <ProfileInfo variant="sidebar" showLocation={true} />
 
           <Box sx={{ display: 'flex', gap: 0.5, flexWrap: 'wrap', justifyContent: 'center', mb: 1.5 }}>
             {config.chips.map((chip, index) => (
@@ -213,6 +192,118 @@ export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
             <Typography variant="caption" sx={{ fontWeight: 600 }}>
               {config.social.linkedin.label}
             </Typography>
+          </Box>
+        </Box>
+      </Paper>
+
+      {/* Xpylon.com Card */}
+      <Paper
+        elevation={0}
+        sx={{
+          p: 2.5,
+          borderRadius: '12px',
+          border: '1px solid',
+          borderColor: '#e8e8e8',
+          backgroundColor: '#ffffff',
+          mb: 2,
+          background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+        }}
+      >
+        <Box
+          component="a"
+          href="https://xpylon.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{
+            display: 'block',
+            textDecoration: 'none',
+            transition: 'transform 0.3s',
+            '&:hover': {
+              transform: 'scale(1.02)',
+            },
+          }}
+        >
+          {/* Logo */}
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              mb: 2,
+              p: 1.5,
+              borderRadius: '8px',
+              bgcolor: 'rgba(255,255,255,0.05)',
+            }}
+          >
+            <img
+              src="https://landing.xpylon.com/wp-content/uploads/2025/07/Logo-V2-white-scaled-300x109.png"
+              alt="Xpylon"
+              style={{
+                width: '100%',
+                maxWidth: '180px',
+                height: 'auto',
+              }}
+            />
+          </Box>
+
+          {/* Info */}
+          <Typography
+            variant="caption"
+            sx={{
+              color: 'rgba(255,255,255,0.9)',
+              display: 'block',
+              textAlign: 'center',
+              mb: 1,
+              lineHeight: 1.6,
+              fontSize: '0.75rem',
+            }}
+          >
+            AI-Powered Matchmaking Platform for Business
+          </Typography>
+
+          {/* Location */}
+          <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 0.5, mb: 1.5 }}>
+            <LocationOnIcon sx={{ fontSize: 14, color: 'rgba(255,255,255,0.7)' }} />
+            <Typography
+              variant="caption"
+              sx={{
+                color: 'rgba(255,255,255,0.7)',
+                fontSize: '0.7rem',
+              }}
+            >
+              Houston, Texas
+            </Typography>
+          </Box>
+
+          {/* CTA Button */}
+          <Box
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: 0.5,
+              py: 1,
+              px: 2,
+              borderRadius: '6px',
+              bgcolor: 'rgba(255,255,255,0.1)',
+              border: '1px solid rgba(255,255,255,0.2)',
+              transition: 'all 0.2s',
+              '&:hover': {
+                bgcolor: 'rgba(255,255,255,0.15)',
+                borderColor: 'rgba(255,255,255,0.4)',
+              },
+            }}
+          >
+            <Typography
+              variant="caption"
+              sx={{
+                color: '#fff',
+                fontWeight: 600,
+                fontSize: '0.75rem',
+              }}
+            >
+              Visit Xpylon.com
+            </Typography>
+            <LaunchIcon sx={{ fontSize: 14, color: '#fff' }} />
           </Box>
         </Box>
       </Paper>

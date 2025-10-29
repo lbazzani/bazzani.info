@@ -1,265 +1,238 @@
+// ======================
+// UTILITY FUNCTIONS
+// ======================
 
-import moment from 'moment';
-import p5 from 'p5';
-import bfsetting from  './bfsettings';
+import { getRandomInt } from './basesk';
 
-//import {cnv, cnvWidth, cnvHeight, scaleWidth, scaleHeight, getRandomInt} from './basesk'
+// ======================
+// STATE VARIABLES
+// ======================
 
-import {getRandomInt} from './basesk'
+let canvas;
+let canvasWidth;
+let canvasHeight;
+const scaleWidth = 1.0;
+const scaleHeight = 0.92;
 
+let sceneFrame = -1;
+const FRAME_RATE = 60;
 
-var cnv;
-var cnvWidth;
-var cnvHeight;
-var scaleWidth = bfsetting.canvasScaleWidth;
-var scaleHeight = bfsetting.canvasScaleHeight;
+let birds = [];
+let birdsCount = 10000;
+let points; // Grid to track drawn pixels
+let cross = true; // Wrap around edges
 
+let singleMode = true; // All birds use same mode
+let globalMode = 1; // Drawing mode (1-4)
+const NUM_MODES = 4;
 
-var sceneFrame=-1;
-//var sceneDuration=bfsetting.enableVideoSaving?1:10; //sec
-var frameRate=60;
-
-var birds=[];
-var birdsCount=10000;
-var points;
-var cross=true;
-
-var singleMode=true;
-var globalMode=1;
-var numModes=4;
-
-var videoWriter;
-
-var saveMode=false;
+let scene = null;
 
 
-
-
-var s=null;
-
+// ======================
+// INITIALIZATION
+// ======================
 
 const init = (p5) => {
-    // Reset variabili globali
-    cnv = null;
+    // Reset global variables
+    canvas = null;
     birds = [];
     points = null;
-    s = null;
+    scene = null;
     sceneFrame = -1;
 
-    if(bfsetting.enableVideoSaving){
-        cnvHeight=500;
-        cnvWidth=500;
+    // Calculate canvas dimensions
+    canvasHeight = p5.round(window.innerHeight * scaleHeight);
+    canvasWidth = p5.round(window.innerWidth * scaleWidth);
+
+    // Random settings for each scene
+    cross = getRandomInt(0, 1) === 1;
+    singleMode = getRandomInt(0, 1) === 1;
+    globalMode = getRandomInt(1, NUM_MODES);
+
+    // Calculate bird count based on canvas size
+    birdsCount = Math.round((canvasWidth * canvasHeight) / getRandomInt(100, 1000));
+
+    // Initialize birds
+    birds = [];
+    for (let i = 0; i < birdsCount; i++) {
+        birds.push(new Bird());
     }
-    else{
-        cnvHeight=p5.round(window.innerHeight*scaleHeight);
-        cnvWidth=p5.round(window.innerWidth*scaleWidth);
-    }
 
-    if(saveMode){
-        cnvHeight= p5.displayHeight;
-        cnvWidth= p5.displayWidth;
-    }
+    // Initialize pixel tracking grid
+    points = [...Array(canvasWidth)].map(item => Array(canvasHeight).fill(0));
 
-    cross=getRandomInt(0,1);
-    singleMode=getRandomInt(0,1);
-    globalMode=getRandomInt(1,numModes);
-
-    //forced
-    //singleMode=1;
-    //globalMode=4;
-
-    birdsCount=Math.round((cnvWidth*cnvHeight)/(getRandomInt(100,1000)));
-
-    birds=[];
-    for(var i=0; i< birdsCount; i++){
-        birds.push(new Bird())
-    }
-    points = [...Array(cnvWidth)].map(item => Array(cnvHeight).fill(0));
-
-    cnv=p5.createCanvas(cnvWidth, cnvHeight);
-    p5.frameRate(frameRate);
+    canvas = p5.createCanvas(canvasWidth, canvasHeight);
+    p5.frameRate(FRAME_RATE);
 }
 
-export const circleart = (p5) => {    
-    p5.setup = () => {
+// ======================
+// MAIN SKETCH
+// ======================
 
+export const circleart = (p5) => {
+    p5.setup = () => {
         init(p5);
     };
-      
-    
+
     p5.draw = () => {
-        if(sceneFrame==-1){ //|| sceneFrame==sceneDuration*frameRate) {
-            p5.background(getRandomInt(10,50),getRandomInt(100,200));
-
-            s= new Scene();
+        // Initialize scene on first frame
+        if (sceneFrame === -1) {
+            p5.background(getRandomInt(10, 50), getRandomInt(100, 200));
+            scene = new Scene();
         }
-        s && s.drow(p5);
 
-        var drowed=0;
-        var stopat=birds.length*getRandomInt(5,20)/100;
+        scene && scene.draw(p5);
 
-        if(saveMode){
-            p5.background(getRandomInt(10,50),getRandomInt(100,200));
-            p5.noLoop();
-            console.log("savemode");
-            drowed=stopat+1;
-            while(drowed>stopat){
-                drowed=0;
-                for(var i=0; i< birdsCount; i++){
-                    drowed+=birds[i].drow(p5);
-                }
-                //console.log("drowed: " + drowed);
-            }
-        } else {
-            for(var i=0; i< birdsCount; i++){
-                drowed+=birds[i].drow(p5);
-            }
+        // Draw all birds and count how many successfully drew
+        let drawnCount = 0;
+        const stopThreshold = birds.length * getRandomInt(5, 20) / 100;
+
+        for (let i = 0; i < birdsCount; i++) {
+            drawnCount += birds[i].draw(p5);
         }
-        
+
+        // Signature
         p5.noStroke();
-        p5.fill(255,255);
+        p5.fill(255, 255);
         p5.textSize(12);
-        p5.text("@bazzani", cnvWidth-80, cnvHeight-10 );
+        p5.text("@bazzani", canvasWidth - 80, canvasHeight - 10);
 
-        if(saveMode){
-            p5.save("CicleArt_"+birdsCount+"_"+singleMode+"_"+globalMode);
-            console.log("saved");
-            setTimeout(()=>{
-                init(p5);
-                p5.loop();
-            }, 10000);   
-        } else {
-            if(drowed<stopat){
-                p5.text("Click the image to repaint", 10, 10 );
-                p5.noLoop();
-            }
+        // Stop when drawn count drops below threshold
+        if (drawnCount < stopThreshold) {
+            p5.text("Click to repaint", 10, 20);
+            p5.noLoop();
         }
-
-        
     };
 
     p5.touchStarted = () => {
-        if(p5.mouseY>0 && p5.mouseY<cnvHeight){
+        if (p5.mouseY > 0 && p5.mouseY < canvasHeight) {
             init(p5);
             p5.loop();
             return false;
         }
-      }
+    };
 
     p5.mousePressed = () => {
-        console.log("mouse on: " + p5.mouseX + "," + p5.mouseY);
-        if(p5.mouseY>0 && p5.mouseY<cnvHeight){
+        if (p5.mouseY > 0 && p5.mouseY < canvasHeight) {
             init(p5);
             p5.loop();
             return false;
         }
-    }
+    };
 
     p5.windowResized = () => {
-        init(p5);   
-    }
-  
+        canvasHeight = p5.windowHeight * scaleHeight;
+        canvasWidth = p5.windowWidth * scaleWidth;
+        canvas = canvas ? p5.resizeCanvas(canvasWidth, canvasHeight) : p5.createCanvas(canvasWidth, canvasHeight);
+    };
 };
+
+// ======================
+// BIRD CLASS
+// ======================
 
 class Bird {
     constructor() {
-        this.radius=Math.min(cnvWidth,cnvHeight)/getRandomInt(20,100);
-        this.angle=getRandomInt(0,Math.PI*200)/100;
-        this.direction=getRandomInt(0,1)?-1:1;
-        this.step=this.radius/getRandomInt(0.001,0.9);
-        this.mode=(singleMode)?globalMode:getRandomInt(1,numModes);
-        this.ellipseRadious1=getRandomInt(1,4);
-        this.ellipseRadious2=getRandomInt(1,4);
-        this.x=getRandomInt(1,cnvWidth-1);
-        this.y=getRandomInt(1,cnvHeight-1);
-        this.x1=null;
-        this.y1=null;
-        this.dx=getRandomInt(0,1)?-1:1;
-        this.dy=getRandomInt(0,1)?-1:1;
-        this.r=getRandomInt(40,255);
-        this.g=getRandomInt(10,255);
-        this.b=getRandomInt(10,255);
-        this.h=getRandomInt(10,255);
+        // Circular motion parameters
+        this.radius = Math.min(canvasWidth, canvasHeight) / getRandomInt(20, 100);
+        this.angle = getRandomInt(0, Math.PI * 200) / 100;
+        this.direction = getRandomInt(0, 1) ? -1 : 1;
+        this.step = this.radius / getRandomInt(0.001, 0.9);
 
-    } 
-    drow(p5){
-        //var step=(2*p5.PI)/this.radius;
-        //var step=getRandomInt
-        var na=this.angle+(this.direction*this.step);
-        var nx=this.x+p5.round(this.radius*p5.cos(na));
-        var ny=this.y+p5.round(this.radius*p5.sin(na));
+        // Drawing mode: 1=point, 2=line, 3=ellipse, 4=geometric
+        this.mode = singleMode ? globalMode : getRandomInt(1, NUM_MODES);
+        this.ellipseRadius1 = getRandomInt(1, 4);
+        this.ellipseRadius2 = getRandomInt(1, 4);
 
+        // Position
+        this.x = getRandomInt(1, canvasWidth - 1);
+        this.y = getRandomInt(1, canvasHeight - 1);
+        this.x1 = null; // Previous x for geometric mode
+        this.y1 = null; // Previous y for geometric mode
 
-        if(cross && this.mode==1){
-            if(nx>=cnvWidth) 
-                {nx=nx-cnvWidth}
-            if(nx<=0) 
-                {nx=cnvWidth-nx}
-            if(ny>=cnvHeight) 
-                {ny=ny-cnvHeight}
-            if(ny<=0) 
-                {ny=cnvWidth-ny}
+        // Random color
+        this.r = getRandomInt(40, 255);
+        this.g = getRandomInt(10, 255);
+        this.b = getRandomInt(10, 255);
+        this.alpha = getRandomInt(10, 255);
+    }
+
+    draw(p5) {
+        // Calculate next position in circular motion
+        const newAngle = this.angle + (this.direction * this.step);
+        let nx = this.x + p5.round(this.radius * Math.cos(newAngle));
+        let ny = this.y + p5.round(this.radius * Math.sin(newAngle));
+
+        // Wrap around edges if cross mode is enabled (only for point mode)
+        if (cross && this.mode === 1) {
+            if (nx >= canvasWidth) nx = nx - canvasWidth;
+            if (nx <= 0) nx = canvasWidth - nx;
+            if (ny >= canvasHeight) ny = ny - canvasHeight;
+            if (ny <= 0) ny = canvasHeight - ny;
         }
-        
-        var drowed=0;
-        if(nx>0 && nx<cnvWidth && ny>0 && ny<cnvHeight && points[nx][ny]==0){
-            this.angle=na;
-            p5.stroke(this.r,this.g,this.b,this.h);
-            
+
+        let drawn = 0;
+
+        // Draw if the next position is valid and not already drawn
+        if (nx > 0 && nx < canvasWidth && ny > 0 && ny < canvasHeight && points[nx][ny] === 0) {
+            this.angle = newAngle;
+            p5.stroke(this.r, this.g, this.b, this.alpha);
+
             switch (this.mode) {
-                case 1: //point
-                    p5.point(nx,ny);
+                case 1: // Point mode
+                    p5.point(nx, ny);
                     break;
-                case 2: //line
-                    p5.line(this.x,this.y,nx,ny);
+                case 2: // Line from center mode
+                    p5.line(this.x, this.y, nx, ny);
                     break;
-                case 3: //ellipse
+                case 3: // Ellipse mode
                     p5.noStroke();
-                    p5.fill(this.r,this.g,this.b,this.h);
-                    p5.ellipse(nx,ny,2,this.ellipseRadious1,this.ellipseRadious2);
+                    p5.fill(this.r, this.g, this.b, this.alpha);
+                    p5.ellipse(nx, ny, this.ellipseRadius1, this.ellipseRadius2);
                     break;
-                case 4: //geometric
-                    if(this.x1 && this.y1){
-                        p5.line(this.x1,this.y1,nx,ny);
+                case 4: // Geometric mode (connect consecutive points)
+                    if (this.x1 && this.y1) {
+                        p5.line(this.x1, this.y1, nx, ny);
                     }
-                    this.x1=nx;
-                    this.y1=ny;
-  
-                    break;
-                default:
+                    this.x1 = nx;
+                    this.y1 = ny;
                     break;
             }
-            
-            points[nx][ny]=1;
-            drowed++;
-        } else {
-            this.direction=getRandomInt(0,1)?-1:1;
-            this.radius=this.radius+this.direction;
 
-            (this.h>10 && this.h<255 ) && (this.h=this.h+this.direction);
+            points[nx][ny] = 1;
+            drawn++;
+        } else {
+            // Change direction and adjust radius
+            this.direction = getRandomInt(0, 1) ? -1 : 1;
+            this.radius = this.radius + this.direction;
+
+            // Adjust alpha
+            if (this.alpha > 10 && this.alpha < 255) {
+                this.alpha = this.alpha + this.direction;
+            }
         }
-        return drowed;
-        
+
+        return drawn;
     }
 }
+
+// ======================
+// SCENE CLASS
+// ======================
 
 class Scene {
     constructor() {
-        this.rnd1=getRandomInt(40,100)/100;
-        this.rnd2=getRandomInt(10,100)/100;
-        this.rnd3=getRandomInt(10,100)/100;
-        this.rnd4=getRandomInt(10,100)/100;
-        this.rnd5=getRandomInt(10,100)/100;
-    } 
-
-
-
-    drow(p5) { 
-
-        //
-        sceneFrame++;
+        // Random parameters for potential future animations
+        this.rnd1 = getRandomInt(40, 100) / 100;
+        this.rnd2 = getRandomInt(10, 100) / 100;
+        this.rnd3 = getRandomInt(10, 100) / 100;
+        this.rnd4 = getRandomInt(10, 100) / 100;
+        this.rnd5 = getRandomInt(10, 100) / 100;
     }
 
+    draw(p5) {
+        // Increment scene frame counter
+        sceneFrame++;
+    }
 }
-
-

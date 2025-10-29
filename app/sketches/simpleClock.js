@@ -1,16 +1,22 @@
-import bfsetting from  './bfsettings';
+// ======================
+// UTILITY FUNCTIONS
+// ======================
 
 function getRandomInt(min, max) {
-    if(!max) { //gestione parametro opzionale
-      max=min;
-      min=0;
+    if (!max) {
+        max = min;
+        min = 0;
     }
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-var crazyCit =[
+// ======================
+// QUOTES DATA
+// ======================
+
+const quotes = [
     {
         text:"I\'m crazy like a clock", author:"I\'s me, The clock"
     },
@@ -205,227 +211,446 @@ var crazyCit =[
     }
 ]
 
-var cnv;
+// ======================
+// STATE VARIABLES
+// ======================
 
-var cnvWidth;
-var cnvHeight;
-var scaleWidth = bfsetting.canvasScaleWidth;
-var scaleHeight = bfsetting.canvasScaleHeight;
-var sceneStartSec=-1;
-var sceneFrame=0;
-var sceneDuration=10; //sec
-var frameRate=20;
+let canvas;
+let canvasWidth;
+let canvasHeight;
+const scaleWidth = 1.0;
+const scaleHeight = 0.92;
 
-var videoWriter;
-var captured=false;
+let watch = null;
+let scene = null;
+let sceneStartSec = -1;
+let sceneFrame = 0;
 
-var w=null;
-var s=null;
+const SCENE_DURATION = 10; // seconds
+const FRAME_RATE = 20;
 
 export const simpleClock = (p5) => {
     p5.setup = () => {
-        // Reset delle variabili globali
-        cnv = null;
-        w = null;
-        s = null;
+        // Reset global variables
+        canvas = null;
+        watch = null;
+        scene = null;
         sceneStartSec = -1;
         sceneFrame = 0;
 
-        if(bfsetting.enableVideoSaving){
-            cnvHeight=500;
-            cnvWidth=500;
-        }
-        else{
-            cnvHeight=p5.round(window.innerHeight*scaleHeight);
-            cnvWidth=p5.round(window.innerWidth*scaleWidth);
-        }
+        canvasHeight = p5.round(window.innerHeight * scaleHeight);
+        canvasWidth = p5.round(window.innerWidth * scaleWidth);
 
-        cnv=p5.createCanvas(cnvWidth, cnvHeight);
-        p5.frameRate(frameRate);
-
-        if(bfsetting.enableVideoSaving){
-            videoWriter = new window.WebMWriter({
-                quality: 0.95,    // WebM image quality from 0.0 (worst) to 0.99999 (best), 1.00 (VP8L lossless) is not supported
-                fileWriter: null, // FileWriter in order to stream to a file instead of buffering to memory (optional)
-                fd: null,         // Node.js file handle to write to instead of buffering to memory (optional)
-            
-                // You must supply one of:
-                frameDuration: 1000/frameRate, // Duration of frames in milliseconds
-                frameRate: null,     // Number of frames per second
-            
-                transparent: false,      // True if an alpha channel should be included in the video
-                alphaQuality: undefined, // Allows you to set the quality level of the alpha channel separately.
-                                        // If not specified this defaults to the same value as `quality`.
-            });
-        }
-        w=null;
-        s=null;
-        sceneStartSec=-1;
+        canvas = p5.createCanvas(canvasWidth, canvasHeight);
+        p5.frameRate(FRAME_RATE);
     };
-      
-    
+
     p5.draw = () => {
         p5.background(100);
-        const radius=Math.min(cnvWidth,cnvHeight)*0.9/2;
-        (!w) && (w= new Watch(cnvWidth/2,cnvHeight/2,radius));
-        w.drow(p5);
-        
-        if((sceneStartSec==-1) || ((p5.second()-sceneStartSec)%sceneDuration==0 && sceneStartSec!=p5.second())) {
-            s = new Scene(cnvWidth/2,cnvHeight/2,radius)
-            sceneStartSec=p5.second();
-            sceneFrame=0;
-            console.log("new scene at " + sceneStartSec);
-        }
-        s && s.drow(p5);
-    };
 
-    p5.mousePressed = () => {
-        
-    }
+        const radius = Math.min(canvasWidth, canvasHeight) * 0.45;
+        const centerX = canvasWidth / 2;
+        const centerY = canvasHeight / 2;
+
+        // Initialize watch if needed
+        if (!watch) {
+            watch = new Watch(centerX, centerY, radius);
+        }
+        watch.draw(p5);
+
+        // Create new scene every SCENE_DURATION seconds
+        if (sceneStartSec === -1 ||
+            ((p5.second() - sceneStartSec) % SCENE_DURATION === 0 && sceneStartSec !== p5.second())) {
+            scene = new Scene(centerX, centerY, radius);
+            sceneStartSec = p5.second();
+            sceneFrame = 0;
+        }
+
+        if (scene) {
+            scene.draw(p5, sceneFrame);
+            sceneFrame++;
+        }
+    };
 
     p5.windowResized = () => {
-        cnvWidth=p5.windowWidth*scaleWidth;
-        cnvHeight=p5.windowHeight*scaleHeight;
-        w=null;
-        s=null;
-        cnv=(!cnv)?(p5.createCanvas(cnvWidth, cnvHeight)):(p5.resizeCanvas(cnvWidth, cnvHeight))   
-    }
-  
-
-
+        canvasWidth = p5.windowWidth * scaleWidth;
+        canvasHeight = p5.windowHeight * scaleHeight;
+        watch = null;
+        scene = null;
+        canvas = canvas ? p5.resizeCanvas(canvasWidth, canvasHeight) : p5.createCanvas(canvasWidth, canvasHeight);
+    };
 };
 
+// ======================
+// SCENE CLASS
+// ======================
+
 class Scene {
-    constructor(x,y,radius) {
+    constructor(x, y, radius) {
         this.x = x;
         this.y = y;
-        this.radius=radius;
-        this.current=0;
-        this.cit=crazyCit[getRandomInt(0,crazyCit.length-1)];
-        this.rnd1=getRandomInt(40,100)/100;
-        this.rnd2=getRandomInt(10,100)/100;
-        this.rnd3=getRandomInt(10,100)/100;
-        this.rnd4=getRandomInt(10,100)/100;
-        this.rnd5=getRandomInt(10,100)/100;
-    } 
+        this.radius = radius;
+        this.quote = quotes[getRandomInt(0, quotes.length - 1)];
 
-    drow(p5) {
+        // Pastel color palette
+        const pastelColors = [
+            { r: 255, g: 200, b: 220 }, // Pink
+            { r: 200, g: 220, b: 255 }, // Light blue
+            { r: 220, g: 255, b: 200 }, // Light green
+            { r: 255, g: 230, b: 200 }, // Peach
+            { r: 230, g: 200, b: 255 }, // Lavender
+            { r: 255, g: 250, b: 200 }, // Light yellow
+        ];
+        this.faceColor = pastelColors[getRandomInt(0, pastelColors.length - 1)];
+
+        // Face expression type
+        this.faceType = getRandomInt(0, 4); // 0: happy, 1: surprised, 2: wink, 3: hearts, 4: sleepy
+
+        // Random animation offset
+        this.animOffset = Math.random() * Math.PI * 2;
+    }
+
+    draw(p5, frame) {
         p5.push();
-        p5.translate(this.x,this.y);
-        const s=cnvWidth*0.9;
-        var scale=1/(frameRate*(sceneDuration)) * sceneFrame;
-        var scaleSin=p5.sin(scale*p5.PI);
-        //var bouncing=Math.abs(Math.sin(p5.millis() / 1000)*Math.cos(p5.millis() / 1000))+0.8;
-        
+        p5.translate(this.x, this.y);
 
-        p5.fill(255*this.rnd2*scaleSin,50*this.rnd2*scaleSin,80*this.rnd2*scaleSin,120*scaleSin);
-        p5.noStroke();
-        p5.beginShape();
-        var borderDist=s*0.3*scaleSin*this.rnd1;
-        var hDist=Math.abs(s*0.1 *(scaleSin*this.rnd1));
-        var xs=0;
-        var ys=this.radius*0.8*this.rnd4;
-        p5.vertex(xs-borderDist, ys);
-        p5.bezierVertex(xs-borderDist/2,ys-(hDist*this.rnd2), xs+borderDist/2,ys-(hDist*this.rnd3),  xs+borderDist,ys);
-        p5.bezierVertex(xs+borderDist/2,ys+(hDist*this.rnd4), xs-borderDist/2,ys+(hDist*this.rnd5), xs-borderDist, ys);
-        p5.endShape('close');
-        p5.ellipse(-ys,-ys, hDist*2*scaleSin*this.rnd2, hDist*2*scaleSin*this.rnd3);
-        p5.ellipse(ys,-ys, hDist*2*scaleSin*this.rnd4, hDist*2*scaleSin*this.rnd5);
-        //p5.line(-borderDist,ys,+borderDist,ys);
+        // Animation progress (0 to 1)
+        const totalFrames = FRAME_RATE * SCENE_DURATION;
+        const progress = frame / totalFrames;
+        const sinProgress = Math.sin(progress * Math.PI); // Smooth ease in/out
 
-        p5.noStroke();
-        p5.fill(255,255*scaleSin);
+        // Draw decorative shapes
+        this.drawDecorations(p5, sinProgress);
 
-        var t1=this.cit.text;
-        var t2=this.cit.author;
-        
-        var ts= s/t1.length*2 ;
-        if(p5.windowWidth>=768) {ts=ts* scaleSin+1}
+        // Draw quote text
+        this.drawQuoteText(p5, sinProgress);
 
-        p5.textFont('Georgia');
-        p5.textSize(ts);
-        p5.text(t1,-p5.textWidth(t1)/2, -(30) );
-        p5.text(t2,-p5.textWidth(t2)/2, 30 );
         p5.pop();
+    }
 
-        if(bfsetting.enableVideoSaving) {
-            if(p5.frameCount<=60*frameRate){
-                //var dataurl=document.querySelector('#defaultCanvas0.p5Canvas').toDataURL();
-                videoWriter.addFrame(document.querySelector('#defaultCanvas0.p5Canvas'));
-            }
-            else{
-                if(!captured){
-                    captured=true;
-                    videoWriter.complete().then(function(webMBlob) {
-                        var objUrl=URL.createObjectURL(webMBlob);
-                        saveBlob(objUrl,"video.webm");
-                    });
-                }
-            }
+    drawDecorations(p5, sinProgress) {
+        // Subtle floating animation
+        const floatOffset = Math.sin((p5.millis() / 2000) + this.animOffset) * 15;
+
+        p5.push();
+        p5.translate(0, floatOffset);
+
+        // Draw cute face in background
+        this.drawCuteFace(p5, sinProgress);
+
+        p5.pop();
+    }
+
+    drawCuteFace(p5, sinProgress) {
+        const faceSize = this.radius * 1.2 * sinProgress;
+        const alpha = 150 * sinProgress; // Subtle opacity
+
+        // Face background circle
+        p5.noStroke();
+        p5.fill(this.faceColor.r, this.faceColor.g, this.faceColor.b, alpha);
+        p5.ellipse(0, -50, faceSize, faceSize);
+
+        // Eyes and mouth with darker pastel color
+        const featureAlpha = 180 * sinProgress;
+        p5.fill(
+            this.faceColor.r * 0.6,
+            this.faceColor.g * 0.6,
+            this.faceColor.b * 0.6,
+            featureAlpha
+        );
+
+        const eyeSize = faceSize * 0.12;
+        const eyeOffset = faceSize * 0.15;
+        const eyeY = -50 - faceSize * 0.1;
+
+        // Draw eyes based on face type
+        switch (this.faceType) {
+            case 0: // Happy eyes
+                p5.ellipse(-eyeOffset, eyeY, eyeSize, eyeSize);
+                p5.ellipse(eyeOffset, eyeY, eyeSize, eyeSize);
+                break;
+            case 1: // Surprised (big round eyes)
+                p5.ellipse(-eyeOffset, eyeY, eyeSize * 1.5, eyeSize * 1.5);
+                p5.ellipse(eyeOffset, eyeY, eyeSize * 1.5, eyeSize * 1.5);
+                break;
+            case 2: // Wink (one closed)
+                p5.ellipse(-eyeOffset, eyeY, eyeSize, eyeSize);
+                p5.rect(eyeOffset - eyeSize / 2, eyeY - 2, eyeSize, 4, 2);
+                break;
+            case 3: // Hearts for eyes
+                this.drawHeart(p5, -eyeOffset, eyeY, eyeSize * 0.8);
+                this.drawHeart(p5, eyeOffset, eyeY, eyeSize * 0.8);
+                break;
+            case 4: // Sleepy (half closed)
+                p5.arc(-eyeOffset, eyeY, eyeSize, eyeSize, 0, Math.PI);
+                p5.arc(eyeOffset, eyeY, eyeSize, eyeSize, 0, Math.PI);
+                break;
         }
 
+        // Draw mouth
+        const mouthY = -50 + faceSize * 0.2;
+        const mouthWidth = faceSize * 0.25;
 
-        sceneFrame++;
-    }
-
-}
-
-class Watch {
-    constructor(x,y,radius) {
-        this.x = x;
-        this.y = y;
-        this.radius=radius;
-    }
-    drow(p5) {
-
-        const s = p5.map(p5.second() , 0, 60, 0, p5.TWO_PI) - p5.HALF_PI;
-        const m = p5.map(p5.minute() + p5.norm(p5.second(), 0, 60), 0, 60, 0, p5.TWO_PI) - p5.HALF_PI;
-        const h = p5.map(p5.hour() + p5.norm(p5.minute(), 0, 60), 0, 24, 0, p5.TWO_PI * 2) - p5.HALF_PI;
-
-        const secondsRadius=this.radius;
-        const minutesRadius=this.radius*0.8;
-        const hoursRadius=minutesRadius*0.8;
-        p5.push();
-        p5.translate(this.x,this.y);
-
-        p5.strokeWeight(1);
-        p5.stroke(200,0,0,200);
-        p5.line(0,0,p5.cos(s)*secondsRadius,p5.sin(s)*secondsRadius );
-
-        p5.stroke(0);
+        p5.noFill();
+        p5.stroke(
+            this.faceColor.r * 0.6,
+            this.faceColor.g * 0.6,
+            this.faceColor.b * 0.6,
+            featureAlpha
+        );
         p5.strokeWeight(3);
-        p5.line(0,0,p5.cos(m)*minutesRadius,p5.sin(m)*minutesRadius );
 
-        p5.strokeWeight(6);
-        p5.line(0,0,p5.cos(h)*hoursRadius,p5.sin(h)*hoursRadius );
+        if (this.faceType === 1) {
+            // Surprised mouth (O shape)
+            p5.ellipse(0, mouthY, mouthWidth * 0.5, mouthWidth * 0.6);
+        } else {
+            // Smile
+            p5.arc(0, mouthY, mouthWidth, mouthWidth * 0.6, 0, Math.PI);
+        }
 
-        //p5.fill(0, 102, 153);
-        //p5.text(p5.hour()+ ":" + p5.minute()+ ":" + p5.second(), -this.secondsRadius/2, this.secondsRadius+20 );
+        // Blush cheeks
+        p5.noStroke();
+        p5.fill(255, 150, 150, alpha * 0.5);
+        const cheekSize = faceSize * 0.15;
+        const cheekOffset = faceSize * 0.28;
+        p5.ellipse(-cheekOffset, -50 + faceSize * 0.05, cheekSize, cheekSize * 0.8);
+        p5.ellipse(cheekOffset, -50 + faceSize * 0.05, cheekSize, cheekSize * 0.8);
+    }
 
-        p5.strokeWeight(2);
-        p5.beginShape(p5.POINTS);
-        for (let a = 0; a < 360; a += 6) {
-          let angle = p5.radians(a);
-          let x = p5.cos(angle) * secondsRadius;
-          let y = p5.sin(angle) * secondsRadius;
-          p5.vertex(x, y);
+    drawHeart(p5, x, y, size) {
+        p5.beginShape();
+        const xOffset = x;
+        const yOffset = y;
+        for (let angle = 0; angle < Math.PI * 2; angle += 0.1) {
+            const r = size * (1 - Math.sin(angle));
+            const hx = xOffset + r * Math.cos(angle);
+            const hy = yOffset + r * Math.sin(angle) - size * 0.3;
+            p5.vertex(hx, hy);
         }
         p5.endShape();
+    }
+
+    drawQuoteText(p5, sinProgress) {
+        const quoteText = this.quote.text;
+        const authorText = this.quote.author;
+
+        // Calculate text size based on quote length
+        const size = canvasWidth * 0.9;
+        let quoteSize = size / quoteText.length * 2;
+        let authorSize = quoteSize * 0.7;
+
+        if (p5.windowWidth >= 768) {
+            quoteSize = quoteSize * sinProgress + 1;
+            authorSize = authorSize * sinProgress + 1;
+        }
+
+        p5.textFont('Georgia');
+
+        // Elegant entrance animation
+        const slideIn = Math.pow(sinProgress, 0.7); // Ease out
+        const quoteY = -30 + (1 - slideIn) * -20; // Slide from top
+        const authorY = 30 + (1 - slideIn) * 20; // Slide from bottom
+
+        // Quote text with glow effect
+        p5.push();
+
+        // Soft glow
+        p5.drawingContext.shadowBlur = 20;
+        p5.drawingContext.shadowColor = `rgba(255, 255, 255, ${sinProgress * 0.3})`;
+
+        // Shadow for depth
+        p5.fill(0, 0, 0, 100 * sinProgress);
+        p5.textSize(quoteSize);
+        p5.text(quoteText, -p5.textWidth(quoteText) / 2 + 2, quoteY + 2);
+
+        // Main quote text
+        p5.fill(255, 255, 255, 255 * sinProgress);
+        p5.text(quoteText, -p5.textWidth(quoteText) / 2, quoteY);
+
+        p5.drawingContext.shadowBlur = 0;
         p5.pop();
 
+        // Author text with different animation timing
+        const authorDelay = Math.max(0, (sinProgress - 0.2) * 1.25); // Starts after quote
+
+        p5.push();
+        p5.textSize(authorSize);
+
+        // Author shadow
+        p5.fill(0, 0, 0, 80 * authorDelay);
+        p5.text(authorText, -p5.textWidth(authorText) / 2 + 1, authorY + 1);
+
+        // Author text with gold tint
+        p5.fill(255, 240, 200, 220 * authorDelay);
+        p5.text(authorText, -p5.textWidth(authorText) / 2, authorY);
+
+        p5.pop();
     }
 }
 
-var saveBlob = (function () {
-    var a = document.createElement("a");
-    document.body.appendChild(a);
-    a.style = "display: none";
-    return function (objUrl, fileName) {
-        var url = objUrl;
-        a.href = url;
-        a.download = fileName;
-        a.click();
-        window.URL.revokeObjectURL(url);
-    };
-}());
- 
+// ======================
+// WATCH CLASS
+// ======================
+
+class Watch {
+    constructor(x, y, radius) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+    }
+
+    draw(p5) {
+        p5.push();
+        p5.translate(this.x, this.y);
+
+        // Calculate angles for each hand
+        const secondAngle = p5.map(p5.second(), 0, 60, 0, p5.TWO_PI) - p5.HALF_PI;
+        const minuteAngle = p5.map(p5.minute() + p5.norm(p5.second(), 0, 60), 0, 60, 0, p5.TWO_PI) - p5.HALF_PI;
+        const hourAngle = p5.map(p5.hour() + p5.norm(p5.minute(), 0, 60), 0, 24, 0, p5.TWO_PI * 2) - p5.HALF_PI;
+
+        // Hand lengths
+        const secondsRadius = this.radius;
+        const minutesRadius = this.radius * 0.75;
+        const hoursRadius = this.radius * 0.5;
+
+        // Draw clock face
+        this.drawClockFace(p5, this.radius);
+
+        // Draw hour markers
+        this.drawHourMarkers(p5, this.radius);
+
+        // Draw clock hands (back to front)
+        this.drawHourHand(p5, hourAngle, hoursRadius);
+        this.drawMinuteHand(p5, minuteAngle, minutesRadius);
+        this.drawSecondHand(p5, secondAngle, secondsRadius);
+
+        // Center cap
+        this.drawCenterCap(p5);
+
+        p5.pop();
+    }
+
+    drawClockFace(p5, radius) {
+        // Outer circle with gradient effect
+        p5.noFill();
+        p5.stroke(255, 255, 255, 30);
+        p5.strokeWeight(2);
+        p5.ellipse(0, 0, radius * 2, radius * 2);
+
+        // Inner decorative circle
+        p5.stroke(255, 255, 255, 15);
+        p5.strokeWeight(1);
+        p5.ellipse(0, 0, radius * 1.85, radius * 1.85);
+    }
+
+    drawHourMarkers(p5, radius) {
+        for (let hour = 0; hour < 12; hour++) {
+            const angle = (hour * 30 - 90) * (Math.PI / 180);
+            const isMainHour = hour % 3 === 0;
+
+            if (isMainHour) {
+                // Large markers for 12, 3, 6, 9
+                const x1 = Math.cos(angle) * (radius * 0.9);
+                const y1 = Math.sin(angle) * (radius * 0.9);
+                const x2 = Math.cos(angle) * (radius * 0.95);
+                const y2 = Math.sin(angle) * (radius * 0.95);
+
+                p5.stroke(255, 255, 255, 150);
+                p5.strokeWeight(3);
+                p5.line(x1, y1, x2, y2);
+            } else {
+                // Small dots for other hours
+                const x = Math.cos(angle) * (radius * 0.92);
+                const y = Math.sin(angle) * (radius * 0.92);
+
+                p5.noStroke();
+                p5.fill(255, 255, 255, 100);
+                p5.ellipse(x, y, 4, 4);
+            }
+        }
+    }
+
+    drawHourHand(p5, angle, length) {
+        p5.push();
+        p5.rotate(angle);
+
+        // Hand shadow
+        p5.noStroke();
+        p5.fill(0, 0, 0, 50);
+        p5.beginShape();
+        p5.vertex(0, -8);
+        p5.vertex(length, 0);
+        p5.vertex(0, 8);
+        p5.vertex(-length * 0.2, 0);
+        p5.endShape();
+
+        // Main hand
+        p5.fill(255, 255, 255, 200);
+        p5.beginShape();
+        p5.vertex(0, -6);
+        p5.vertex(length, 0);
+        p5.vertex(0, 6);
+        p5.vertex(-length * 0.2, 0);
+        p5.endShape();
+
+        p5.pop();
+    }
+
+    drawMinuteHand(p5, angle, length) {
+        p5.push();
+        p5.rotate(angle);
+
+        // Hand shadow
+        p5.noStroke();
+        p5.fill(0, 0, 0, 50);
+        p5.beginShape();
+        p5.vertex(0, -5);
+        p5.vertex(length, 0);
+        p5.vertex(0, 5);
+        p5.vertex(-length * 0.15, 0);
+        p5.endShape();
+
+        // Main hand
+        p5.fill(255, 255, 255, 230);
+        p5.beginShape();
+        p5.vertex(0, -4);
+        p5.vertex(length, 0);
+        p5.vertex(0, 4);
+        p5.vertex(-length * 0.15, 0);
+        p5.endShape();
+
+        p5.pop();
+    }
+
+    drawSecondHand(p5, angle, length) {
+        p5.push();
+        p5.rotate(angle);
+
+        // Thin elegant second hand
+        p5.stroke(255, 100, 100, 200);
+        p5.strokeWeight(2);
+        p5.line(-length * 0.15, 0, length * 0.95, 0);
+
+        // Decorative circle at the end
+        p5.noStroke();
+        p5.fill(255, 100, 100, 180);
+        p5.ellipse(length * 0.95, 0, 8, 8);
+
+        p5.pop();
+    }
+
+    drawCenterCap(p5) {
+        // Outer shadow circle
+        p5.noStroke();
+        p5.fill(0, 0, 0, 50);
+        p5.ellipse(1, 1, 18, 18);
+
+        // Main center cap
+        p5.fill(255, 255, 255, 220);
+        p5.ellipse(0, 0, 16, 16);
+
+        // Inner highlight
+        p5.fill(255, 255, 255, 150);
+        p5.ellipse(-2, -2, 8, 8);
+    }
+}
