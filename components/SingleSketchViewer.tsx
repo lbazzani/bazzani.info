@@ -1,8 +1,8 @@
 'use client';
 
-import { Box, IconButton, AppBar, Toolbar, Typography, Button, CircularProgress } from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
+import { Box, AppBar, Toolbar, Typography, Button, CircularProgress } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import HomeIcon from '@mui/icons-material/Home';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
@@ -66,7 +66,32 @@ export default function SingleSketchViewer({ title, note, sketchName }: SingleSk
             borderBottom: '1px solid rgba(155, 89, 182, 0.2)',
           }}
         >
-        <Toolbar sx={{ gap: 3, py: 1.5 }}>
+        <Toolbar sx={{ gap: 2, py: 1.5 }}>
+          <Button
+            variant="text"
+            startIcon={<HomeIcon />}
+            onClick={() => router.push('/')}
+            sx={{
+              color: '#fff',
+              textTransform: 'none',
+              fontWeight: 600,
+              fontSize: '0.95rem',
+              px: 2,
+              '&:hover': {
+                bgcolor: 'rgba(155, 89, 182, 0.1)',
+                color: '#9B59B6',
+              },
+            }}
+          >
+            Home
+          </Button>
+          <Box
+            sx={{
+              width: '1px',
+              height: '24px',
+              bgcolor: 'rgba(155, 89, 182, 0.3)',
+            }}
+          />
           <Button
             variant="text"
             startIcon={<ArrowBackIcon />}

@@ -1,10 +1,26 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import {
+  generateSessionId,
+  logUserMessage,
+  logAssistantMessage,
+  logSystemMessage,
+  logError
+} from '../../../lib/chatLogger';
 
 export async function POST(request: NextRequest) {
+  // Get or create session ID from cookie
+  let sessionId = request.cookies.get('chat-session-id')?.value;
+  if (!sessionId) {
+    sessionId = generateSessionId();
+  }
+
   try {
     const { message } = await request.json();
+
+    // Log user message
+    logUserMessage(sessionId, message);
 
     if (!message) {
       return NextResponse.json({ error: 'Message is required' }, { status: 400 });
@@ -33,25 +49,49 @@ export async function POST(request: NextRequest) {
     const messageLC = message.toLowerCase().trim();
     for (const [cmd, response] of Object.entries(shellCommands)) {
       if (messageLC === cmd || messageLC.startsWith(cmd + ' ')) {
-        return NextResponse.json({ message: response });
+        // Log shell command response
+        logAssistantMessage(sessionId, response, { type: 'shell-command', command: cmd });
+
+        const nextResponse = NextResponse.json({ message: response });
+        nextResponse.cookies.set('chat-session-id', sessionId, {
+          httpOnly: true,
+          sameSite: 'strict',
+          maxAge: 60 * 60 * 24 * 365 // 1 year
+        });
+        return nextResponse;
       }
     }
 
     // Special handling for commands with flags/options
     if (messageLC.match(/^(ls|ll|dir)\s/)) {
-      return NextResponse.json({ message: shellCommands['ls'] });
+      logAssistantMessage(sessionId, shellCommands['ls'], { type: 'shell-command', command: 'ls' });
+      const nextResponse = NextResponse.json({ message: shellCommands['ls'] });
+      nextResponse.cookies.set('chat-session-id', sessionId, { httpOnly: true, sameSite: 'strict', maxAge: 60 * 60 * 24 * 365 });
+      return nextResponse;
     }
     if (messageLC.match(/^cd\s/)) {
-      return NextResponse.json({ message: shellCommands['cd'] });
+      logAssistantMessage(sessionId, shellCommands['cd'], { type: 'shell-command', command: 'cd' });
+      const nextResponse = NextResponse.json({ message: shellCommands['cd'] });
+      nextResponse.cookies.set('chat-session-id', sessionId, { httpOnly: true, sameSite: 'strict', maxAge: 60 * 60 * 24 * 365 });
+      return nextResponse;
     }
     if (messageLC.match(/^cat\s/)) {
-      return NextResponse.json({ message: shellCommands['cat'] });
+      logAssistantMessage(sessionId, shellCommands['cat'], { type: 'shell-command', command: 'cat' });
+      const nextResponse = NextResponse.json({ message: shellCommands['cat'] });
+      nextResponse.cookies.set('chat-session-id', sessionId, { httpOnly: true, sameSite: 'strict', maxAge: 60 * 60 * 24 * 365 });
+      return nextResponse;
     }
     if (messageLC.match(/^grep\s/)) {
-      return NextResponse.json({ message: shellCommands['grep'] });
+      logAssistantMessage(sessionId, shellCommands['grep'], { type: 'shell-command', command: 'grep' });
+      const nextResponse = NextResponse.json({ message: shellCommands['grep'] });
+      nextResponse.cookies.set('chat-session-id', sessionId, { httpOnly: true, sameSite: 'strict', maxAge: 60 * 60 * 24 * 365 });
+      return nextResponse;
     }
     if (messageLC.match(/^sudo\s/)) {
-      return NextResponse.json({ message: shellCommands['sudo'] });
+      logAssistantMessage(sessionId, shellCommands['sudo'], { type: 'shell-command', command: 'sudo' });
+      const nextResponse = NextResponse.json({ message: shellCommands['sudo'] });
+      nextResponse.cookies.set('chat-session-id', sessionId, { httpOnly: true, sameSite: 'strict', maxAge: 60 * 60 * 24 * 365 });
+      return nextResponse;
     }
 
     // Read myProfile.txt
@@ -123,12 +163,35 @@ Guidelines:
     const data = await response.json();
     const assistantMessage = data.choices[0]?.message?.content || 'Sorry, I could not generate a response.';
 
-    return NextResponse.json({
+    // Log AI response
+    logAssistantMessage(sessionId, assistantMessage, {
+      type: 'ai-response',
+      model: openaiModel,
+      usage: data.usage
+    });
+
+    const nextResponse = NextResponse.json({
       message: assistantMessage,
       usage: data.usage
     });
+
+    // Set session cookie
+    nextResponse.cookies.set('chat-session-id', sessionId, {
+      httpOnly: true,
+      sameSite: 'strict',
+      maxAge: 60 * 60 * 24 * 365 // 1 year
+    });
+
+    return nextResponse;
   } catch (error) {
     console.error('AI Assistant error:', error);
+
+    // Log error
+    logError(sessionId, error as Error, {
+      context: 'ai-assistant-api',
+      timestamp: new Date().toISOString()
+    });
+
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }

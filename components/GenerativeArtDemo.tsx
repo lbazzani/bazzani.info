@@ -13,8 +13,8 @@ export default function GenerativeArtDemo({ isOpen, onClose }: GenerativeArtDemo
 
   useEffect(() => {
     if (isOpen) {
-      // Navigate to the likeTheWorld sketch page
-      router.push('/s/liketheworld');
+      // Navigate to the gallery page instead of a specific sketch
+      router.push('/s');
       // Close the modal immediately
       onClose();
     }

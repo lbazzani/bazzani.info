@@ -27,11 +27,6 @@ const sketches: Record<string, { title: string; note: string; sketchName: string
     note: '@bazzani',
     sketchName: 'circleart',
   },
-  rectart: {
-    title: 'Rectangle Art',
-    note: '@bazzani',
-    sketchName: 'rectart',
-  },
 };
 
 export async function generateStaticParams() {

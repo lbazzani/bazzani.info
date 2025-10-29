@@ -227,60 +227,9 @@ export default function AIAssistantPanel() {
       setInvitationMessage(0);
     }
 
-    // Scroll panel to top on mobile
-    if (panelRef.current && window.innerWidth < 900) {
-      // Small delay to ensure state updates
-      setTimeout(() => {
-        const rect = panelRef.current?.getBoundingClientRect();
-        if (rect) {
-          window.scrollTo({
-            top: window.pageYOffset + rect.top - 4, // 4px from top
-            behavior: 'smooth'
-          });
-        }
-      }, 100);
-    }
-
     // Always focus on input when clicking anywhere in the component
     setTimeout(() => inputRef.current?.focus(), 0);
   };
-
-  // Prevent scroll on keyboard open (mobile)
-  useEffect(() => {
-    if (isInteractive && window.innerWidth < 900) {
-      // Save original viewport height
-      const viewportHeight = window.visualViewport?.height || window.innerHeight;
-
-      const handleResize = () => {
-        // When keyboard opens, viewport height changes
-        const newHeight = window.visualViewport?.height || window.innerHeight;
-        if (newHeight < viewportHeight) {
-          // Keyboard is open - prevent any scroll
-          document.body.style.position = 'fixed';
-          document.body.style.width = '100%';
-          document.body.style.top = `-${window.scrollY}px`;
-        }
-      };
-
-      const handleVisualViewportResize = () => handleResize();
-
-      window.visualViewport?.addEventListener('resize', handleVisualViewportResize);
-      window.addEventListener('resize', handleResize);
-
-      return () => {
-        window.visualViewport?.removeEventListener('resize', handleVisualViewportResize);
-        window.removeEventListener('resize', handleResize);
-        // Restore scroll
-        const scrollY = document.body.style.top;
-        document.body.style.position = '';
-        document.body.style.width = '';
-        document.body.style.top = '';
-        if (scrollY) {
-          window.scrollTo(0, parseInt(scrollY || '0') * -1);
-        }
-      };
-    }
-  }, [isInteractive]);
 
   return (
     <Paper

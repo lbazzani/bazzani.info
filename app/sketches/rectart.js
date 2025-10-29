@@ -45,9 +45,14 @@ const init = (p5) => {
     scene = null;
     sceneFrame = -1;
 
-    // Calculate canvas dimensions
-    canvasHeight = p5.round(p5.windowHeight * scaleHeight);
-    canvasWidth = p5.round(p5.windowWidth * scaleWidth);
+    // Calculate canvas dimensions - use available space
+    const availableWidth = p5.windowWidth;
+    const availableHeight = p5.windowHeight;
+
+    // Use the smaller dimension to create a square-ish canvas
+    const size = Math.min(availableWidth, availableHeight);
+    canvasWidth = p5.round(size * scaleWidth);
+    canvasHeight = p5.round(size * scaleHeight);
 
     // Random settings for each scene
     cross = getRandomInt(0, 1) === 1;
@@ -80,7 +85,9 @@ export const rectart = (p5) => {
     p5.draw = () => {
         // Initialize scene on first frame
         if (sceneFrame === -1) {
-            p5.background(getRandomInt(10, 50), getRandomInt(100, 200));
+            // Random dark background
+            const bgGray = getRandomInt(10, 50);
+            p5.background(bgGray);
             scene = new Scene();
         }
 
@@ -109,8 +116,11 @@ export const rectart = (p5) => {
     };
 
     p5.windowResized = () => {
-        canvasHeight = p5.windowHeight * scaleHeight;
-        canvasWidth = p5.windowWidth * scaleWidth;
+        const availableWidth = p5.windowWidth;
+        const availableHeight = p5.windowHeight;
+        const size = Math.min(availableWidth, availableHeight);
+        canvasWidth = p5.round(size * scaleWidth);
+        canvasHeight = p5.round(size * scaleHeight);
         canvas = canvas ? p5.resizeCanvas(canvasWidth, canvasHeight) : p5.createCanvas(canvasWidth, canvasHeight);
     };
 };

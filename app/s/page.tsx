@@ -1,6 +1,7 @@
-import { Box, Container, Typography, Card, CardContent, CardActionArea, Grid } from '@mui/material';
+import { Box, Container, Typography, Card, CardContent, CardActionArea, Grid, Button } from '@mui/material';
 import Link from 'next/link';
 import BrushIcon from '@mui/icons-material/Brush';
+import HomeIcon from '@mui/icons-material/Home';
 
 const sketches = [
   {
@@ -38,13 +39,6 @@ const sketches = [
     note: '@bazzani',
     color: '#FFEAA7',
   },
-  {
-    id: 'rectart',
-    title: 'Rectangle Art',
-    description: 'Geometric compositions using rectangular shapes and mathematical patterns.',
-    note: '@bazzani',
-    color: '#DFE6E9',
-  },
 ];
 
 export default function SketchListPage() {
@@ -57,12 +51,35 @@ export default function SketchListPage() {
       }}
     >
       <Container maxWidth="lg">
+        {/* Back to Home Button */}
+        <Box sx={{ pt: 2, pb: 2 }}>
+          <Link href="/" style={{ textDecoration: 'none' }}>
+            <Button
+              variant="text"
+              startIcon={<HomeIcon />}
+              sx={{
+                color: '#fff',
+                textTransform: 'none',
+                fontWeight: 600,
+                fontSize: '0.95rem',
+                px: 2,
+                '&:hover': {
+                  bgcolor: 'rgba(155, 89, 182, 0.1)',
+                  color: '#9B59B6',
+                },
+              }}
+            >
+              Back to Home
+            </Button>
+          </Link>
+        </Box>
+
         {/* Header */}
         <Box
           sx={{
             textAlign: 'center',
             mb: 6,
-            pt: 4,
+            pt: 2,
           }}
         >
           <Box
