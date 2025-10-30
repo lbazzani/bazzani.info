@@ -1,2 +1,0 @@
-Amidst the challenges of the lockdown, I found solace and inspiration in the world of generative art and data visualization. What started as a pastime quickly transformed into a passion, and today, I'm excited to share my journey with you.
-On [bazzify.com](https://bazzify.com), you can witness some of my creative endeavors, crafted using the powerful p5.js graphics library. These pieces are a reflection of my exploration of generative art, where algorithms breathe life into visuals, creating unique and captivating compositions.

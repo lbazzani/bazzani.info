@@ -1,3 +1,0 @@
-Exciting things are on the horizon at [bazzium.com](https://bazzium.com), where I'm gearing up to introduce a groundbreaking project that merges the immense capabilities of OpenAI's language model with my expertise in business process automation.
-
-My goal is sipmle: to bring to life a dynamic and automated multilingual virtual back office. It's an innovative convergence of cutting-edge AI technology and practical business solutions, designed to streamline operations and enhance productivity across industries.
