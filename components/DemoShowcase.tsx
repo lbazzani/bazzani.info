@@ -7,6 +7,7 @@ import SmartToyIcon from '@mui/icons-material/SmartToy';
 import NewReleasesIcon from '@mui/icons-material/NewReleases';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import BrushIcon from '@mui/icons-material/Brush';
+import SlideshowIcon from '@mui/icons-material/Slideshow';
 
 interface DemoShowcaseProps {
   onDemoOpen: (demoId: string) => void;
@@ -32,6 +33,16 @@ const DEMOS = [
     isNew: true,
     gradient: 'linear-gradient(135deg, rgba(78,205,196,0.1) 0%, rgba(78,205,196,0.05) 100%)',
     borderColor: '#4ECDC4',
+  },
+  {
+    id: 'slide-generator',
+    title: 'AI Flowchart Builder & PPT Export',
+    description: 'Create professional flowcharts with drag-and-drop interface and AI assistant. Export to PowerPoint with perfect positioning and formatting.',
+    icon: <SlideshowIcon sx={{ fontSize: 48, color: '#667eea' }} />,
+    features: ['AI Assistant', 'Drag & Drop', 'PPT Export', 'Custom Shapes'],
+    isNew: true,
+    gradient: 'linear-gradient(135deg, rgba(102,126,234,0.1) 0%, rgba(118,75,162,0.05) 100%)',
+    borderColor: '#667eea',
   },
   // {
   //   id: 'co2-assistant',

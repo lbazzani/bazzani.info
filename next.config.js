@@ -39,12 +39,19 @@ const nextConfig = {
             fs: false,
             events: false,
             process: false,
-            child_process : false
+            child_process: false,
+            stream: false,
+            buffer: false,
+            util: false,
+            url: false,
+            'node:fs': false,
+            'node:path': false,
+            'node:stream': false,
           }
         };
       }
-      config.module.exprContextCritical = false; // Workaround to suppress next-i18next warning, see https://github.com/isaachinman/next-i18next/issues/1545
-  
+      config.module.exprContextCritical = false;
+
       return config;
     },
 }

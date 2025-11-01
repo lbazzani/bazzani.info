@@ -108,7 +108,9 @@ export default function Home() {
   };
 
   const handleDemoOpen = (demoId: string) => {
-    if (demoId === 'k8s-architecture') {
+    if (demoId === 'slide-generator') {
+      window.open('/slide-generator', '_blank');
+    } else if (demoId === 'k8s-architecture') {
       setIsArchitectureDemoOpen(true);
     } else if (demoId === 'co2-data') {
       setIsCO2DemoOpen(true);

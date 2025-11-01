@@ -9,6 +9,7 @@ import MyAppBar from '../components/MyAppBar';
 import MyFooter from '../components/MyFooter';
 import Box from '@mui/material/Box';
 import { generateStructuredData, generateKeywords } from '../lib/seo/generateMetadata';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -94,7 +95,6 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="theme-color" content="#ffffff" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMNVX8WZV5"></script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -104,6 +104,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         <Providers session={session}>
           <AppRouterCacheProvider>
             <body className={inter.className} style={{ backgroundColor: '#f8f9fa' }}>
+              <GoogleAnalytics />
               <main style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
                 <MyAppBar />
                 <Box sx={{ display: { xs: 'none', md: 'block' }, height: '16px' }} />
