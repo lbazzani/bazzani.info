@@ -163,10 +163,10 @@ export async function POST(request: NextRequest) {
     }
 
     // Generate the file
-    const fileBuffer = await pptx.write({ outputType: 'nodebuffer' });
+    const fileBuffer = await pptx.write({ outputType: 'nodebuffer' }) as Buffer;
 
     // Return as response
-    return new NextResponse(fileBuffer, {
+    return new NextResponse(fileBuffer as unknown as BodyInit, {
       status: 200,
       headers: {
         'Content-Type': 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
