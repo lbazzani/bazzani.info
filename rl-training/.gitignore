@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Training artifacts
+logs/
+models/checkpoints/
+models/final/
+*.pth
+*.pt
+*.onnx
+
+# Data
+data/training/*
+data/validation/*
+data/test/*
+!data/.gitkeep
+
+# TensorBoard
+events.out.tfevents.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temp files
+temp_*
+*.tmp
+
+# Plots
+*.png
+*.pdf
+evaluation_results/
