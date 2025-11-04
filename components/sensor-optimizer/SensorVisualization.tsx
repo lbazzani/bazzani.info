@@ -19,6 +19,7 @@ import {
   FormControl,
   InputLabel,
   IconButton,
+  Slider,
 } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -29,6 +30,8 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import FlashOnIcon from '@mui/icons-material/FlashOn';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 const Sketch = dynamic(() => import('react-p5').then((mod) => mod.default), {
   ssr: false,
@@ -48,6 +51,12 @@ interface Sensor {
   color: string;
 }
 
+interface Constraint {
+  x: number;
+  y: number;
+  z: number;
+}
+
 interface JunctionBox {
   id: string;
   x: number;
@@ -63,6 +72,7 @@ interface SensorVisualizationProps {
   unitsY: number;
   unitsZ: number;
   sensors: SensorType[];
+  constraints: Constraint[];
   onReconfigure: () => void;
 }
 
@@ -71,6 +81,7 @@ export default function SensorVisualization({
   unitsY,
   unitsZ,
   sensors,
+  constraints,
   onReconfigure,
 }: SensorVisualizationProps) {
   const router = useRouter();
@@ -82,28 +93,80 @@ export default function SensorVisualization({
   const [optimizeDialogOpen, setOptimizeDialogOpen] = useState(false);
   const [optimizationSteps, setOptimizationSteps] = useState<string[]>([]);
   const [isOptimizing, setIsOptimizing] = useState(false);
+  const [showConstraints, setShowConstraints] = useState(true);
+  const [sensorScale, setSensorScale] = useState(1.0);
+  const [showGrid, setShowGrid] = useState(true);
+  const [showFloor, setShowFloor] = useState(true);
+  const [settingsPanelOpen, setSettingsPanelOpen] = useState(false);
   const rotationX = useRef(-0.4);
   const rotationY = useRef(0.6);
   const zoomLevel = useRef(1);
 
-  // Generate random sensor positions
+  // Pre-calculate which free space cubes to display (for performance)
+  const [freeSpaceCubesToShow, setFreeSpaceCubesToShow] = useState<Set<string>>(new Set());
+
+  // Pre-calculate free space cubes to display (once)
+  useEffect(() => {
+    const cubesToShow = new Set<string>();
+    const sampleRate = 0.002; // Show only 0.2% of free space cubes
+
+    for (let x = 0; x < unitsX; x++) {
+      for (let y = 0; y < unitsY; y++) {
+        for (let z = 0; z < unitsZ; z++) {
+          if (Math.random() < sampleRate) {
+            cubesToShow.add(`${x},${y},${z}`);
+          }
+        }
+      }
+    }
+
+    setFreeSpaceCubesToShow(cubesToShow);
+  }, [unitsX, unitsY, unitsZ]);
+
+  // Helper function to check if a position overlaps with constraints
+  const isPositionConstrained = (x: number, y: number, z: number): boolean => {
+    const xInt = Math.floor(x);
+    const yInt = Math.floor(y);
+    const zInt = Math.floor(z);
+
+    return constraints.some(
+      (c) => c.x === xInt && c.y === yInt && c.z === zInt
+    );
+  };
+
+  // Generate random sensor positions avoiding constraints
   useEffect(() => {
     const newSensors: Sensor[] = [];
 
     sensors.forEach((sensorType) => {
       for (let i = 0; i < sensorType.count; i++) {
-        newSensors.push({
-          x: Math.random() * unitsX,
-          y: Math.random() * unitsY,
-          z: Math.random() * unitsZ,
-          type: sensorType.id,
-          color: sensorType.color,
-        });
+        let x, y, z;
+        let attempts = 0;
+        const maxAttempts = 1000;
+
+        // Try to find a valid position (not in constraint)
+        do {
+          x = Math.random() * unitsX;
+          y = Math.random() * unitsY;
+          z = Math.random() * unitsZ;
+          attempts++;
+        } while (isPositionConstrained(x, y, z) && attempts < maxAttempts);
+
+        // Only add sensor if we found a valid position
+        if (attempts < maxAttempts) {
+          newSensors.push({
+            x,
+            y,
+            z,
+            type: sensorType.id,
+            color: sensorType.color,
+          });
+        }
       }
     });
 
     setPlacedSensors(newSensors);
-  }, [unitsX, unitsY, unitsZ, sensors]);
+  }, [unitsX, unitsY, unitsZ, sensors, constraints]);
 
   // Get already connected sensors (sensors that are connected to any junction box)
   const getConnectedSensors = () => {
@@ -152,7 +215,7 @@ export default function SensorVisualization({
     );
 
     if (typeSensors.length === 0) {
-      // No free sensors, return a random non-overlapping position
+      // No free sensors, return a random non-overlapping and non-constrained position
       let attempts = 0;
       while (attempts < 100) {
         const testPos = {
@@ -160,7 +223,8 @@ export default function SensorVisualization({
           y: Math.random() * unitsY,
           z: Math.random() * unitsZ,
         };
-        if (!isPositionOverlapping(testPos.x, testPos.y, testPos.z)) {
+        if (!isPositionOverlapping(testPos.x, testPos.y, testPos.z) &&
+            !isPositionConstrained(testPos.x, testPos.y, testPos.z)) {
           return testPos;
         }
         attempts++;
@@ -192,8 +256,9 @@ export default function SensorVisualization({
             z: Math.max(0, Math.min(unitsZ, centroid.z + dz)),
           };
 
-          // Skip if overlapping with existing junction boxes
-          if (isPositionOverlapping(testPos.x, testPos.y, testPos.z)) {
+          // Skip if overlapping with existing junction boxes or constraints
+          if (isPositionOverlapping(testPos.x, testPos.y, testPos.z) ||
+              isPositionConstrained(testPos.x, testPos.y, testPos.z)) {
             continue;
           }
 
@@ -304,7 +369,10 @@ export default function SensorVisualization({
                 return dist < 5;
               });
 
-              if (!overlaps) {
+              // Check if position is constrained
+              const constrained = isPositionConstrained(testPos.x, testPos.y, testPos.z);
+
+              if (!overlaps && !constrained) {
                 finalPosition = testPos;
                 foundPosition = true;
               }
@@ -450,11 +518,33 @@ export default function SensorVisualization({
               if (boxSensors.length === 0) continue;
 
               // Calculate optimal position for this consolidated box
-              const centroid = {
+              let centroid = {
                 x: boxSensors.reduce((sum, s) => sum + s.x, 0) / boxSensors.length,
                 y: boxSensors.reduce((sum, s) => sum + s.y, 0) / boxSensors.length,
                 z: boxSensors.reduce((sum, s) => sum + s.z, 0) / boxSensors.length,
               };
+
+              // If centroid is constrained, try to find a nearby valid position
+              if (isPositionConstrained(centroid.x, centroid.y, centroid.z)) {
+                const searchRadius = 5;
+                let foundValid = false;
+                for (let dx = -searchRadius; !foundValid && dx <= searchRadius; dx++) {
+                  for (let dy = -searchRadius; !foundValid && dy <= searchRadius; dy++) {
+                    for (let dz = -searchRadius; !foundValid && dz <= searchRadius; dz++) {
+                      const testX = centroid.x + dx;
+                      const testY = centroid.y + dy;
+                      const testZ = centroid.z + dz;
+                      if (testX >= 0 && testX < unitsX &&
+                          testY >= 0 && testY < unitsY &&
+                          testZ >= 0 && testZ < unitsZ &&
+                          !isPositionConstrained(testX, testY, testZ)) {
+                        centroid = { x: testX, y: testY, z: testZ };
+                        foundValid = true;
+                      }
+                    }
+                  }
+                }
+              }
 
               optimizedBoxes.push({
                 id: `optimized-${typeId}-${i}-${Date.now()}`,
@@ -525,6 +615,11 @@ export default function SensorVisualization({
                 y: Math.max(0, Math.min(unitsY, centroid.y + dy)),
                 z: Math.max(0, Math.min(unitsZ, centroid.z + dz)),
               };
+
+              // Skip if position is constrained
+              if (isPositionConstrained(testPos.x, testPos.y, testPos.z)) {
+                continue;
+              }
 
               const distances = typeSensors
                 .map((s) => Math.sqrt(
@@ -659,6 +754,7 @@ export default function SensorVisualization({
       const requestData = {
         sensors: placedSensors,
         junctionBoxes: junctionBoxes,
+        constraints: constraints,
         unitsX,
         unitsY,
         unitsZ,
@@ -811,13 +907,15 @@ export default function SensorVisualization({
     const unitSize = Math.min(600 / maxDimension, 10);
 
     // Draw base floor (bottom of the cube) with color
-    p5.push();
-    p5.translate(0, (unitsY * unitSize) / 2, 0);
-    p5.rotateX(p5.HALF_PI);
-    p5.fill(20, 20, 40, 150);
-    p5.noStroke();
-    p5.rect(-unitsX * unitSize / 2, -unitsZ * unitSize / 2, unitsX * unitSize, unitsZ * unitSize);
-    p5.pop();
+    if (showFloor) {
+      p5.push();
+      p5.translate(0, (unitsY * unitSize) / 2, 0);
+      p5.rotateX(p5.HALF_PI);
+      p5.fill(20, 20, 40, 150);
+      p5.noStroke();
+      p5.rect(-unitsX * unitSize / 2, -unitsZ * unitSize / 2, unitsX * unitSize, unitsZ * unitSize);
+      p5.pop();
+    }
 
     // Draw space boundaries (wireframe box)
     p5.push();
@@ -828,28 +926,53 @@ export default function SensorVisualization({
     p5.pop();
 
     // Draw grid lines on bottom
-    p5.push();
-    p5.stroke(60, 60, 120);
-    p5.strokeWeight(1);
+    if (showGrid) {
+      p5.push();
+      p5.stroke(60, 60, 120);
+      p5.strokeWeight(1);
 
-    // Position grid at bottom of box
-    p5.translate(0, (unitsY * unitSize) / 2, 0);
-    p5.rotateX(p5.HALF_PI);
+      // Position grid at bottom of box
+      p5.translate(0, (unitsY * unitSize) / 2, 0);
+      p5.rotateX(p5.HALF_PI);
 
-    const gridStep = Math.max(5, Math.floor(maxDimension / 10));
-    for (let i = -unitsX/2; i <= unitsX/2; i += gridStep) {
-      p5.line(
-        i * unitSize, -unitsZ * unitSize / 2,
-        i * unitSize, unitsZ * unitSize / 2
-      );
+      const gridStep = Math.max(5, Math.floor(maxDimension / 10));
+      for (let i = -unitsX/2; i <= unitsX/2; i += gridStep) {
+        p5.line(
+          i * unitSize, -unitsZ * unitSize / 2,
+          i * unitSize, unitsZ * unitSize / 2
+        );
+      }
+      for (let i = -unitsZ/2; i <= unitsZ/2; i += gridStep) {
+        p5.line(
+          -unitsX * unitSize / 2, i * unitSize,
+          unitsX * unitSize / 2, i * unitSize
+        );
+      }
+      p5.pop();
     }
-    for (let i = -unitsZ/2; i <= unitsZ/2; i += gridStep) {
-      p5.line(
-        -unitsX * unitSize / 2, i * unitSize,
-        unitsX * unitSize / 2, i * unitSize
-      );
+
+    // Draw constraint cubes (red with edge) - optimized version
+    if (showConstraints && constraints.length > 0) {
+      p5.push();
+
+      // Draw all constraint cubes with more visible style
+      constraints.forEach(c => {
+        p5.push();
+        const cubeX = (c.x - unitsX / 2 + 0.5) * unitSize;
+        const cubeY = (c.y - unitsY / 2 + 0.5) * unitSize;
+        const cubeZ = (c.z - unitsZ / 2 + 0.5) * unitSize;
+        p5.translate(cubeX, cubeY, cubeZ);
+
+        // Red fill with higher opacity
+        p5.fill(200, 40, 40, 80);
+        p5.stroke(255, 80, 80, 180);
+        p5.strokeWeight(0.5);
+        p5.box(unitSize * 0.85);
+        p5.pop();
+      });
+
+      p5.pop();
     }
-    p5.pop();
 
     // Draw connections from junction boxes to sensors (with exclusivity)
     const alreadyConnected = new Set<Sensor>();
@@ -881,8 +1004,8 @@ export default function SensorVisualization({
       const r = parseInt(jbox.color.slice(1, 3), 16);
       const g = parseInt(jbox.color.slice(3, 5), 16);
       const b = parseInt(jbox.color.slice(5, 7), 16);
-      p5.stroke(r, g, b, 150);
-      p5.strokeWeight(1);
+      p5.stroke(r, g, b, 255);
+      p5.strokeWeight(2 * sensorScale);
 
       availableSensors.forEach(({ sensor }) => {
         const sensorX = (sensor.x - unitsX / 2) * unitSize;
@@ -913,31 +1036,17 @@ export default function SensorVisualization({
       const isConnected = alreadyConnected.has(sensor);
 
       if (isConnected) {
-        // Connected sensor - normal appearance
-        // Inner sphere
+        // Connected sensor - small box, fully visible
         p5.fill(r, g, b);
-        p5.noStroke();
-        p5.sphere(unitSize * 0.6);
-
-        // Glow effect
-        p5.stroke(r, g, b, 100);
-        p5.strokeWeight(1);
-        p5.noFill();
-        p5.sphere(unitSize * 0.9);
-      } else {
-        // Unconnected sensor - dimmed with border
-        // Inner sphere - much dimmer
-        p5.fill(r * 0.3, g * 0.3, b * 0.3, 120);
         p5.stroke(r, g, b, 180);
-        p5.strokeWeight(2);
-        p5.sphere(unitSize * 0.6);
-
-        // Pulsing effect outline
-        const pulseSize = 0.9 + Math.sin(p5.frameCount * 0.05) * 0.1;
-        p5.stroke(r, g, b, 80);
-        p5.strokeWeight(1);
-        p5.noFill();
-        p5.sphere(unitSize * pulseSize);
+        p5.strokeWeight(0.5);
+        p5.box(unitSize * 0.3 * sensorScale);
+      } else {
+        // Unconnected sensor - small box with bright outline
+        p5.fill(r * 0.4, g * 0.4, b * 0.4, 200);
+        p5.stroke(r, g, b, 255);
+        p5.strokeWeight(1.5 * sensorScale);
+        p5.box(unitSize * 0.3 * sensorScale);
       }
 
       p5.pop();
@@ -958,17 +1067,11 @@ export default function SensorVisualization({
       const g = parseInt(jbox.color.slice(3, 5), 16);
       const b = parseInt(jbox.color.slice(5, 7), 16);
 
-      // Draw box
+      // Draw box - smaller and proportional
       p5.fill(r, g, b);
-      p5.stroke(255);
-      p5.strokeWeight(2);
-      p5.box(unitSize * 1.5);
-
-      // Draw outline
-      p5.noFill();
-      p5.stroke(r, g, b, 200);
-      p5.strokeWeight(1);
-      p5.box(unitSize * 1.8);
+      p5.stroke(255, 200);
+      p5.strokeWeight(1.5);
+      p5.box(unitSize * 0.8);
 
       p5.pop();
     });
@@ -1269,6 +1372,128 @@ export default function SensorVisualization({
         </DialogContent>
       </Dialog>
 
+      {/* Settings Dialog */}
+      <Dialog
+        open={settingsPanelOpen}
+        onClose={() => setSettingsPanelOpen(false)}
+        sx={{
+          zIndex: 10000,
+        }}
+        PaperProps={{
+          sx: {
+            background: 'linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%)',
+            color: 'white',
+            minWidth: 400,
+            maxWidth: 500,
+          },
+        }}
+      >
+        <DialogTitle sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+            <SettingsIcon sx={{ color: '#667eea' }} />
+            <Typography variant="h6">Display Settings</Typography>
+          </Box>
+          <IconButton onClick={() => setSettingsPanelOpen(false)} sx={{ color: 'white' }}>
+            <CloseIcon />
+          </IconButton>
+        </DialogTitle>
+        <DialogContent sx={{ pt: 3 }}>
+          {/* Display Scale */}
+          <Box sx={{ mb: 3 }}>
+            <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1.5, color: '#667eea' }}>
+              Display Scale
+            </Typography>
+            <Typography variant="body2" sx={{ color: '#aaa', mb: 1 }}>
+              Sensors & Connectors: {sensorScale.toFixed(1)}x
+            </Typography>
+            <Slider
+              value={sensorScale}
+              onChange={(e, v) => setSensorScale(v as number)}
+              min={0.5}
+              max={2.0}
+              step={0.1}
+              valueLabelDisplay="auto"
+              sx={{
+                color: '#667eea',
+                '& .MuiSlider-thumb': {
+                  bgcolor: '#667eea',
+                },
+                '& .MuiSlider-track': {
+                  bgcolor: '#667eea',
+                },
+              }}
+            />
+          </Box>
+
+          {/* Visibility Options */}
+          <Box sx={{ mb: 3 }}>
+            <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1.5, color: '#667eea' }}>
+              Visibility Options
+            </Typography>
+
+            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 1.5 }}>
+              <Typography variant="body2">Show Constraints</Typography>
+              <IconButton
+                onClick={() => setShowConstraints(!showConstraints)}
+                sx={{
+                  color: showConstraints ? '#FF6B6B' : '#666',
+                  '&:hover': {
+                    bgcolor: 'rgba(255, 107, 107, 0.1)',
+                  },
+                }}
+              >
+                {showConstraints ? <VisibilityIcon /> : <VisibilityOffIcon />}
+              </IconButton>
+            </Box>
+
+            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 1.5 }}>
+              <Typography variant="body2">Show Grid</Typography>
+              <IconButton
+                onClick={() => setShowGrid(!showGrid)}
+                sx={{
+                  color: showGrid ? '#4ECDC4' : '#666',
+                  '&:hover': {
+                    bgcolor: 'rgba(78, 205, 196, 0.1)',
+                  },
+                }}
+              >
+                {showGrid ? <VisibilityIcon /> : <VisibilityOffIcon />}
+              </IconButton>
+            </Box>
+
+            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+              <Typography variant="body2">Show Floor</Typography>
+              <IconButton
+                onClick={() => setShowFloor(!showFloor)}
+                sx={{
+                  color: showFloor ? '#45B7D1' : '#666',
+                  '&:hover': {
+                    bgcolor: 'rgba(69, 183, 209, 0.1)',
+                  },
+                }}
+              >
+                {showFloor ? <VisibilityIcon /> : <VisibilityOffIcon />}
+              </IconButton>
+            </Box>
+          </Box>
+
+          <Button
+            fullWidth
+            variant="contained"
+            onClick={() => setSettingsPanelOpen(false)}
+            sx={{
+              py: 1.5,
+              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+              '&:hover': {
+                background: 'linear-gradient(135deg, #5568d3 0%, #63408a 100%)',
+              },
+            }}
+          >
+            Close
+          </Button>
+        </DialogContent>
+      </Dialog>
+
       {/* Full-screen overlay */}
       <Box
         sx={{
@@ -1414,6 +1639,20 @@ export default function SensorVisualization({
                 </Button>
               </>
             )}
+            <IconButton
+              onClick={() => setSettingsPanelOpen(true)}
+              sx={{
+                color: '#667eea',
+                mr: 1,
+                '&:hover': {
+                  bgcolor: 'rgba(102, 126, 234, 0.1)',
+                  color: '#8b9cf5',
+                },
+              }}
+              title="Display Settings"
+            >
+              <SettingsIcon />
+            </IconButton>
             <Button
               variant="contained"
               startIcon={<AddIcon />}

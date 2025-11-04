@@ -8,7 +8,7 @@ const openai = new OpenAI({
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { sensors, junctionBoxes, unitsX, unitsY, unitsZ } = body;
+    const { sensors, junctionBoxes, constraints, unitsX, unitsY, unitsZ } = body;
 
     // Calculate current metrics
     const totalSensors = sensors.length;
@@ -61,12 +61,23 @@ export async function POST(req: NextRequest) {
       )
       .join('\n');
 
+    const constraintsSummary = constraints && constraints.length > 0
+      ? `CONSTRAINTS (Blocked Positions):
+- Total Constraints: ${constraints.length} positions (${((constraints.length / totalVolume) * 100).toFixed(1)}% of space)
+- These positions CANNOT contain junction boxes
+- Junction boxes must NOT be placed at these exact integer coordinates:
+${constraints.slice(0, 20).map((c: any) => `  (${c.x}, ${c.y}, ${c.z})`).join('\n')}${constraints.length > 20 ? `\n  ... and ${constraints.length - 20} more constrained positions` : ''}
+`
+      : 'CONSTRAINTS: None';
+
     const prompt = `You are an expert in 3D sensor network optimization. Analyze the configuration and provide an OPTIMIZED configuration.
 
 SPACE CONFIGURATION:
 - Dimensions: ${unitsX} × ${unitsY} × ${unitsZ} units (${totalVolume.toFixed(0)} cubic units)
 - Total Sensors: ${totalSensors}
 - Total Junction Boxes: ${totalJunctionBoxes}
+
+${constraintsSummary}
 
 SENSOR DISTRIBUTION:
 ${sensorTypesSummary}
@@ -120,6 +131,7 @@ CRITICAL RULES:
 5. Try to consolidate boxes where possible (fewer boxes = better)
 6. Position boxes near the centroid of sensor clusters
 7. Calculate realistic improvements based on sensor positions
+8. IMPORTANT: Junction boxes MUST NOT be placed at constrained positions. When floor(x), floor(y), floor(z) match any constraint coordinates, the position is INVALID. Choose nearby valid positions instead.
 
 Generate the optimized junction box configuration now. Remember: ONLY valid JSON, no other text.`;
 

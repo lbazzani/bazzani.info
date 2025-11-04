@@ -21,6 +21,12 @@ interface SensorType {
   color: string;
 }
 
+interface Constraint {
+  x: number;
+  y: number;
+  z: number;
+}
+
 export default function SensorOptimizerMain() {
   const [configured, setConfigured] = useState(false);
 
@@ -39,6 +45,9 @@ export default function SensorOptimizerMain() {
     '#FFCC00', // Bright Yellow
     '#FF00FF', // Bright Magenta
   ]);
+
+  // Constraints configuration
+  const [constraintsPercentage, setConstraintsPercentage] = useState(5);
 
   const handleSensorTypeChange = (event: Event, value: number | number[]) => {
     const newValue = value as number;
@@ -72,11 +81,31 @@ export default function SensorOptimizerMain() {
       color: sensorColors[i],
     }));
 
+    // Generate random constraints based on configured percentage
+    const totalVolume = unitsX * unitsY * unitsZ;
+    const numConstraints = Math.floor(totalVolume * (constraintsPercentage / 100));
+    const constraints: Constraint[] = [];
+    const constraintSet = new Set<string>();
+
+    // Generate unique random constraint positions
+    while (constraints.length < numConstraints) {
+      const x = Math.floor(Math.random() * unitsX);
+      const y = Math.floor(Math.random() * unitsY);
+      const z = Math.floor(Math.random() * unitsZ);
+      const key = `${x},${y},${z}`;
+
+      if (!constraintSet.has(key)) {
+        constraintSet.add(key);
+        constraints.push({ x, y, z });
+      }
+    }
+
     return <SensorVisualization
       unitsX={unitsX}
       unitsY={unitsY}
       unitsZ={unitsZ}
       sensors={sensors}
+      constraints={constraints}
       onReconfigure={handleReconfigure}
     />;
   }
@@ -182,6 +211,39 @@ export default function SensorOptimizerMain() {
 
         <Divider sx={{ bgcolor: '#444', my: 4 }} />
 
+        {/* Constraints Configuration */}
+        <Box sx={{ mb: 4 }}>
+          <Typography variant="h6" sx={{ mb: 3, display: 'flex', alignItems: 'center', gap: 1 }}>
+            <SettingsIcon /> Constraints Configuration
+          </Typography>
+
+          <Box sx={{ mb: 3 }}>
+            <Typography gutterBottom sx={{ color: '#FF6B6B' }}>
+              Blocked Positions: {constraintsPercentage}% of space
+            </Typography>
+            <Slider
+              value={constraintsPercentage}
+              onChange={(e, v) => setConstraintsPercentage(v as number)}
+              min={0}
+              max={20}
+              step={1}
+              marks
+              valueLabelDisplay="auto"
+              sx={{
+                color: '#FF6B6B',
+                '& .MuiSlider-thumb': {
+                  bgcolor: '#FF6B6B',
+                },
+              }}
+            />
+            <Typography variant="caption" sx={{ color: '#aaa', display: 'block', mt: 1 }}>
+              Percentage of space that will be blocked (cannot contain sensors, junction boxes, or cables)
+            </Typography>
+          </Box>
+        </Box>
+
+        <Divider sx={{ bgcolor: '#444', my: 4 }} />
+
         {/* Sensor Configuration */}
         <Box sx={{ mb: 4 }}>
           <Typography variant="h6" sx={{ mb: 3 }}>
@@ -265,6 +327,9 @@ export default function SensorOptimizerMain() {
           </Typography>
           <Typography variant="body2" sx={{ color: '#aaa', mb: 1 }}>
             Total Sensors: {sensorCounts.slice(0, numSensorTypes).reduce((a, b) => a + b, 0)}
+          </Typography>
+          <Typography variant="body2" sx={{ color: '#FF6B6B', mb: 1 }}>
+            Blocked Positions: {constraintsPercentage}% ({Math.floor(unitsX * unitsY * unitsZ * (constraintsPercentage / 100))} cubes)
           </Typography>
           {(() => {
             const totalVolume = unitsX * unitsY * unitsZ;
