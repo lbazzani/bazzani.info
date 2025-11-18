@@ -10,6 +10,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import PublicIcon from '@mui/icons-material/Public';
 import SmartToyIcon from '@mui/icons-material/SmartToy';
+import PsychologyIcon from '@mui/icons-material/Psychology';
 import NewReleasesIcon from '@mui/icons-material/NewReleases';
 import LaunchIcon from '@mui/icons-material/Launch';
 import ProfileInfo from '../../components/ProfileInfo';
@@ -200,7 +201,7 @@ export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
       <Paper
         elevation={0}
         sx={{
-          p: 2.5,
+          p: 1.2,
           borderRadius: '12px',
           border: '1px solid',
           borderColor: '#e8e8e8',
@@ -228,10 +229,7 @@ export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
             sx={{
               display: 'flex',
               justifyContent: 'center',
-              mb: 2,
-              p: 1.5,
-              borderRadius: '8px',
-              bgcolor: 'rgba(255,255,255,0.05)',
+              mb: 0.6,
             }}
           >
             <img
@@ -239,7 +237,7 @@ export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
               alt="Xpylon"
               style={{
                 width: '100%',
-                maxWidth: '180px',
+                maxWidth: '140px',
                 height: 'auto',
               }}
             />
@@ -249,30 +247,16 @@ export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
           <Typography
             variant="caption"
             sx={{
-              color: 'rgba(255,255,255,0.9)',
+              color: 'rgba(255,255,255,0.85)',
               display: 'block',
               textAlign: 'center',
-              mb: 1,
-              lineHeight: 1.6,
-              fontSize: '0.75rem',
+              mb: 0.6,
+              lineHeight: 1.3,
+              fontSize: '0.65rem',
             }}
           >
-            AI-Powered Matchmaking Platform for Business
+            AI-Powered Matchmaking Platform
           </Typography>
-
-          {/* Location */}
-          <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 0.5, mb: 1.5 }}>
-            <LocationOnIcon sx={{ fontSize: 14, color: 'rgba(255,255,255,0.7)' }} />
-            <Typography
-              variant="caption"
-              sx={{
-                color: 'rgba(255,255,255,0.7)',
-                fontSize: '0.7rem',
-              }}
-            >
-              Houston, Texas
-            </Typography>
-          </Box>
 
           {/* CTA Button */}
           <Box
@@ -280,9 +264,9 @@ export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              gap: 0.5,
-              py: 1,
-              px: 2,
+              gap: 0.4,
+              py: 0.5,
+              px: 1.2,
               borderRadius: '6px',
               bgcolor: 'rgba(255,255,255,0.1)',
               border: '1px solid rgba(255,255,255,0.2)',
@@ -298,12 +282,124 @@ export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
               sx={{
                 color: '#fff',
                 fontWeight: 600,
-                fontSize: '0.75rem',
+                fontSize: '0.65rem',
               }}
             >
               Visit Xpylon.com
             </Typography>
-            <LaunchIcon sx={{ fontSize: 14, color: '#fff' }} />
+            <LaunchIcon sx={{ fontSize: 11, color: '#fff' }} />
+          </Box>
+        </Box>
+      </Paper>
+
+      {/* AI Course Card */}
+      <Paper
+        elevation={0}
+        sx={{
+          p: 1.2,
+          borderRadius: '12px',
+          border: '1px solid',
+          borderColor: '#e8e8e8',
+          backgroundColor: '#ffffff',
+          mb: 2,
+          background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+        }}
+      >
+        <Box
+          component="a"
+          href="https://corsoai.bazzani.info"
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{
+            display: 'block',
+            textDecoration: 'none',
+            transition: 'transform 0.3s',
+            '&:hover': {
+              transform: 'scale(1.02)',
+            },
+          }}
+        >
+          {/* Icon/Title */}
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              mb: 0.6,
+              gap: 0.8,
+            }}
+          >
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: 32,
+                height: 32,
+                borderRadius: '50%',
+                background: 'linear-gradient(135deg, #e67e22 0%, #d35400 100%)',
+                boxShadow: '0 3px 10px rgba(230, 126, 34, 0.3)',
+              }}
+            >
+              <PsychologyIcon sx={{ fontSize: 20, color: '#fff' }} />
+            </Box>
+            <Typography
+              variant="h6"
+              sx={{
+                color: '#fff',
+                fontWeight: 700,
+                fontSize: '0.95rem',
+              }}
+            >
+              AI Course
+            </Typography>
+          </Box>
+
+          {/* Info */}
+          <Typography
+            variant="caption"
+            sx={{
+              color: 'rgba(255,255,255,0.85)',
+              display: 'block',
+              textAlign: 'center',
+              mb: 0.6,
+              lineHeight: 1.3,
+              fontSize: '0.65rem',
+            }}
+          >
+            Professional AI & Machine Learning
+          </Typography>
+
+          {/* CTA Button */}
+          <Box
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: 0.4,
+              py: 0.5,
+              px: 1.2,
+              borderRadius: '6px',
+              bgcolor: 'rgba(255,255,255,0.1)',
+              border: '1px solid rgba(255,255,255,0.2)',
+              transition: 'all 0.2s',
+              '&:hover': {
+                bgcolor: 'rgba(255,255,255,0.15)',
+                borderColor: 'rgba(255,255,255,0.4)',
+              },
+            }}
+          >
+            <Typography
+              variant="caption"
+              sx={{
+                color: '#fff',
+                fontWeight: 600,
+                fontSize: '0.65rem',
+              }}
+            >
+              Explore Course
+            </Typography>
+            <LaunchIcon sx={{ fontSize: 11, color: '#fff' }} />
           </Box>
         </Box>
       </Paper>
