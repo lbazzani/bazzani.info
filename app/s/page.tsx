@@ -145,7 +145,7 @@ export default function SketchListPage() {
         {/* Sketch Grid */}
         <Grid container spacing={3}>
           {sketches.map((sketch) => (
-            <Grid item xs={12} sm={6} md={4} key={sketch.id}>
+            <Grid size={{ xs: 12, sm: 6, md: 4 }} key={sketch.id}>
               <Link href={`/s/${sketch.id}`} style={{ textDecoration: 'none' }}>
                 <Card
                   sx={{

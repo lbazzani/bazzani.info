@@ -2,6 +2,9 @@
 
 
 const nextConfig = {
+    // Enable Turbopack (default in Next.js 16)
+    turbopack: {},
+
     // Add cache busting for PWA updates
     generateBuildId: async () => {
       return `build-${Date.now()}`;

@@ -150,7 +150,7 @@ export default function SensorOptimizerMain() {
           </Typography>
 
           <Grid container spacing={3}>
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Typography gutterBottom sx={{ color: '#4ECDC4' }}>
                 Width (X): {unitsX} units
               </Typography>
@@ -169,7 +169,7 @@ export default function SensorOptimizerMain() {
               />
             </Grid>
 
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Typography gutterBottom sx={{ color: '#45B7D1' }}>
                 Height (Y): {unitsY} units
               </Typography>
@@ -188,7 +188,7 @@ export default function SensorOptimizerMain() {
               />
             </Grid>
 
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Typography gutterBottom sx={{ color: '#FFA07A' }}>
                 Depth (Z): {unitsZ} units
               </Typography>

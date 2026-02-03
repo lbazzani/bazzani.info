@@ -1,7 +1,7 @@
 import React from 'react';
 import { Inter } from 'next/font/google';
 import { Providers } from "./providers";
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import ThemeRegistry from '../src/lib/platform/theme/ThemeRegistry';
 import { auth } from "../auth";
 import { Container } from '@mui/material';
@@ -12,6 +12,16 @@ import { generateStructuredData, generateKeywords } from '../lib/seo/generateMet
 import GoogleAnalytics from '../components/GoogleAnalytics';
 
 const inter = Inter({ subsets: ['latin'] });
+
+// Generate viewport configuration separately (required in Next.js 16)
+export function generateViewport() {
+  return {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  };
+}
 
 // Generate metadata dynamically from markdown files
 export async function generateMetadata() {
@@ -27,12 +37,6 @@ export async function generateMetadata() {
     metadataBase: new URL('https://bazzani.info'),
     alternates: {
       canonical: '/',
-    },
-    viewport: {
-      width: 'device-width',
-      initialScale: 1,
-      maximumScale: 1,
-      userScalable: false,
     },
     appleWebApp: {
       capable: true,

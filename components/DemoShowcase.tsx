@@ -111,7 +111,7 @@ export default function DemoShowcase({ onDemoOpen }: DemoShowcaseProps) {
       {/* Demo Cards Grid */}
       <Grid container spacing={3}>
         {DEMOS.map((demo) => (
-          <Grid item xs={12} md={6} key={demo.id}>
+          <Grid size={{ xs: 12, md: 6 }} key={demo.id}>
             <Card
               sx={{
                 height: '100%',

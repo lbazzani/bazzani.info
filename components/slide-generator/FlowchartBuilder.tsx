@@ -41,7 +41,7 @@ import {
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import DownloadIcon from '@mui/icons-material/Download';
 import SlideshowIcon from '@mui/icons-material/Slideshow';
 import RestartAltIcon from '@mui/icons-material/RestartAlt';

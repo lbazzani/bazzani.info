@@ -528,7 +528,7 @@ export default function CO2DataDemo({ isOpen, onClose }: CO2DataDemoProps) {
 
             {/* Stats Cards */}
             <Grid container spacing={2} sx={{ mb: 3 }}>
-              <Grid item xs={12} md={3}>
+              <Grid size={{ xs: 12, md: 3 }}>
                 <Fade in={true} timeout={500}>
                   <Card sx={{ bgcolor: 'rgba(50,108,229,0.1)', border: '1px solid rgba(50,108,229,0.3)' }}>
                     <CardContent>
@@ -545,7 +545,7 @@ export default function CO2DataDemo({ isOpen, onClose }: CO2DataDemoProps) {
                   </Card>
                 </Fade>
               </Grid>
-              <Grid item xs={12} md={3}>
+              <Grid size={{ xs: 12, md: 3 }}>
                 <Fade in={true} timeout={600}>
                   <Card sx={{ bgcolor: 'rgba(255,107,107,0.1)', border: '1px solid rgba(255,107,107,0.3)' }}>
                     <CardContent>
@@ -562,7 +562,7 @@ export default function CO2DataDemo({ isOpen, onClose }: CO2DataDemoProps) {
                   </Card>
                 </Fade>
               </Grid>
-              <Grid item xs={12} md={3}>
+              <Grid size={{ xs: 12, md: 3 }}>
                 <Fade in={true} timeout={700}>
                   <Card sx={{ bgcolor: 'rgba(78,205,196,0.1)', border: '1px solid rgba(78,205,196,0.3)' }}>
                     <CardContent>
@@ -579,7 +579,7 @@ export default function CO2DataDemo({ isOpen, onClose }: CO2DataDemoProps) {
                   </Card>
                 </Fade>
               </Grid>
-              <Grid item xs={12} md={3}>
+              <Grid size={{ xs: 12, md: 3 }}>
                 <Fade in={true} timeout={800}>
                   <Card sx={{ bgcolor: 'rgba(255,217,61,0.1)', border: '1px solid rgba(255,217,61,0.3)' }}>
                     <CardContent>
@@ -668,7 +668,7 @@ function OverviewView({
 }: OverviewViewProps) {
   return (
     <Grid container spacing={3}>
-      <Grid item xs={12} lg={8}>
+      <Grid size={{ xs: 12, lg: 8 }}>
         <Paper sx={{ p: 3, bgcolor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
           <Typography variant="h6" sx={{ color: 'white', mb: 2 }}>
             CO₂ Emissions Evolution (1950-{selectedYear})
@@ -715,9 +715,10 @@ function OverviewView({
               <Tooltip
                 contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid rgba(255,255,255,0.2)' }}
                 labelStyle={{ color: 'white' }}
-                formatter={(value: number, name: string) => {
+                formatter={(value, name) => {
+                  if (value === undefined || typeof value !== 'number') return ['', name ?? ''];
                   const country = MAJOR_COUNTRIES.find(c => c.code === name);
-                  return [`${Math.round(value).toLocaleString()} Mt`, country?.name || name];
+                  return [`${Math.round(value).toLocaleString()} Mt`, country?.name || name || ''];
                 }}
               />
               {MAJOR_COUNTRIES.map(country =>
@@ -739,7 +740,7 @@ function OverviewView({
         </Paper>
       </Grid>
 
-      <Grid item xs={12} lg={4}>
+      <Grid size={{ xs: 12, lg: 4 }}>
         <Paper sx={{ p: 3, bgcolor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
           <Typography variant="h6" sx={{ color: 'white', mb: 2 }}>
             Top 10 Emitters {selectedYear}
@@ -755,7 +756,7 @@ function OverviewView({
               <Tooltip
                 contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid rgba(255,255,255,0.2)' }}
                 labelStyle={{ color: 'white' }}
-                formatter={(value: number) => `${Math.round(value).toLocaleString()} Mt`}
+                formatter={(value) => value !== undefined && typeof value === 'number' ? `${Math.round(value).toLocaleString()} Mt` : ''}
               />
               <Bar dataKey="co2" animationDuration={500} onClick={(data: any) => onCountryClick(data.iso_code)} cursor="pointer">
                 {currentTopEmitters.map((entry: any, index: number) => (
@@ -816,7 +817,7 @@ function ComparisonView({
         </Typography>
 
         <Grid container spacing={2} sx={{ mb: 3 }}>
-          <Grid item xs={12} md={6}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <Typography variant="subtitle2" sx={{ color: 'rgba(255,255,255,0.7)', mb: 1 }}>
               Countries
             </Typography>
@@ -836,7 +837,7 @@ function ComparisonView({
               ))}
             </Box>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <Typography variant="subtitle2" sx={{ color: 'rgba(255,255,255,0.7)', mb: 1 }}>
               Metrics
             </Typography>
@@ -867,12 +868,11 @@ function ComparisonView({
             <Tooltip
               contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid rgba(255,255,255,0.2)' }}
               labelStyle={{ color: 'white' }}
-              formatter={(value: number, name: string) => {
+              formatter={(value, name) => {
+                if (value === undefined || name === undefined || typeof value !== 'number' || typeof name !== 'string') return ['', ''];
                 const [countryCode, metric] = name.split('_');
                 const country = MAJOR_COUNTRIES.find(c => c.code === countryCode);
                 const metricInfo = METRICS.find(m => m.key === metric);
-                const rawKey = `${name}_raw`;
-                const rawValue = normalizedData.find(d => d.year === value)?.year;
                 return [`${value.toFixed(1)}% (normalized)`, `${country?.name} - ${metricInfo?.label}`];
               }}
             />
@@ -926,7 +926,7 @@ function CountryDetailView({ countryData, yearData, selectedYear }: CountryDetai
 
       {yearData && (
         <Grid container spacing={2} sx={{ mb: 3 }}>
-          <Grid item xs={6} md={3}>
+          <Grid size={{ xs: 6, md: 3 }}>
             <Card sx={{ bgcolor: 'rgba(50,108,229,0.1)', border: '1px solid rgba(50,108,229,0.3)' }}>
               <CardContent>
                 <Typography variant="caption" sx={{ color: 'rgba(255,255,255,0.7)' }}>
@@ -941,7 +941,7 @@ function CountryDetailView({ countryData, yearData, selectedYear }: CountryDetai
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid size={{ xs: 6, md: 3 }}>
             <Card sx={{ bgcolor: 'rgba(78,205,196,0.1)', border: '1px solid rgba(78,205,196,0.3)' }}>
               <CardContent>
                 <Typography variant="caption" sx={{ color: 'rgba(255,255,255,0.7)' }}>
@@ -956,7 +956,7 @@ function CountryDetailView({ countryData, yearData, selectedYear }: CountryDetai
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid size={{ xs: 6, md: 3 }}>
             <Card sx={{ bgcolor: 'rgba(255,217,61,0.1)', border: '1px solid rgba(255,217,61,0.3)' }}>
               <CardContent>
                 <Typography variant="caption" sx={{ color: 'rgba(255,255,255,0.7)' }}>
@@ -971,7 +971,7 @@ function CountryDetailView({ countryData, yearData, selectedYear }: CountryDetai
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid size={{ xs: 6, md: 3 }}>
             <Card sx={{ bgcolor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
               <CardContent>
                 <Typography variant="caption" sx={{ color: 'rgba(255,255,255,0.7)' }}>
@@ -990,7 +990,7 @@ function CountryDetailView({ countryData, yearData, selectedYear }: CountryDetai
       )}
 
       <Grid container spacing={3}>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Paper sx={{ p: 3, bgcolor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
             <Typography variant="h6" sx={{ color: 'white', mb: 2 }}>
               Emissions Trend
@@ -1012,7 +1012,7 @@ function CountryDetailView({ countryData, yearData, selectedYear }: CountryDetai
           </Paper>
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Paper sx={{ p: 3, bgcolor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
             <Typography variant="h6" sx={{ color: 'white', mb: 2 }}>
               Emissions by Source
