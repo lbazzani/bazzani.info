@@ -162,25 +162,8 @@ export default function ExperienceCard(props: ExperienceCardProps) {
               position: 'relative',
             }}
           >
-            <Typography
-              variant="body2"
-              sx={{
-                color: 'text.secondary',
-                lineHeight: 1.6,
-                fontSize: '0.875rem',
-                overflow: 'hidden',
-                textOverflow: 'ellipsis',
-                display: '-webkit-box',
-                WebkitLineClamp: 3,
-                WebkitBoxOrient: 'vertical',
-                pr: 2,
-                pb: 4,
-                fontStyle: 'italic',
-                opacity: 0.8,
-              }}
-            >
-              Click to discover more →
-            </Typography>
+            {/* Space for READ MORE badge */}
+            <Box sx={{ pb: 2 }} />
           </CardContent>
         </Box>
 

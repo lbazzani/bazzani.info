@@ -41,8 +41,8 @@ function SectionHeader({ children, gradient = "linear-gradient(135deg, #d35400 0
   return (
     <Box
       sx={{
-        mb: 2,
-        mt: 4,
+        mb: 2.5,
+        mt: 5,
         position: 'relative',
         paddingBottom: 1.5,
         '&::before': {
@@ -50,10 +50,14 @@ function SectionHeader({ children, gradient = "linear-gradient(135deg, #d35400 0
           position: 'absolute',
           left: 0,
           bottom: 0,
-          width: '60px',
-          height: '3px',
+          width: '80px',
+          height: '4px',
           background: gradient,
-          borderRadius: '2px',
+          borderRadius: '4px',
+          transition: 'width 0.3s ease',
+        },
+        '&:hover::before': {
+          width: '120px',
         }
       }}
     >
@@ -61,10 +65,10 @@ function SectionHeader({ children, gradient = "linear-gradient(135deg, #d35400 0
         variant="h5"
         component="h2"
         sx={{
-          fontWeight: 600,
+          fontWeight: 700,
           color: '#2c3e50',
           letterSpacing: '-0.3px',
-          fontSize: { xs: '1.25rem', md: '1.5rem' }
+          fontSize: { xs: '1.3rem', md: '1.55rem' }
         }}
       >
         {children}

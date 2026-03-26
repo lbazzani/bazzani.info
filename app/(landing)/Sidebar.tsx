@@ -60,10 +60,11 @@ export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
         elevation={0}
         sx={{
           p: 0,
-          borderRadius: '12px',
+          borderRadius: '16px',
           border: '1px solid',
           borderColor: '#e8e8e8',
           backgroundColor: '#ffffff',
+          boxShadow: '0 2px 12px rgba(0, 0, 0, 0.05)',
           mb: 2,
           overflow: 'hidden',
         }}
@@ -202,12 +203,14 @@ export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
         elevation={0}
         sx={{
           p: 1.2,
-          borderRadius: '12px',
+          borderRadius: '16px',
           border: '1px solid',
           borderColor: '#e8e8e8',
           backgroundColor: '#ffffff',
+          boxShadow: '0 4px 16px rgba(26, 26, 46, 0.25)',
           mb: 2,
           background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+          borderColor: 'rgba(26, 26, 46, 0.3)',
         }}
       >
         <Box
@@ -297,12 +300,14 @@ export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
         elevation={0}
         sx={{
           p: 1.2,
-          borderRadius: '12px',
+          borderRadius: '16px',
           border: '1px solid',
           borderColor: '#e8e8e8',
           backgroundColor: '#ffffff',
+          boxShadow: '0 4px 16px rgba(26, 26, 46, 0.25)',
           mb: 2,
           background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+          borderColor: 'rgba(26, 26, 46, 0.3)',
         }}
       >
         <Box
@@ -409,10 +414,11 @@ export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
         elevation={0}
         sx={{
           p: 2.5,
-          borderRadius: '12px',
+          borderRadius: '16px',
           border: '1px solid',
           borderColor: '#e8e8e8',
           backgroundColor: '#ffffff',
+          boxShadow: '0 2px 12px rgba(0, 0, 0, 0.05)',
           mb: 2,
         }}
       >
@@ -524,10 +530,11 @@ export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
         elevation={0}
         sx={{
           p: 2.5,
-          borderRadius: '12px',
+          borderRadius: '16px',
           border: '1px solid',
           borderColor: '#e8e8e8',
           backgroundColor: '#ffffff',
+          boxShadow: '0 2px 12px rgba(0, 0, 0, 0.05)',
         }}
       >
         <Typography
@@ -567,10 +574,11 @@ export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
         elevation={0}
         sx={{
           p: 2,
-          borderRadius: '12px',
+          borderRadius: '16px',
           border: '1px solid',
           borderColor: '#e8e8e8',
           backgroundColor: '#ffffff',
+          boxShadow: '0 2px 12px rgba(0, 0, 0, 0.05)',
           mt: 2,
         }}
       >

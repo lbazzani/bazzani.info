@@ -80,7 +80,7 @@ export default function DemoShowcase({ onDemoOpen }: DemoShowcaseProps) {
       {/* Section Header */}
       <Box
         sx={{
-          mb: 3,
+          mb: 4,
           display: 'flex',
           alignItems: 'center',
           gap: 2,
@@ -88,24 +88,26 @@ export default function DemoShowcase({ onDemoOpen }: DemoShowcaseProps) {
       >
         <Box
           sx={{
-            width: 4,
-            height: 40,
-            borderRadius: 1,
-            background: 'linear-gradient(135deg, #326CE5 0%, #4ECDC4 100%)',
+            width: 5,
+            height: 48,
+            borderRadius: 2,
+            background: 'linear-gradient(180deg, #326CE5 0%, #4ECDC4 100%)',
+            boxShadow: '0 2px 8px rgba(50, 108, 229, 0.3)',
           }}
         />
         <Box>
           <Typography
             variant="h4"
             sx={{
-              fontWeight: 600,
+              fontWeight: 700,
               color: '#2c3e50',
               letterSpacing: '-0.5px',
+              fontSize: { xs: '1.5rem', md: '2rem' },
             }}
           >
             Interactive Demos
           </Typography>
-          <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.5 }}>
+          <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.5, fontSize: '0.9rem' }}>
             Explore my latest interactive projects and technical demonstrations
           </Typography>
         </Box>

@@ -95,7 +95,7 @@ export default function MyFooter() {
             >
               Follow Me
             </Typography>
-            <Stack direction="row" spacing={1}>
+            <Stack direction="row" spacing={1.5}>
               <IconButton
                 component={Link}
                 href="https://www.linkedin.com/in/lorenzo-bazzani"
@@ -103,14 +103,18 @@ export default function MyFooter() {
                 rel="noopener noreferrer"
                 sx={{
                   color: '#0077b5',
+                  border: '2px solid rgba(0, 119, 181, 0.2)',
+                  p: 1.2,
                   '&:hover': {
-                    backgroundColor: 'rgba(0, 119, 181, 0.08)',
-                    transform: 'translateY(-2px)',
+                    backgroundColor: '#0077b5',
+                    color: '#fff',
+                    transform: 'translateY(-3px)',
+                    boxShadow: '0 4px 12px rgba(0, 119, 181, 0.4)',
                   },
-                  transition: 'all 0.2s ease',
+                  transition: 'all 0.3s ease',
                 }}
               >
-                <LinkedIn />
+                <LinkedIn sx={{ fontSize: 24 }} />
               </IconButton>
               <IconButton
                 component={Link}
@@ -119,14 +123,18 @@ export default function MyFooter() {
                 rel="noopener noreferrer"
                 sx={{
                   color: '#E4405F',
+                  border: '2px solid rgba(228, 64, 95, 0.2)',
+                  p: 1.2,
                   '&:hover': {
-                    backgroundColor: 'rgba(228, 64, 95, 0.08)',
-                    transform: 'translateY(-2px)',
+                    backgroundColor: '#E4405F',
+                    color: '#fff',
+                    transform: 'translateY(-3px)',
+                    boxShadow: '0 4px 12px rgba(228, 64, 95, 0.4)',
                   },
-                  transition: 'all 0.2s ease',
+                  transition: 'all 0.3s ease',
                 }}
               >
-                <Instagram />
+                <Instagram sx={{ fontSize: 24 }} />
               </IconButton>
               <IconButton
                 component={Link}
@@ -135,14 +143,18 @@ export default function MyFooter() {
                 rel="noopener noreferrer"
                 sx={{
                   color: '#1877F2',
+                  border: '2px solid rgba(24, 119, 242, 0.2)',
+                  p: 1.2,
                   '&:hover': {
-                    backgroundColor: 'rgba(24, 119, 242, 0.08)',
-                    transform: 'translateY(-2px)',
+                    backgroundColor: '#1877F2',
+                    color: '#fff',
+                    transform: 'translateY(-3px)',
+                    boxShadow: '0 4px 12px rgba(24, 119, 242, 0.4)',
                   },
-                  transition: 'all 0.2s ease',
+                  transition: 'all 0.3s ease',
                 }}
               >
-                <Facebook />
+                <Facebook sx={{ fontSize: 24 }} />
               </IconButton>
             </Stack>
           </Grid>

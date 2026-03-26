@@ -12,11 +12,12 @@ export default function MobileHeader() {
       elevation={0}
       sx={{
         display: { xs: 'block', md: 'none' },
-        p: 1.5,
-        borderRadius: '8px',
+        p: 2,
+        borderRadius: '16px',
         border: '1px solid',
         borderColor: '#e8e8e8',
-        backgroundColor: '#ffffff',
+        background: 'linear-gradient(135deg, #ffffff 0%, #fefaf7 100%)',
+        boxShadow: '0 2px 12px rgba(0, 0, 0, 0.05)',
         mb: 1.5,
         mt: 0.5,
       }}
