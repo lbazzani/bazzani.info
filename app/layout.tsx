@@ -93,7 +93,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   const structuredData = generateStructuredData();
 
   return (
-    <html lang="en">
+    <html lang="en" style={{ scrollBehavior: 'smooth' }}>
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />

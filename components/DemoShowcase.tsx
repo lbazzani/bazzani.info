@@ -8,6 +8,7 @@ import NewReleasesIcon from '@mui/icons-material/NewReleases';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import BrushIcon from '@mui/icons-material/Brush';
 import SlideshowIcon from '@mui/icons-material/Slideshow';
+import AnimateOnScroll from './AnimateOnScroll';
 
 interface DemoShowcaseProps {
   onDemoOpen: (demoId: string) => void;
@@ -72,51 +73,63 @@ export default function DemoShowcase({ onDemoOpen }: DemoShowcaseProps) {
       sx={{
         mt: 8,
         mb: 4,
-        pt: 4,
-        borderTop: '1px solid',
-        borderColor: '#e8e8e8',
+        pt: 5,
+        position: 'relative',
+        '&::before': {
+          content: '""',
+          position: 'absolute',
+          top: 0,
+          left: '10%',
+          right: '10%',
+          height: '1px',
+          background: 'linear-gradient(90deg, transparent, #e0e0e0, transparent)',
+        },
       }}
     >
       {/* Section Header */}
-      <Box
-        sx={{
-          mb: 4,
-          display: 'flex',
-          alignItems: 'center',
-          gap: 2,
-        }}
-      >
+      <AnimateOnScroll variant="fadeUp">
         <Box
           sx={{
-            width: 5,
-            height: 48,
-            borderRadius: 2,
-            background: 'linear-gradient(180deg, #326CE5 0%, #4ECDC4 100%)',
-            boxShadow: '0 2px 8px rgba(50, 108, 229, 0.3)',
+            mb: 4,
+            display: 'flex',
+            alignItems: 'center',
+            gap: 2,
           }}
-        />
-        <Box>
-          <Typography
-            variant="h4"
+        >
+          <Box
             sx={{
-              fontWeight: 700,
-              color: '#2c3e50',
-              letterSpacing: '-0.5px',
-              fontSize: { xs: '1.5rem', md: '2rem' },
+              width: 5,
+              height: 48,
+              borderRadius: 2,
+              background: 'linear-gradient(180deg, #326CE5 0%, #4ECDC4 100%)',
+              boxShadow: '0 2px 12px rgba(50, 108, 229, 0.3)',
+              transition: 'height 0.3s ease',
             }}
-          >
-            Interactive Demos
-          </Typography>
-          <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.5, fontSize: '0.9rem' }}>
-            Explore my latest interactive projects and technical demonstrations
-          </Typography>
+          />
+          <Box>
+            <Typography
+              variant="h4"
+              sx={{
+                fontWeight: 700,
+                color: '#2c3e50',
+                letterSpacing: '-0.5px',
+                fontSize: { xs: '1.5rem', md: '2rem' },
+              }}
+            >
+              Interactive Demos
+            </Typography>
+            <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.5, fontSize: '0.9rem' }}>
+              Explore my latest interactive projects and technical demonstrations
+            </Typography>
+          </Box>
         </Box>
-      </Box>
+      </AnimateOnScroll>
 
       {/* Demo Cards Grid */}
       <Grid container spacing={3}>
-        {DEMOS.map((demo) => (
+        {DEMOS.map((demo, index) => (
           <Grid size={{ xs: 12, md: 6 }} key={demo.id}>
+            <AnimateOnScroll variant="fadeUp" delay={index * 0.1}>
             <Card
               sx={{
                 height: '100%',
@@ -235,6 +248,7 @@ export default function DemoShowcase({ onDemoOpen }: DemoShowcaseProps) {
                 </Button>
               </CardActions>
             </Card>
+            </AnimateOnScroll>
           </Grid>
         ))}
       </Grid>

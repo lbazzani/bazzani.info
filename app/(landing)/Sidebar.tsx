@@ -460,12 +460,17 @@ export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
                 sx={{
                   height: 7,
                   borderRadius: 3,
-                  bgcolor: '#f5f5f5',
+                  bgcolor: '#f0f0f0',
                   '& .MuiLinearProgress-bar': {
                     bgcolor: skill.color,
                     borderRadius: 3,
                     boxShadow: `0 0 8px ${skill.color}40`,
-                  }
+                    transition: 'transform 1.2s cubic-bezier(0.22, 1, 0.36, 1)',
+                  },
+                  '&:hover .MuiLinearProgress-bar': {
+                    boxShadow: `0 0 12px ${skill.color}60`,
+                  },
+                  transition: 'all 0.3s ease',
                 }}
               />
             </Box>
@@ -512,12 +517,17 @@ export default function Sidebar({ onDemoOpen }: SidebarProps = {}) {
                 sx={{
                   height: 7,
                   borderRadius: 3,
-                  bgcolor: '#f5f5f5',
+                  bgcolor: '#f0f0f0',
                   '& .MuiLinearProgress-bar': {
                     bgcolor: skill.color,
                     borderRadius: 3,
                     boxShadow: `0 0 8px ${skill.color}40`,
-                  }
+                    transition: 'transform 1.2s cubic-bezier(0.22, 1, 0.36, 1)',
+                  },
+                  '&:hover .MuiLinearProgress-bar': {
+                    boxShadow: `0 0 12px ${skill.color}60`,
+                  },
+                  transition: 'all 0.3s ease',
                 }}
               />
             </Box>

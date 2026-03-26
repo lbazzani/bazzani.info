@@ -7,6 +7,7 @@ import IntroSection from './IntroSection';
 import Sidebar from './Sidebar';
 import MobileHeader from './MobileHeader';
 import AIAssistantPanel from '../../components/AIAssistantPanel';
+import AnimateOnScroll from '../../components/AnimateOnScroll';
 import ArchitectureDemo from '../../components/ArchitectureDemo';
 import CO2DataDemo from '../../components/CO2DataDemo';
 import CO2AssistantDemo from '../../components/CO2AssistantDemo';
@@ -132,9 +133,15 @@ export default function Home() {
 
       {/* Main Content */}
       <Box sx={{ flex: 1, minWidth: 0 }}>
-        <MobileHeader />
-        <AIAssistantPanel />
-        <IntroSection />
+        <AnimateOnScroll variant="fadeIn" duration={0.5}>
+          <MobileHeader />
+        </AnimateOnScroll>
+        <AnimateOnScroll variant="fadeUp" delay={0.1}>
+          <AIAssistantPanel />
+        </AnimateOnScroll>
+        <AnimateOnScroll variant="fadeUp" delay={0.2}>
+          <IntroSection />
+        </AnimateOnScroll>
 
         {/* Tabs Navigation */}
         <Paper
@@ -197,16 +204,20 @@ export default function Home() {
           return (
             <TabPanel key={tab.id} value={tabValue} index={tabIndex}>
               {Object.entries(sections).map(([sectionTitle, cards], sectionIndex) => (
-                <Box key={`${tab.id}-section-${sectionIndex}`}>
-                  <SectionHeader gradient={cards[0].gradient}>
-                    {sectionTitle}
-                  </SectionHeader>
-                  <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-                    {cards.map((card) => (
-                      <ExperienceCard key={card.id} {...card} />
-                    ))}
+                <AnimateOnScroll key={`${tab.id}-section-${sectionIndex}`} variant="fadeUp" delay={sectionIndex * 0.1}>
+                  <Box>
+                    <SectionHeader gradient={cards[0].gradient}>
+                      {sectionTitle}
+                    </SectionHeader>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                      {cards.map((card, cardIndex) => (
+                        <AnimateOnScroll key={card.id} variant="fadeUp" delay={cardIndex * 0.08}>
+                          <ExperienceCard {...card} />
+                        </AnimateOnScroll>
+                      ))}
+                    </Box>
                   </Box>
-                </Box>
+                </AnimateOnScroll>
               ))}
             </TabPanel>
           );

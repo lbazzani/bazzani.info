@@ -236,12 +236,18 @@ export default function AIAssistantPanel() {
       ref={panelRef}
       elevation={0}
       sx={{
-        borderRadius: '4px',
-        border: '1px solid #e0e0e0',
+        borderRadius: '16px',
+        border: '1px solid rgba(76, 175, 80, 0.2)',
         background: '#ffffff',
         mb: 3,
         overflow: 'hidden',
         position: 'relative',
+        boxShadow: '0 4px 24px rgba(0, 0, 0, 0.08)',
+        transition: 'box-shadow 0.3s ease, border-color 0.3s ease',
+        '&:hover': {
+          boxShadow: '0 8px 32px rgba(76, 175, 80, 0.12)',
+          borderColor: 'rgba(76, 175, 80, 0.35)',
+        },
       }}
     >
       <Box
