@@ -23,25 +23,25 @@ interface ExperienceCardProps {
 const StyledCard = styled(Card)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'row',
-  borderRadius: '12px',
+  borderRadius: '16px',
   transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
   border: '1px solid',
   borderColor: '#e8e8e8',
   overflow: 'hidden',
   position: 'relative',
   backgroundColor: '#ffffff',
-  boxShadow: '0 2px 8px rgba(0, 0, 0, 0.04)',
+  boxShadow: '0 2px 12px rgba(0, 0, 0, 0.05)',
   cursor: 'pointer',
   height: '160px',
   width: '100%',
 
   '&:hover': {
-    transform: 'translateX(4px)',
-    boxShadow: '0 8px 24px rgba(211, 84, 0, 0.15)',
-    borderColor: '#d35400',
+    transform: 'translateY(-4px)',
+    boxShadow: '0 12px 32px rgba(211, 84, 0, 0.15)',
+    borderColor: '#e67e22',
 
     '& .card-image': {
-      transform: 'scale(1.05)',
+      transform: 'scale(1.08)',
     },
 
     '& .read-more-badge': {
@@ -175,9 +175,11 @@ export default function ExperienceCard(props: ExperienceCardProps) {
                 WebkitBoxOrient: 'vertical',
                 pr: 2,
                 pb: 4,
+                fontStyle: 'italic',
+                opacity: 0.8,
               }}
             >
-              {props.subtitle || 'Click to discover more about this experience...'}
+              Click to discover more →
             </Typography>
           </CardContent>
         </Box>

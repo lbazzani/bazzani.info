@@ -70,8 +70,11 @@ export default function DemoShowcase({ onDemoOpen }: DemoShowcaseProps) {
   return (
     <Box
       sx={{
-        mt: 6,
+        mt: 8,
         mb: 4,
+        pt: 4,
+        borderTop: '1px solid',
+        borderColor: '#e8e8e8',
       }}
     >
       {/* Section Header */}

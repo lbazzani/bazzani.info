@@ -136,11 +136,12 @@ export default function Home() {
         <Paper
           elevation={0}
           sx={{
-            borderRadius: '12px',
+            borderRadius: '16px',
             border: '1px solid',
-            borderColor: '#e8e8e8',
+            borderColor: '#e0e0e0',
             mb: 3,
             overflow: 'hidden',
+            boxShadow: '0 2px 12px rgba(0, 0, 0, 0.06)',
           }}
         >
           <Tabs
@@ -148,20 +149,27 @@ export default function Home() {
             onChange={handleTabChange}
             variant="fullWidth"
             sx={{
-              minHeight: 48,
+              minHeight: 52,
               '& .MuiTab-root': {
                 textTransform: 'none',
                 fontWeight: 600,
-                fontSize: '0.95rem',
+                fontSize: '1rem',
                 color: 'text.secondary',
-                minHeight: 48,
+                minHeight: 52,
+                letterSpacing: '0.3px',
+                transition: 'all 0.2s ease',
+                '&:hover': {
+                  color: '#e67e22',
+                  backgroundColor: 'rgba(211, 84, 0, 0.04)',
+                },
                 '&.Mui-selected': {
                   color: '#d35400',
                 },
               },
               '& .MuiTabs-indicator': {
-                backgroundColor: '#d35400',
-                height: 3,
+                background: 'linear-gradient(90deg, #d35400, #e67e22)',
+                height: 4,
+                borderRadius: '4px 4px 0 0',
               },
             }}
           >
@@ -189,7 +197,7 @@ export default function Home() {
                   <SectionHeader gradient={cards[0].gradient}>
                     {sectionTitle}
                   </SectionHeader>
-                  <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
+                  <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
                     {cards.map((card) => (
                       <ExperienceCard key={card.id} {...card} />
                     ))}

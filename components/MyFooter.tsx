@@ -13,13 +13,13 @@ export default function MyFooter() {
     <Box
       component="footer"
       sx={{
-        backgroundColor: (theme) =>
+        background: (theme) =>
           theme.palette.mode === "light"
-            ? theme.palette.grey[50]
+            ? 'linear-gradient(180deg, #f8f9fa 0%, #eef1f5 100%)'
             : theme.palette.grey[900],
-        borderTop: '1px solid',
-        borderColor: 'divider',
-        py: 4,
+        borderTop: '3px solid',
+        borderImage: 'linear-gradient(90deg, #d35400, #e67e22, #f39c12) 1',
+        py: 5,
         px: 2,
         mt: 'auto',
       }}

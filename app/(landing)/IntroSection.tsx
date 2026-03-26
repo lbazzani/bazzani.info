@@ -20,12 +20,12 @@ export default function IntroSection() {
       elevation={0}
       sx={{
         position: 'relative',
-        padding: { xs: 2, sm: 2.5, md: 3 },
-        borderRadius: '12px',
-        background: 'linear-gradient(135deg, #ffffff 0%, #fefaf7 100%)',
+        padding: { xs: 2.5, sm: 3, md: 3.5 },
+        borderRadius: '16px',
+        background: 'linear-gradient(145deg, #ffffff 0%, #fef9f5 40%, #fef0e6 100%)',
         border: '2px solid',
-        borderColor: '#ffe8db',
-        boxShadow: '0 4px 20px rgba(211, 84, 0, 0.08)',
+        borderColor: '#ffe0cc',
+        boxShadow: '0 8px 32px rgba(211, 84, 0, 0.10)',
         mb: 3,
         overflow: 'hidden',
         '&::before': {
@@ -34,8 +34,8 @@ export default function IntroSection() {
           top: 0,
           left: 0,
           right: 0,
-          height: '3px',
-          background: 'linear-gradient(90deg, #d35400 0%, #e67e22 50%, #f39c12 100%)',
+          height: '4px',
+          background: 'linear-gradient(90deg, #d35400 0%, #e67e22 40%, #f39c12 70%, #f1c40f 100%)',
         }
       }}
     >
